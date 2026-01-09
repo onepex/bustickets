@@ -5,6 +5,7 @@ import { HeroBackground } from '@/components/HeroBackground'
 import { StickyBookCTA } from '@/components/StickyBookCTA'
 import { Breadcrumbs } from '@/components/Breadcrumbs'
 import { TerminalCard } from '@/components/TerminalCard'
+import { OperatorCard } from '@/components/OperatorCard'
 import { TerminalData } from '@/lib/terminal-types'
 import { kv } from '@vercel/kv'
 import Link from 'next/link'
@@ -332,46 +333,23 @@ export default async function ManilaToViganPage() {
           <section className="mb-12">
             <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-6">Bus Operators</h2>
             <div className="grid md:grid-cols-2 gap-4">
-              <Link href="/operator/partas-bus" className="block group">
-                <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5 hover:border-amber-300 transition-colors">
-                  <div className="w-full h-14 bg-gradient-to-r from-red-600 to-red-700 rounded-lg flex items-center justify-center mb-4">
-                    <span className="text-white font-bold text-lg">PARTAS</span>
-                  </div>
-                  <div className="flex items-center justify-between mb-3">
-                    <div className="flex items-center gap-1">
-                      <Star className="w-4 h-4 text-amber-400 fill-amber-400" aria-hidden="true" />
-                      <span className="text-sm font-medium text-gray-700">4.4</span>
-                    </div>
-                    <span className="text-xs bg-amber-50 text-amber-700 px-2 py-0.5 rounded-full">Most Popular</span>
-                  </div>
-                  <p className="text-sm text-gray-600 mb-3">Premium Ilocos operator. Multiple daily departures with Luxury, Super Deluxe, and Deluxe classes.</p>
-                  <div className="flex flex-wrap gap-1.5 mb-3">
-                    <span className="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded">Cubao</span>
-                    <span className="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded">Pasay</span>
-                    <span className="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded">CR Option</span>
-                  </div>
-                  <div className="text-sm text-gray-500"><span className="font-medium text-gray-700">₱950 - ₱1,350</span></div>
-                </div>
-              </Link>
-
-              <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5 hover:border-amber-300 transition-colors">
-                <div className="w-full h-14 bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg flex items-center justify-center mb-4">
-                  <span className="text-white font-bold text-lg">FARINAS TRANS</span>
-                </div>
-                <div className="flex items-center justify-between mb-3">
-                  <div className="flex items-center gap-1">
-                    <Star className="w-4 h-4 text-amber-400 fill-amber-400" aria-hidden="true" />
-                    <span className="text-sm font-medium text-gray-700">4.0</span>
-                  </div>
-                  <span className="text-xs bg-blue-50 text-blue-700 px-2 py-0.5 rounded-full">Budget Option</span>
-                </div>
-                <p className="text-sm text-gray-600 mb-3">Ilocos-based operator with affordable fares. Makes more stops along the route.</p>
-                <div className="flex flex-wrap gap-1.5 mb-3">
-                  <span className="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded">Sampaloc</span>
-                  <span className="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded">Cubao</span>
-                </div>
-                <div className="text-sm text-gray-500"><span className="font-medium text-gray-700">₱900 - ₱950</span></div>
-              </div>
+              <OperatorCard
+                name="Partas"
+                rating={4.4}
+                badge="Most Popular"
+                description="Premium Ilocos operator. Multiple daily departures with Luxury, Super Deluxe, and Deluxe classes."
+                terminals={['Cubao', 'Pasay', 'CR Option']}
+                priceRange="₱950 - ₱1,350"
+                href="/operator/partas-bus"
+              />
+              <OperatorCard
+                name="Farinas"
+                rating={4.0}
+                badge="Budget Option"
+                description="Ilocos-based operator with affordable fares. Makes more stops along the route."
+                terminals={['Sampaloc', 'Cubao']}
+                priceRange="₱900 - ₱950"
+              />
             </div>
           </section>
 
