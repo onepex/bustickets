@@ -6,6 +6,7 @@ import { StickyBookCTA } from '@/components/StickyBookCTA'
 import { Breadcrumbs } from '@/components/Breadcrumbs'
 import { TerminalCard } from '@/components/TerminalCard'
 import { OperatorCard } from '@/components/OperatorCard'
+import { RouteJourneyMap, TerminalLocationMap } from '@/components/maps'
 import { TerminalData } from '@/lib/terminal-types'
 import { kv } from '@vercel/kv'
 import Link from 'next/link'
@@ -245,27 +246,32 @@ export default async function ManilaToViganPage() {
             </div>
           </section>
 
-          {/* Your Journey */}
+          {/* Your Journey - Interactive Map */}
           <section className="mb-12">
             <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
               <Navigation className="w-6 h-6 text-amber-600" />
               Your Journey
             </h2>
-            <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-              <div className="grid md:grid-cols-2">
-                <div className="bg-gradient-to-br from-amber-50 to-orange-100 h-64 md:h-auto flex items-center justify-center relative">
-                  <div className="text-center z-10">
-                    <MapPin className="w-12 h-12 text-amber-600 mx-auto mb-2" />
-                    <p className="text-amber-700 font-medium">Ilocos Heritage Route</p>
-                    <p className="text-amber-600 text-sm">7-11 hours via TPLEX</p>
-                  </div>
-                </div>
-                <div className="p-6">
+            <div className="grid lg:grid-cols-5 gap-6">
+              <div className="lg:col-span-3">
+                <RouteJourneyMap
+                  origin={{ name: 'Manila', coordinates: [121.0, 14.6] }}
+                  destination={{ name: 'Vigan', coordinates: [120.39, 17.57] }}
+                  waypoints={[
+                    { name: 'Tarlac', coordinates: [120.6, 15.5] },
+                    { name: 'La Union', coordinates: [120.32, 16.62] },
+                  ]}
+                  duration="7-11 hours"
+                  distance="407 km"
+                />
+              </div>
+              <div className="lg:col-span-2">
+                <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 h-full">
                   <h3 className="font-semibold text-gray-900 mb-4">Journey Highlights</h3>
                   <div className="space-y-4">
                     <div className="flex items-start gap-3">
                       <div className="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0"><span className="text-amber-600 font-bold text-sm">1</span></div>
-                      <div><div className="font-medium text-gray-900">Metro Manila</div><div className="text-sm text-gray-500">Depart from Cubao or Pasay</div></div>
+                      <div><div className="font-medium text-gray-900">Metro Manila</div><div className="text-sm text-gray-500">Depart from Cubao or Sampaloc</div></div>
                     </div>
                     <div className="flex items-start gap-3">
                       <div className="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0"><span className="text-amber-600 font-bold text-sm">2</span></div>
@@ -273,12 +279,19 @@ export default async function ManilaToViganPage() {
                     </div>
                     <div className="flex items-start gap-3">
                       <div className="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0"><span className="text-amber-600 font-bold text-sm">3</span></div>
-                      <div><div className="font-medium text-gray-900">La Union & Ilocos Sur</div><div className="text-sm text-gray-500">Coastal route with beach views</div></div>
+                      <div><div className="font-medium text-gray-900">La Union Coast</div><div className="text-sm text-gray-500">Scenic coastal highway</div></div>
                     </div>
                     <div className="flex items-start gap-3">
-                      <div className="w-8 h-8 bg-amber-600 rounded-full flex items-center justify-center flex-shrink-0"><MapPin className="w-4 h-4 text-white" /></div>
-                      <div><div className="font-medium text-gray-900">Vigan City</div><div className="text-sm text-gray-500">Arrive at Vigan Bus Terminal</div></div>
+                      <div className="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center flex-shrink-0"><MapPin className="w-4 h-4 text-white" /></div>
+                      <div><div className="font-medium text-gray-900">Vigan City</div><div className="text-sm text-gray-500">UNESCO World Heritage Site</div></div>
                     </div>
+                  </div>
+                  <div className="mt-6 p-4 bg-amber-50 rounded-xl">
+                    <div className="flex items-center gap-2 text-amber-800 font-medium text-sm mb-1">
+                      <Bus className="w-4 h-4" />
+                      Pro Tip
+                    </div>
+                    <p className="text-xs text-amber-700">Take the Luxury class for a direct 7-hour trip. Deluxe buses make more stops but are ₱300 cheaper.</p>
                   </div>
                 </div>
               </div>
@@ -364,7 +377,26 @@ export default async function ManilaToViganPage() {
             <div className="grid md:grid-cols-2 gap-6 mb-6">
               {/* Departure */}
               <div className="space-y-4">
-                <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">Departure (Manila)</h3>
+                <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Departure (Manila)</h3>
+                <TerminalLocationMap
+                  terminals={[
+                    { 
+                      name: 'Partas Cubao', 
+                      coordinates: [121.0523, 14.6207], 
+                      operator: 'Partas',
+                      address: 'Aurora Blvd, Cubao'
+                    },
+                    { 
+                      name: 'Farinas Sampaloc', 
+                      coordinates: [120.9845, 14.6117], 
+                      operator: 'Farinas',
+                      address: 'Lacson Ave, Sampaloc'
+                    },
+                  ]}
+                  title="Manila Terminals"
+                  zoom={12}
+                  height="200px"
+                />
                 {partasCubao ? (
                   <TerminalCard 
                     terminal={partasCubao} 
@@ -395,8 +427,21 @@ export default async function ManilaToViganPage() {
               </div>
 
               {/* Arrival */}
-              <div>
-                <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">Arrival (Vigan)</h3>
+              <div className="space-y-4">
+                <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Arrival (Vigan)</h3>
+                <TerminalLocationMap
+                  terminals={[
+                    { 
+                      name: 'Vigan Bus Terminal', 
+                      coordinates: [120.3869, 17.5747], 
+                      operator: 'All operators',
+                      address: 'Vigan City, Ilocos Sur'
+                    },
+                  ]}
+                  title="Vigan Terminal"
+                  zoom={14}
+                  height="200px"
+                />
                 {viganTerminal ? (
                   <TerminalCard 
                     terminal={viganTerminal}
