@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
-import { Star, MapPin, Clock, Phone, Navigation, Bus, ChevronDown, ChevronUp } from 'lucide-react'
+import { Star, MapPin, Clock, Phone, Bus, ChevronDown, ChevronUp, Share2 } from 'lucide-react'
 import { TerminalData } from '@/lib/terminal-types'
 
 interface TerminalCardProps {
@@ -107,34 +107,52 @@ export function TerminalCard({
       </div>
 
       {/* Footer - always visible */}
-      <div className="flex items-center justify-between text-xs px-3 py-2 bg-gray-50 border-t border-gray-100">
-        <div className="flex items-center gap-2">
+      <div className="flex items-center justify-between text-sm px-3 py-2.5 bg-gray-50 border-t border-gray-100">
+        <div className="flex items-center gap-3">
           {terminal.phone && (
-            <a href={`tel:${terminal.phone}`} className="flex items-center gap-1 text-gray-500 hover:text-amber-600">
-              <Phone className="w-3 h-3" />
+            <a href={`tel:${terminal.phone}`} className="flex items-center gap-1.5 text-gray-600 hover:text-amber-600">
+              <Phone className="w-4 h-4" />
               <span>{terminal.phone}</span>
             </a>
           )}
           {terminal.wheelchairAccessible && (
-            <span className="text-blue-600" title="Wheelchair accessible">♿</span>
+            <span className="text-blue-600 text-base" title="Wheelchair accessible">♿</span>
           )}
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-3">
+          {/* Google Maps button - prominent */}
           <a 
             href={mapsUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-1 text-amber-600 font-medium hover:underline"
+            className="flex items-center gap-1.5 bg-blue-500 hover:bg-blue-600 text-white px-3 py-1.5 rounded-lg font-medium transition-colors"
           >
-            <Navigation className="w-3 h-3" />
+            <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+            </svg>
             <span>Directions</span>
           </a>
+          {/* Share button */}
+          <button
+            onClick={() => {
+              if (navigator.share) {
+                navigator.share({ title: terminal.name, url: mapsUrl })
+              } else {
+                navigator.clipboard.writeText(mapsUrl)
+                alert('Link copied!')
+              }
+            }}
+            className="flex items-center gap-1 text-gray-500 hover:text-gray-700 p-1.5"
+            title="Share location"
+          >
+            <Share2 className="w-4 h-4" />
+          </button>
           {(terminal.reviews?.length || terminal.openingHours?.length) && (
             <button 
               onClick={() => setExpanded(!expanded)}
-              className="flex items-center gap-0.5 text-gray-400 hover:text-gray-600 ml-1"
+              className="flex items-center text-gray-400 hover:text-gray-600 p-1"
             >
-              {expanded ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
+              {expanded ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}
             </button>
           )}
         </div>
