@@ -29,33 +29,37 @@ export function OperatorCard({
 
   const content = (
     <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5 hover:border-amber-300 transition-colors h-full">
-      {/* Header with logo + brand color */}
+      {/* Header with logo + name left, rating right */}
       <div 
-        className="w-full h-14 rounded-lg flex items-center justify-center gap-3 mb-4"
-        style={{ backgroundColor: color }}
+        className="w-full h-14 rounded-lg flex items-center justify-between px-4 mb-4"
+        style={{ 
+          background: `linear-gradient(135deg, ${color} 0%, ${color}cc 100%)`,
+        }}
       >
-        {logo && (
-          <Image 
-            src={logo} 
-            alt={displayName} 
-            width={32} 
-            height={32} 
-            className="w-8 h-8 object-contain bg-white rounded p-1"
-          />
-        )}
-        <span className="text-white font-bold text-lg uppercase tracking-wide">
-          {displayName}
-        </span>
-      </div>
-
-      {/* Rating + Badge */}
-      <div className="flex items-center justify-between mb-3">
+        <div className="flex items-center gap-3">
+          {logo && (
+            <Image 
+              src={logo} 
+              alt={displayName} 
+              width={32} 
+              height={32} 
+              className="w-8 h-8 object-contain bg-white rounded p-1"
+            />
+          )}
+          <span className="text-white font-bold text-lg uppercase tracking-wide">
+            {op?.name || name}
+          </span>
+        </div>
         {rating && (
-          <div className="flex items-center gap-1">
-            <Star className="w-4 h-4 text-amber-500 fill-amber-500" />
-            <span className="font-semibold text-gray-800">{rating.toFixed(1)}</span>
+          <div className="flex items-center gap-1 bg-white/20 px-2 py-1 rounded">
+            <Star className="w-4 h-4 text-amber-300 fill-amber-300" />
+            <span className="font-bold text-white">{rating.toFixed(1)}</span>
           </div>
         )}
+      </div>
+
+      {/* Badge */}
+      <div className="flex items-center justify-end mb-3">
         {badge && (
           <span className="text-xs font-medium text-amber-600">{badge}</span>
         )}

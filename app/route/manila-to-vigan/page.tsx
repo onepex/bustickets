@@ -86,8 +86,9 @@ async function getTerminalData(slug: string): Promise<TerminalData | null> {
 }
 
 export default async function ManilaToViganPage() {
-  const [partasCubao, viganTerminal] = await Promise.all([
+  const [partasCubao, farinasSampaloc, viganTerminal] = await Promise.all([
     getTerminalData('partas-cubao'),
+    getTerminalData('farinas-sampaloc'),
     getTerminalData('vigan-bus-terminal'),
   ])
   return (
@@ -362,7 +363,7 @@ export default async function ManilaToViganPage() {
             
             <div className="grid md:grid-cols-2 gap-6 mb-6">
               {/* Departure */}
-              <div>
+              <div className="space-y-4">
                 <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">Departure (Manila)</h3>
                 {partasCubao ? (
                   <TerminalCard 
@@ -376,6 +377,19 @@ export default async function ManilaToViganPage() {
                   <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-4">
                     <h4 className="font-semibold text-gray-900">Partas Cubao Terminal</h4>
                     <p className="text-sm text-gray-500">Aurora Blvd, Cubao, Quezon City</p>
+                  </div>
+                )}
+                {farinasSampaloc ? (
+                  <TerminalCard 
+                    terminal={farinasSampaloc} 
+                    departures="4 daily to Vigan"
+                    firstBus="7:00 AM"
+                    lastBus="9:00 PM"
+                  />
+                ) : (
+                  <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-4">
+                    <h4 className="font-semibold text-gray-900">Farinas Sampaloc Terminal</h4>
+                    <p className="text-sm text-gray-500">1238 Lacson Ave, Sampaloc, Manila</p>
                   </div>
                 )}
               </div>

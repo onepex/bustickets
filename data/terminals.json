@@ -32,6 +32,14 @@
     "operators": ["Ohayami"]
   },
   {
+    "slug": "farinas-sampaloc",
+    "name": "Farinas Sampaloc Terminal",
+    "city": "Manila",
+    "lat": 14.6117,
+    "lon": 120.9845,
+    "operators": ["Farinas"]
+  },
+  {
     "slug": "partas-cubao",
     "name": "Partas Cubao Terminal",
     "city": "Quezon City",
