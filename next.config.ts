@@ -6,6 +6,7 @@ const nextConfig: NextConfig = {
       { protocol: 'https', hostname: 'bustickets.ph' },
       { protocol: 'https', hostname: 'book.bustickets.ph' },
       { protocol: 'https', hostname: '12go.asia' },
+      { protocol: 'https', hostname: '*.public.blob.vercel-storage.com' },
     ],
   },
 };
