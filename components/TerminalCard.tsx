@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Star, MapPin, Clock, Phone, Bus, Share2 } from 'lucide-react'
 import { TerminalData } from '@/lib/terminal-types'
+import { getOperator } from '@/lib/operators'
 
 interface TerminalCardProps {
   terminal: TerminalData
@@ -87,14 +88,35 @@ export function TerminalCard({
             <span className="line-clamp-2">{terminal.formattedAddress || terminal.city}</span>
           </a>
 
-          {/* Operators */}
+          {/* Operators with logos */}
           {terminal.operators && terminal.operators.length > 0 && (
-            <div className="flex flex-wrap gap-1.5 mb-3">
-              {terminal.operators.map((op, i) => (
-                <span key={i} className="text-sm bg-amber-50 text-amber-700 px-2 py-0.5 rounded-md font-medium">
-                  {op}
-                </span>
-              ))}
+            <div className="flex flex-wrap gap-2 mb-3">
+              {terminal.operators.map((opName, i) => {
+                const op = getOperator(opName)
+                if (op) {
+                  return (
+                    <span 
+                      key={i} 
+                      className="flex items-center gap-1.5 text-sm text-white px-2 py-1 rounded-md font-medium"
+                      style={{ backgroundColor: op.color }}
+                    >
+                      <Image 
+                        src={op.logo} 
+                        alt={op.shortName} 
+                        width={20} 
+                        height={20} 
+                        className="w-5 h-5 object-contain bg-white rounded p-0.5"
+                      />
+                      {op.shortName}
+                    </span>
+                  )
+                }
+                return (
+                  <span key={i} className="text-sm bg-gray-100 text-gray-700 px-2 py-1 rounded-md font-medium">
+                    {opName}
+                  </span>
+                )
+              })}
             </div>
           )}
 

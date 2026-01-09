@@ -30,12 +30,18 @@
 - 7-day TTL on cached data
 - API endpoint: `/api/terminals/[slug]` - returns cached data
 
-### TerminalCard Component
-- Displays all cached data from KV
-- Rating badge, address, operators, schedule info
-- Phone, wheelchair accessibility icon
-- Directions link (uses googleMapsUri)
-- Currently text-only layout (removed embedded map due to API key issues)
+### TerminalCard Component (COMPLETE - Jan 9, 2026)
+- **Square photo thumbnail** (144px) with Next.js Image optimization
+- **Name + rating** with star icon
+- **Address** - clickable, opens Google Maps
+- **Operators** - colored tags
+- **Schedule info** (departures, first/last bus) OR opening hours
+- **Phone** - clickable to dial
+- **Wheelchair accessible** badge
+- **"Share" button** - native share on mobile, copies to clipboard on desktop
+  - Shares: "Meet me at [Terminal Name]" + address + maps link
+- **"Directions" button** - blue, prominent, opens Google Maps
+- Responsive, clean design focused on essential pickup info
 
 ### Route Pages
 - Manila-to-Vigan page uses TerminalCard with live KV data
@@ -43,29 +49,25 @@
 
 ---
 
-## TODO (Pick up tomorrow)
+## TODO
 
-### 1. Google Maps Embed in Cards
-- Maps Embed API enabled but getting "not authorized" error
-- API key has correct restrictions (None + 3 APIs)
-- May need to wait for propagation or use different approach
-- Alternative: Static Maps API or just link to Google Maps
-
-### 2. Terminal Page (`/terminal/[slug]`)
+### 1. Terminal Detail Page (`/terminal/[slug]`)
 - Full detail page with:
   - Photo carousel (all 6 photos)
   - Large Google Maps embed
   - All reviews displayed
   - Full opening hours
-  - More terminal info
+  - Routes served from this terminal
 
-### 3. TerminalCard Image Display
-- Had working thumbnail layout but removed due to map issues
-- Consider: photo-only thumbnail without map embed
-- Or: photo + "View on Map" link
+### 2. More Route Pages
+- Add terminal cards to other route pages (manila-to-baguio, etc.)
+- Reuse TerminalCard component with route-specific schedule data
 
-### 4. More Route Pages
-- Add terminal cards to manila-to-baguio, etc.
+### 3. Git/Vercel Setup (COMPLETE - Jan 9, 2026)
+- Moved to `/Users/onepex/Documents/projects/bustickets`
+- Own Git repo: https://github.com/onepex/bustickets
+- Vercel deploys working via CLI
+- Local workspace at `/Users/onepex/Documents/workspace` (not tracked)
 
 ---
 

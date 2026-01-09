@@ -29,7 +29,7 @@
     "city": "Manila",
     "lat": 14.6101,
     "lon": 120.9891,
-    "operators": ["Ohayami", "Autobus"]
+    "operators": ["Ohayami"]
   },
   {
     "slug": "partas-cubao",
