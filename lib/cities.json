@@ -1,0 +1,1009 @@
+{
+  "version": "1.0",
+  "generated": "2026-01-06",
+  "country": "PH",
+  "cities": [
+    {
+      "id": "allen",
+      "name": "Allen",
+      "slug": "allen",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "bacolod",
+      "name": "Bacolod",
+      "slug": "bacolod",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "baguio",
+      "name": "Baguio",
+      "slug": "baguio",
+      "country": "PH",
+      "type": "city",
+      "popular": true
+    },
+    {
+      "id": "baler",
+      "name": "Baler",
+      "slug": "baler",
+      "country": "PH",
+      "type": "city",
+      "source": "12go",
+      "popular": false
+    },
+    {
+      "id": "banaue",
+      "name": "Banaue",
+      "slug": "banaue",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "bataan",
+      "name": "Bataan",
+      "slug": "bataan",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "batangas",
+      "name": "Batangas",
+      "slug": "batangas",
+      "country": "PH",
+      "type": "city",
+      "popular": true
+    },
+    {
+      "id": "bohol",
+      "name": "Bohol",
+      "slug": "bohol",
+      "country": "PH",
+      "type": "city",
+      "popular": true
+    },
+    {
+      "id": "boracay",
+      "name": "Boracay",
+      "slug": "boracay",
+      "country": "PH",
+      "type": "city",
+      "popular": true
+    },
+    {
+      "id": "butuan",
+      "name": "Butuan",
+      "slug": "butuan",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "cabanatuan",
+      "name": "Cabanatuan",
+      "slug": "cabanatuan",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "cagayan-de-oro",
+      "name": "Cagayan De Oro",
+      "slug": "cagayan-de-oro",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "calapan",
+      "name": "Calapan",
+      "slug": "calapan",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "calbayog",
+      "name": "Calbayog",
+      "slug": "calbayog",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "camiguin",
+      "name": "Camiguin",
+      "slug": "camiguin",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "caticlan",
+      "name": "Caticlan",
+      "slug": "caticlan",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "cavite",
+      "name": "Cavite",
+      "slug": "cavite",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "cebu",
+      "name": "Cebu",
+      "slug": "cebu",
+      "country": "PH",
+      "type": "city",
+      "popular": true
+    },
+    {
+      "id": "coron",
+      "name": "Coron",
+      "slug": "coron",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "daet",
+      "name": "Daet",
+      "slug": "daet",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "dapitan",
+      "name": "Dapitan",
+      "slug": "dapitan",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "davao",
+      "name": "Davao",
+      "slug": "davao",
+      "country": "PH",
+      "type": "city",
+      "popular": true
+    },
+    {
+      "id": "dipolog",
+      "name": "Dipolog",
+      "slug": "dipolog",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "dumaguete",
+      "name": "Dumaguete",
+      "slug": "dumaguete",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "el-nido",
+      "name": "El Nido",
+      "slug": "el-nido",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "gensan",
+      "name": "Gensan",
+      "slug": "gensan",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "iligan",
+      "name": "Iligan",
+      "slug": "iligan",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "iloilo",
+      "name": "Iloilo",
+      "slug": "iloilo",
+      "country": "PH",
+      "type": "city",
+      "popular": true
+    },
+    {
+      "id": "iriga",
+      "name": "Iriga",
+      "slug": "iriga",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "isabela",
+      "name": "Isabela",
+      "slug": "isabela",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "jagna",
+      "name": "Jagna",
+      "slug": "jagna",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "kalibo",
+      "name": "Kalibo",
+      "slug": "kalibo",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "la-union",
+      "name": "La Union",
+      "slug": "la-union",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "laguna",
+      "name": "Laguna",
+      "slug": "laguna",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "laoag",
+      "name": "Laoag",
+      "slug": "laoag",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "legazpi",
+      "name": "Legazpi",
+      "slug": "legazpi",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "lucena",
+      "name": "Lucena",
+      "slug": "lucena",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "manila",
+      "name": "Manila",
+      "slug": "manila",
+      "country": "PH",
+      "type": "city",
+      "popular": true
+    },
+    {
+      "id": "matnog",
+      "name": "Matnog",
+      "slug": "matnog",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "naga",
+      "name": "Naga",
+      "slug": "naga",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "nasipit",
+      "name": "Nasipit",
+      "slug": "nasipit",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "nueva-ecija",
+      "name": "Nueva Ecija",
+      "slug": "nueva-ecija",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "ormoc",
+      "name": "Ormoc",
+      "slug": "ormoc",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "oslob",
+      "name": "Oslob",
+      "slug": "oslob",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "ozamiz",
+      "name": "Ozamiz",
+      "slug": "ozamiz",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "palawan",
+      "name": "Palawan",
+      "slug": "palawan",
+      "country": "PH",
+      "type": "city",
+      "popular": true
+    },
+    {
+      "id": "pampanga",
+      "name": "Pampanga",
+      "slug": "pampanga",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "pangasinan",
+      "name": "Pangasinan",
+      "slug": "pangasinan",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "panglao",
+      "name": "Panglao",
+      "slug": "panglao",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "pitx",
+      "name": "Pitx",
+      "slug": "pitx",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "port-barton",
+      "name": "Port Barton",
+      "slug": "port-barton",
+      "country": "PH",
+      "type": "city",
+      "source": "12go",
+      "popular": false
+    },
+    {
+      "id": "puerto-galera",
+      "name": "Puerto Galera",
+      "slug": "puerto-galera",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "puerto-princesa",
+      "name": "Puerto Princesa",
+      "slug": "puerto-princesa",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "sagada",
+      "name": "Sagada",
+      "slug": "sagada",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "san-carlos",
+      "name": "San Carlos",
+      "slug": "san-carlos",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "siargao",
+      "name": "Siargao",
+      "slug": "siargao",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "siquijor",
+      "name": "Siquijor",
+      "slug": "siquijor",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "sorsogon",
+      "name": "Sorsogon",
+      "slug": "sorsogon",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "surigao",
+      "name": "Surigao",
+      "slug": "surigao",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "tabaco",
+      "name": "Tabaco",
+      "slug": "tabaco",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "tacloban",
+      "name": "Tacloban",
+      "slug": "tacloban",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "tagaytay",
+      "name": "Tagaytay",
+      "slug": "tagaytay",
+      "country": "PH",
+      "type": "city",
+      "popular": true
+    },
+    {
+      "id": "tagbilaran",
+      "name": "Tagbilaran",
+      "slug": "tagbilaran",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "tarlac",
+      "name": "Tarlac",
+      "slug": "tarlac",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "toledo",
+      "name": "Toledo",
+      "slug": "toledo",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "tubigon",
+      "name": "Tubigon",
+      "slug": "tubigon",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "tuguegarao",
+      "name": "Tuguegarao",
+      "slug": "tuguegarao",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "vigan",
+      "name": "Vigan",
+      "slug": "vigan",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "zambales",
+      "name": "Zambales",
+      "slug": "zambales",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    },
+    {
+      "id": "zamboanga",
+      "name": "Zamboanga",
+      "slug": "zamboanga",
+      "country": "PH",
+      "type": "city",
+      "popular": false
+    }
+  ],
+  "routes": [
+    {
+      "from": "manila",
+      "to": "palawan"
+    },
+    {
+      "from": "manila",
+      "to": "sagada"
+    },
+    {
+      "from": "manila",
+      "to": "sorsogon"
+    },
+    {
+      "from": "manila",
+      "to": "zambales"
+    },
+    {
+      "from": "manila",
+      "to": "baguio"
+    },
+    {
+      "from": "manila",
+      "to": "la-union"
+    },
+    {
+      "from": "manila",
+      "to": "tarlac"
+    },
+    {
+      "from": "manila",
+      "to": "isabela"
+    },
+    {
+      "from": "manila",
+      "to": "legazpi"
+    },
+    {
+      "from": "manila",
+      "to": "bataan"
+    },
+    {
+      "from": "manila",
+      "to": "davao"
+    },
+    {
+      "from": "manila",
+      "to": "zamboanga"
+    },
+    {
+      "from": "manila",
+      "to": "banaue"
+    },
+    {
+      "from": "manila",
+      "to": "pangasinan"
+    },
+    {
+      "from": "manila",
+      "to": "cagayan-de-oro"
+    },
+    {
+      "from": "manila",
+      "to": "tabaco"
+    },
+    {
+      "from": "manila",
+      "to": "iriga"
+    },
+    {
+      "from": "manila",
+      "to": "cebu"
+    },
+    {
+      "from": "manila",
+      "to": "lucena"
+    },
+    {
+      "from": "manila",
+      "to": "baler"
+    },
+    {
+      "from": "manila",
+      "to": "naga"
+    },
+    {
+      "from": "manila",
+      "to": "laoag"
+    },
+    {
+      "from": "manila",
+      "to": "cabanatuan"
+    },
+    {
+      "from": "manila",
+      "to": "coron"
+    },
+    {
+      "from": "manila",
+      "to": "tacloban"
+    },
+    {
+      "from": "manila",
+      "to": "daet"
+    },
+    {
+      "from": "manila",
+      "to": "bohol"
+    },
+    {
+      "from": "manila",
+      "to": "pampanga"
+    },
+    {
+      "from": "manila",
+      "to": "el-nido"
+    },
+    {
+      "from": "manila",
+      "to": "batangas"
+    },
+    {
+      "from": "manila",
+      "to": "iloilo"
+    },
+    {
+      "from": "manila",
+      "to": "cavite"
+    },
+    {
+      "from": "manila",
+      "to": "tuguegarao"
+    },
+    {
+      "from": "manila",
+      "to": "laguna"
+    },
+    {
+      "from": "manila",
+      "to": "vigan"
+    },
+    {
+      "from": "manila",
+      "to": "bacolod"
+    },
+    {
+      "from": "manila",
+      "to": "tagaytay"
+    },
+    {
+      "from": "butuan",
+      "to": "davao"
+    },
+    {
+      "from": "butuan",
+      "to": "cagayan-de-oro"
+    },
+    {
+      "from": "puerto-galera",
+      "to": "batangas"
+    },
+    {
+      "from": "sagada",
+      "to": "manila"
+    },
+    {
+      "from": "baguio",
+      "to": "vigan"
+    },
+    {
+      "from": "baguio",
+      "to": "manila"
+    },
+    {
+      "from": "cebu",
+      "to": "dipolog"
+    },
+    {
+      "from": "cebu",
+      "to": "iligan"
+    },
+    {
+      "from": "cebu",
+      "to": "nasipit"
+    },
+    {
+      "from": "cebu",
+      "to": "tubigon"
+    },
+    {
+      "from": "cebu",
+      "to": "cagayan-de-oro"
+    },
+    {
+      "from": "cebu",
+      "to": "ozamiz"
+    },
+    {
+      "from": "cebu",
+      "to": "tagbilaran"
+    },
+    {
+      "from": "cebu",
+      "to": "siquijor"
+    },
+    {
+      "from": "cebu",
+      "to": "bohol"
+    },
+    {
+      "from": "cebu",
+      "to": "calbayog"
+    },
+    {
+      "from": "cebu",
+      "to": "ormoc"
+    },
+    {
+      "from": "cebu",
+      "to": "dumaguete"
+    },
+    {
+      "from": "cebu",
+      "to": "surigao"
+    },
+    {
+      "from": "bacolod",
+      "to": "iloilo"
+    },
+    {
+      "from": "bacolod",
+      "to": "dumaguete"
+    },
+    {
+      "from": "bacolod",
+      "to": "cebu"
+    },
+    {
+      "from": "jagna",
+      "to": "camiguin"
+    },
+    {
+      "from": "oslob",
+      "to": "panglao"
+    },
+    {
+      "from": "pampanga",
+      "to": "baguio"
+    },
+    {
+      "from": "pampanga",
+      "to": "manila"
+    },
+    {
+      "from": "iloilo",
+      "to": "bacolod"
+    },
+    {
+      "from": "iloilo",
+      "to": "cebu"
+    },
+    {
+      "from": "iloilo",
+      "to": "manila"
+    },
+    {
+      "from": "cagayan-de-oro",
+      "to": "cebu"
+    },
+    {
+      "from": "cagayan-de-oro",
+      "to": "jagna"
+    },
+    {
+      "from": "batangas",
+      "to": "calapan"
+    },
+    {
+      "from": "batangas",
+      "to": "caticlan"
+    },
+    {
+      "from": "batangas",
+      "to": "puerto-galera"
+    },
+    {
+      "from": "siquijor",
+      "to": "dumaguete"
+    },
+    {
+      "from": "el-nido",
+      "to": "coron"
+    },
+    {
+      "from": "nueva-ecija",
+      "to": "manila"
+    },
+    {
+      "from": "davao",
+      "to": "gensan"
+    },
+    {
+      "from": "davao",
+      "to": "cebu"
+    },
+    {
+      "from": "davao",
+      "to": "cagayan-de-oro"
+    },
+    {
+      "from": "matnog",
+      "to": "allen"
+    },
+    {
+      "from": "coron",
+      "to": "puerto-princesa"
+    },
+    {
+      "from": "coron",
+      "to": "el-nido"
+    },
+    {
+      "from": "coron",
+      "to": "manila"
+    },
+    {
+      "from": "naga",
+      "to": "manila"
+    },
+    {
+      "from": "tagbilaran",
+      "to": "siquijor"
+    },
+    {
+      "from": "tubigon",
+      "to": "cebu"
+    },
+    {
+      "from": "pitx",
+      "to": "tagaytay"
+    },
+    {
+      "from": "legazpi",
+      "to": "manila"
+    },
+    {
+      "from": "puerto-princesa",
+      "to": "el-nido"
+    },
+    {
+      "from": "puerto-princesa",
+      "to": "port-barton"
+    },
+    {
+      "from": "dumaguete",
+      "to": "siquijor"
+    },
+    {
+      "from": "dumaguete",
+      "to": "dapitan"
+    },
+    {
+      "from": "caticlan",
+      "to": "boracay"
+    },
+    {
+      "from": "la-union",
+      "to": "baguio"
+    },
+    {
+      "from": "surigao",
+      "to": "siargao"
+    },
+    {
+      "from": "toledo",
+      "to": "san-carlos"
+    },
+    {
+      "from": "kalibo",
+      "to": "boracay"
+    },
+    {
+      "from": "banaue",
+      "to": "baguio"
+    },
+    {
+      "from": "baler",
+      "to": "manila"
+    }
+  ],
+  "stations": [
+    {
+      "id": "328p",
+      "name": "Manila",
+      "slug": "manila",
+      "type": "city"
+    },
+    {
+      "id": "6372s",
+      "name": "Manila Airport",
+      "slug": "manila-airport",
+      "type": "avia"
+    },
+    {
+      "id": "10481s",
+      "name": "Manila City",
+      "slug": "manila-city",
+      "type": "bus"
+    },
+    {
+      "id": "35385s",
+      "name": "Manila Farinas Terminal",
+      "slug": "manila-farinas-terminal",
+      "type": "bus"
+    },
+    {
+      "id": "11476s",
+      "name": "Manila North Harbor Pier 4",
+      "slug": "manila-north-harbor-pier-4",
+      "type": "ferry"
+    },
+    {
+      "id": "322406s",
+      "name": "Manila North Port",
+      "slug": "manila-north-port",
+      "type": "ferry"
+    },
+    {
+      "id": "277324s",
+      "name": "Manila Robinsons Mall",
+      "slug": "manila-robinsons-mall",
+      "type": "bus"
+    },
+    {
+      "id": "232397s",
+      "name": "Robinsons Place Manila",
+      "slug": "robinsons-place-manila",
+      "type": "bus"
+    }
+  ]
+}

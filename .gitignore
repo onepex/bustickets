@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build
+.next/
+out/
+dist/
+
+# Environment
+.env*.local
+.env
+
+# Vercel
+.vercel/
+
+# OS
+.DS_Store
+*.swp
+
+# Large images (move to CDN later)
+public/images/destinations/
+public/images/heroes/
+
+# Logs
+*.log
+npm-debug.log*

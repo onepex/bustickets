@@ -1,0 +1,295 @@
+{
+  "lastUpdated": "2026-01-07",
+  
+  "cities": {
+    "manila": {
+      "slug": "manila",
+      "name": "Manila",
+      "displayName": "Manila",
+      "alternateNames": ["Metro Manila", "NCR", "National Capital Region"],
+      "region": "NCR",
+      "province": null,
+      "coordinates": {
+        "lat": 14.5995,
+        "lon": 120.9842
+      },
+      "timezone": "Asia/Manila",
+      "weatherSlug": "manila",
+      "description": "The capital and largest city of the Philippines, serving as the main hub for provincial bus travel.",
+      "isOriginHub": true,
+      "majorTerminals": ["cubao-terminal", "pasay-terminal", "pitx-terminal", "sampaloc-terminal"],
+      "popularRoutes": ["manila-to-baguio", "manila-to-baler", "manila-to-la-union", "manila-to-vigan"],
+      "seoPage": "/city/manila",
+      "image": "/images/cities/manila.jpg"
+    },
+    
+    "baguio": {
+      "slug": "baguio",
+      "name": "Baguio City",
+      "displayName": "Baguio",
+      "alternateNames": ["Summer Capital", "City of Pines"],
+      "region": "CAR",
+      "province": "Benguet",
+      "coordinates": {
+        "lat": 16.4023,
+        "lon": 120.5960
+      },
+      "timezone": "Asia/Manila",
+      "weatherSlug": "baguio",
+      "description": "The Summer Capital of the Philippines, known for its cool climate, pine trees, and strawberry farms.",
+      "elevation": "1,540m",
+      "climate": {
+        "type": "subtropical highland",
+        "avgTempHigh": 23,
+        "avgTempLow": 14,
+        "note": "10-15°C cooler than Manila year-round"
+      },
+      "isDestinationHub": true,
+      "majorTerminals": ["baguio-governor-pack"],
+      "popularRoutes": ["baguio-to-manila", "baguio-to-sagada", "baguio-to-vigan"],
+      "attractions": [
+        "Burnham Park",
+        "Mines View Park",
+        "The Mansion",
+        "Camp John Hay",
+        "BenCab Museum",
+        "Strawberry Farm"
+      ],
+      "bestTimeToVisit": "November to February (coolest months)",
+      "seoPage": "/destination/baguio",
+      "image": "/images/cities/baguio.jpg"
+    },
+
+    "cebu": {
+      "slug": "cebu",
+      "name": "Cebu City",
+      "displayName": "Cebu",
+      "alternateNames": ["Queen City of the South"],
+      "region": "Central Visayas",
+      "province": "Cebu",
+      "coordinates": {
+        "lat": 10.3157,
+        "lon": 123.8854
+      },
+      "timezone": "Asia/Manila",
+      "weatherSlug": "cebu",
+      "description": "The second largest metropolitan area in the Philippines and gateway to the Visayas region.",
+      "isOriginHub": true,
+      "isDestinationHub": true,
+      "majorTerminals": ["cebu-south-terminal", "cebu-north-terminal"],
+      "popularRoutes": ["cebu-to-bohol", "cebu-to-dumaguete", "cebu-to-cagayan-de-oro"],
+      "attractions": ["Magellan's Cross", "Basilica del Santo Niño", "Kawasan Falls", "Oslob Whale Sharks"],
+      "seoPage": "/city/cebu",
+      "image": "/images/cities/cebu.jpg"
+    },
+
+    "davao": {
+      "slug": "davao",
+      "name": "Davao City",
+      "displayName": "Davao",
+      "alternateNames": ["Durian Capital"],
+      "region": "Davao Region",
+      "province": "Davao del Sur",
+      "coordinates": {
+        "lat": 7.1907,
+        "lon": 125.4553
+      },
+      "timezone": "Asia/Manila",
+      "weatherSlug": "davao",
+      "description": "The largest city in the Philippines by land area, known for durian and Mount Apo.",
+      "isDestinationHub": true,
+      "attractions": ["Mount Apo", "Philippine Eagle Center", "Eden Nature Park"],
+      "seoPage": "/city/davao",
+      "image": "/images/cities/davao.jpg"
+    },
+
+    "bohol": {
+      "slug": "bohol",
+      "name": "Bohol",
+      "displayName": "Bohol",
+      "alternateNames": ["Tagbilaran"],
+      "region": "Central Visayas",
+      "province": "Bohol",
+      "coordinates": {
+        "lat": 9.8500,
+        "lon": 124.0000
+      },
+      "timezone": "Asia/Manila",
+      "weatherSlug": "bohol",
+      "description": "Island province famous for the Chocolate Hills and tarsiers.",
+      "isDestinationHub": true,
+      "attractions": ["Chocolate Hills", "Tarsier Sanctuary", "Panglao Beach", "Loboc River Cruise"],
+      "bestTimeToVisit": "December to May (dry season)",
+      "seoPage": "/destination/bohol",
+      "image": "/images/cities/bohol.jpg"
+    },
+
+    "boracay": {
+      "slug": "boracay",
+      "name": "Boracay",
+      "displayName": "Boracay",
+      "alternateNames": [],
+      "region": "Western Visayas",
+      "province": "Aklan",
+      "coordinates": {
+        "lat": 11.9674,
+        "lon": 121.9248
+      },
+      "timezone": "Asia/Manila",
+      "weatherSlug": "boracay",
+      "description": "World-famous beach destination known for its white sand beaches and vibrant nightlife.",
+      "isDestinationHub": true,
+      "accessVia": "caticlan",
+      "attractions": ["White Beach", "Puka Beach", "D'Mall", "Ariel's Point"],
+      "bestTimeToVisit": "November to May (dry season)",
+      "seoPage": "/destination/boracay",
+      "image": "/images/cities/boracay.jpg"
+    },
+
+    "vigan": {
+      "slug": "vigan",
+      "name": "Vigan City",
+      "displayName": "Vigan",
+      "alternateNames": ["Heritage City"],
+      "region": "Ilocos Region",
+      "province": "Ilocos Sur",
+      "coordinates": {
+        "lat": 17.5747,
+        "lon": 120.3869
+      },
+      "timezone": "Asia/Manila",
+      "weatherSlug": "vigan",
+      "description": "UNESCO World Heritage City known for its preserved Spanish colonial architecture.",
+      "isDestinationHub": true,
+      "attractions": ["Calle Crisologo", "Bantay Bell Tower", "Vigan Cathedral", "Baluarte"],
+      "seoPage": "/destination/vigan",
+      "image": "/images/cities/vigan.jpg"
+    },
+
+    "sagada": {
+      "slug": "sagada",
+      "name": "Sagada",
+      "displayName": "Sagada",
+      "alternateNames": [],
+      "region": "CAR",
+      "province": "Mountain Province",
+      "coordinates": {
+        "lat": 17.0833,
+        "lon": 120.9000
+      },
+      "timezone": "Asia/Manila",
+      "weatherSlug": "sagada",
+      "description": "Mountain town known for hanging coffins, caves, and stunning rice terraces.",
+      "elevation": "1,500m",
+      "isDestinationHub": true,
+      "accessVia": "baguio",
+      "attractions": ["Hanging Coffins", "Sumaguing Cave", "Kiltepan Peak", "Bomod-ok Falls"],
+      "bestTimeToVisit": "November to February (sea of clouds season)",
+      "seoPage": "/destination/sagada",
+      "image": "/images/cities/sagada.jpg"
+    },
+
+    "la-union": {
+      "slug": "la-union",
+      "name": "La Union",
+      "displayName": "La Union",
+      "alternateNames": ["San Juan", "Elyu"],
+      "region": "Ilocos Region",
+      "province": "La Union",
+      "coordinates": {
+        "lat": 16.6159,
+        "lon": 120.3209
+      },
+      "timezone": "Asia/Manila",
+      "weatherSlug": "la-union",
+      "description": "Surfing capital of the north, popular beach destination for Manila weekenders.",
+      "isDestinationHub": true,
+      "attractions": ["San Juan Beach", "Surfing", "Tangadan Falls", "Flotsam and Jetsam"],
+      "bestTimeToVisit": "October to March (surf season)",
+      "seoPage": "/destination/la-union",
+      "image": "/images/cities/la-union.jpg"
+    },
+
+    "batangas": {
+      "slug": "batangas",
+      "name": "Batangas",
+      "displayName": "Batangas",
+      "alternateNames": [],
+      "region": "CALABARZON",
+      "province": "Batangas",
+      "coordinates": {
+        "lat": 13.7565,
+        "lon": 121.0583
+      },
+      "timezone": "Asia/Manila",
+      "weatherSlug": "batangas",
+      "description": "Gateway to beaches and diving spots in southern Luzon, major ferry port.",
+      "isOriginHub": true,
+      "majorTerminals": ["batangas-port"],
+      "popularRoutes": ["batangas-to-calapan", "batangas-to-puerto-galera", "batangas-to-caticlan"],
+      "seoPage": "/city/batangas",
+      "image": "/images/cities/batangas.jpg"
+    },
+
+    "bacolod": {
+      "slug": "bacolod",
+      "name": "Bacolod City",
+      "displayName": "Bacolod",
+      "alternateNames": ["City of Smiles"],
+      "region": "Western Visayas",
+      "province": "Negros Occidental",
+      "coordinates": {
+        "lat": 10.6407,
+        "lon": 122.9688
+      },
+      "timezone": "Asia/Manila",
+      "weatherSlug": "bacolod",
+      "description": "Known for MassKara Festival, chicken inasal, and sugar industry.",
+      "isOriginHub": true,
+      "majorTerminals": ["bacolod-north-terminal"],
+      "attractions": ["The Ruins", "MassKara Festival", "Lakawon Island"],
+      "seoPage": "/city/bacolod",
+      "image": "/images/cities/bacolod.jpg"
+    },
+
+    "iloilo": {
+      "slug": "iloilo",
+      "name": "Iloilo City",
+      "displayName": "Iloilo",
+      "alternateNames": ["City of Love"],
+      "region": "Western Visayas",
+      "province": "Iloilo",
+      "coordinates": {
+        "lat": 10.7202,
+        "lon": 122.5621
+      },
+      "timezone": "Asia/Manila",
+      "weatherSlug": "iloilo",
+      "description": "Heritage city known for batchoy, historic churches, and Dinagyang Festival.",
+      "isOriginHub": true,
+      "attractions": ["Miag-ao Church", "Islas de Gigantes", "Garin Farm"],
+      "seoPage": "/city/iloilo",
+      "image": "/images/cities/iloilo.jpg"
+    },
+
+    "dumaguete": {
+      "slug": "dumaguete",
+      "name": "Dumaguete City",
+      "displayName": "Dumaguete",
+      "alternateNames": ["City of Gentle People"],
+      "region": "Central Visayas",
+      "province": "Negros Oriental",
+      "coordinates": {
+        "lat": 9.3068,
+        "lon": 123.3054
+      },
+      "timezone": "Asia/Manila",
+      "weatherSlug": "dumaguete",
+      "description": "University city and gateway to Apo Island diving.",
+      "isDestinationHub": true,
+      "attractions": ["Apo Island", "Rizal Boulevard", "Silliman University"],
+      "seoPage": "/city/dumaguete",
+      "image": "/images/cities/dumaguete.jpg"
+    }
+  }
+}

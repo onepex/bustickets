@@ -1,0 +1,95 @@
+{
+  "lastUpdated": "2026-01-07",
+  
+  "classes": {
+    "premier": {
+      "slug": "premier",
+      "name": "Premier Class",
+      "tier": 1,
+      "description": "Top-tier luxury bus service with maximum comfort",
+      "typicalPriceMultiplier": 1.4,
+      "seatingConfig": "2+1",
+      "seatsPerRow": 3,
+      "typicalCapacity": 28,
+      "reclineAngle": "160°",
+      "amenities": [
+        { "id": "aircon", "name": "Air Conditioning", "icon": "❄️" },
+        { "id": "wifi", "name": "Free WiFi", "icon": "📶" },
+        { "id": "usb-charging", "name": "USB Charging", "icon": "🔌" },
+        { "id": "personal-entertainment", "name": "Personal Entertainment", "icon": "📺" },
+        { "id": "restroom", "name": "Onboard Restroom", "icon": "🚻" },
+        { "id": "blanket", "name": "Blanket & Pillow", "icon": "🛏️" },
+        { "id": "free-snacks", "name": "Free Snacks", "icon": "🍿" },
+        { "id": "free-water", "name": "Free Water", "icon": "💧" }
+      ],
+      "suitableFor": ["long-distance", "overnight", "business-travel"]
+    },
+    
+    "first-class": {
+      "slug": "first-class",
+      "name": "First Class",
+      "tier": 2,
+      "description": "Premium service with enhanced comfort and amenities",
+      "typicalPriceMultiplier": 1.25,
+      "seatingConfig": "2+1 or 2+2",
+      "typicalCapacity": "28-36",
+      "amenities": [
+        { "id": "aircon", "name": "Air Conditioning", "icon": "❄️" },
+        { "id": "reclining-seats", "name": "Reclining Seats", "icon": "💺" },
+        { "id": "restroom", "name": "Onboard Restroom", "icon": "🚻" },
+        { "id": "blanket", "name": "Blanket", "icon": "🛏️" },
+        { "id": "wifi", "name": "WiFi (select buses)", "icon": "📶" }
+      ],
+      "suitableFor": ["long-distance", "comfort-seekers"]
+    },
+    
+    "deluxe": {
+      "slug": "deluxe",
+      "name": "Deluxe",
+      "tier": 3,
+      "description": "Good value option with comfort upgrades over regular",
+      "typicalPriceMultiplier": 1.1,
+      "seatingConfig": "2+2",
+      "typicalCapacity": 45,
+      "amenities": [
+        { "id": "aircon", "name": "Air Conditioning", "icon": "❄️" },
+        { "id": "reclining-seats", "name": "Reclining Seats", "icon": "💺" },
+        { "id": "wifi", "name": "WiFi (select operators)", "icon": "📶" },
+        { "id": "free-snacks", "name": "Free Snacks (select operators)", "icon": "🍿" }
+      ],
+      "suitableFor": ["value-seekers", "medium-distance"]
+    },
+
+    "super-deluxe": {
+      "slug": "super-deluxe",
+      "name": "Super Deluxe",
+      "tier": 2,
+      "description": "Enhanced deluxe service with additional amenities",
+      "typicalPriceMultiplier": 1.2,
+      "seatingConfig": "2+2",
+      "typicalCapacity": 40,
+      "amenities": [
+        { "id": "aircon", "name": "Air Conditioning", "icon": "❄️" },
+        { "id": "reclining-seats", "name": "Reclining Seats", "icon": "💺" },
+        { "id": "restroom", "name": "Onboard Restroom", "icon": "🚻" },
+        { "id": "wifi", "name": "WiFi", "icon": "📶" }
+      ],
+      "suitableFor": ["long-distance", "value-seekers"]
+    },
+    
+    "regular": {
+      "slug": "regular",
+      "name": "Regular",
+      "tier": 4,
+      "description": "Standard bus service at the most affordable price",
+      "typicalPriceMultiplier": 1.0,
+      "seatingConfig": "2+2",
+      "typicalCapacity": 49,
+      "amenities": [
+        { "id": "aircon", "name": "Air Conditioning", "icon": "❄️" },
+        { "id": "reclining-seats", "name": "Reclining Seats", "icon": "💺" }
+      ],
+      "suitableFor": ["budget-travel", "short-trips"]
+    }
+  }
+}

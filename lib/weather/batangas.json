@@ -1,0 +1,94 @@
+{
+  "city": "Batangas",
+  "slug": "batangas",
+  "lat": 13.7565,
+  "lon": 121.0583,
+  "timezone": "Asia/Manila",
+  "lastUpdated": "2026-01-06T18:09:50.020Z",
+  "forecast": [
+    {
+      "date": "2026-01-07",
+      "tempMax": 26,
+      "tempMin": 26,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0.8,
+      "precipitationProbability": 20,
+      "windSpeed": 18,
+      "uvIndex": 6
+    },
+    {
+      "date": "2026-01-08",
+      "tempMax": 27,
+      "tempMin": 25,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 1.2,
+      "precipitationProbability": 13,
+      "windSpeed": 21,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-09",
+      "tempMax": 27,
+      "tempMin": 25,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 2.9,
+      "precipitationProbability": 8,
+      "windSpeed": 22,
+      "uvIndex": 6
+    },
+    {
+      "date": "2026-01-10",
+      "tempMax": 28,
+      "tempMin": 25,
+      "weatherCode": 95,
+      "weatherLabel": "Thunderstorm",
+      "weatherIcon": "⛈️",
+      "precipitation": 11.4,
+      "precipitationProbability": 30,
+      "windSpeed": 20,
+      "uvIndex": 6
+    },
+    {
+      "date": "2026-01-11",
+      "tempMax": 27,
+      "tempMin": 26,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 3,
+      "precipitationProbability": 14,
+      "windSpeed": 27,
+      "uvIndex": 1
+    },
+    {
+      "date": "2026-01-12",
+      "tempMax": 29,
+      "tempMin": 26,
+      "weatherCode": 2,
+      "weatherLabel": "Partly cloudy",
+      "weatherIcon": "⛅",
+      "precipitation": 0,
+      "precipitationProbability": 10,
+      "windSpeed": 26,
+      "uvIndex": 4
+    },
+    {
+      "date": "2026-01-13",
+      "tempMax": 29,
+      "tempMin": 26,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 0.9,
+      "precipitationProbability": 27,
+      "windSpeed": 21,
+      "uvIndex": 5
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "city": "Tagaytay",
+  "slug": "tagaytay",
+  "lat": 14.1153,
+  "lon": 120.9621,
+  "timezone": "Asia/Manila",
+  "lastUpdated": "2026-01-06T18:09:49.624Z",
+  "forecast": [
+    {
+      "date": "2026-01-07",
+      "tempMax": 22,
+      "tempMin": 21,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 1.1,
+      "precipitationProbability": 8,
+      "windSpeed": 17,
+      "uvIndex": 6
+    },
+    {
+      "date": "2026-01-08",
+      "tempMax": 23,
+      "tempMin": 20,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0,
+      "precipitationProbability": 8,
+      "windSpeed": 22,
+      "uvIndex": 6
+    },
+    {
+      "date": "2026-01-09",
+      "tempMax": 22,
+      "tempMin": 20,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 0.9,
+      "precipitationProbability": 8,
+      "windSpeed": 21,
+      "uvIndex": 5
+    },
+    {
+      "date": "2026-01-10",
+      "tempMax": 23,
+      "tempMin": 21,
+      "weatherCode": 95,
+      "weatherLabel": "Thunderstorm",
+      "weatherIcon": "⛈️",
+      "precipitation": 7.8,
+      "precipitationProbability": 25,
+      "windSpeed": 16,
+      "uvIndex": 4
+    },
+    {
+      "date": "2026-01-11",
+      "tempMax": 23,
+      "tempMin": 21,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 5.7,
+      "precipitationProbability": 15,
+      "windSpeed": 18,
+      "uvIndex": 1
+    },
+    {
+      "date": "2026-01-12",
+      "tempMax": 25,
+      "tempMin": 21,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0,
+      "precipitationProbability": 14,
+      "windSpeed": 19,
+      "uvIndex": 1
+    },
+    {
+      "date": "2026-01-13",
+      "tempMax": 25,
+      "tempMin": 21,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0.3,
+      "precipitationProbability": 20,
+      "windSpeed": 22,
+      "uvIndex": 1
+    }
+  ]
+}

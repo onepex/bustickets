@@ -1,0 +1,293 @@
+{
+  "version": "2.0",
+  "lastUpdated": "2026-01-07T00:00:00.000Z",
+  
+  "meta": {
+    "slug": "manila-to-baguio",
+    "status": "active",
+    "tier": "flagship",
+    "earnings_score": 10,
+    "keyword_volume": 12500,
+    "keyword_difficulty": 2
+  },
+
+  "seo": {
+    "title": "Manila to Baguio Bus: Schedule, Fare & Online Booking 2026",
+    "description": "Book Manila to Baguio bus tickets from ₱720. Compare Victory Liner, JoyBus & Genesis schedules. 5-6 hour journey with online booking.",
+    "h1": "Manila to Baguio Bus",
+    "canonical": "https://bustickets.ph/route/manila-to-baguio",
+    "breadcrumbs": [
+      { "label": "Home", "href": "/" },
+      { "label": "Routes", "href": "/routes" },
+      { "label": "Manila to Baguio", "href": "/route/manila-to-baguio" }
+    ]
+  },
+
+  "route": {
+    "origin": {
+      "citySlug": "manila",
+      "displayName": "Manila",
+      "alternateNames": ["Metro Manila", "NCR"],
+      "primaryTerminals": ["cubao-terminal", "pasay-terminal", "pitx-terminal", "sampaloc-terminal"]
+    },
+    "destination": {
+      "citySlug": "baguio",
+      "displayName": "Baguio",
+      "alternateNames": ["Baguio City", "City of Pines", "Summer Capital"],
+      "primaryTerminals": ["baguio-governor-pack"]
+    },
+    "distance": {
+      "km": 250,
+      "display": "250 km"
+    },
+    "typicalDuration": {
+      "minMinutes": 300,
+      "maxMinutes": 420,
+      "display": "5-6 hours"
+    },
+    "reverseRouteSlug": "baguio-to-manila"
+  },
+
+  "pricing": {
+    "currency": "PHP",
+    "lastSynced": "2026-01-06T17:20:07.893Z",
+    "source": "12go",
+    "bus": {
+      "min": 720,
+      "max": 1395,
+      "typical": 887,
+      "display": "₱720 - ₱1,395"
+    },
+    "charter": {
+      "min": 9810,
+      "max": 9810,
+      "display": "₱9,810"
+    }
+  },
+
+  "bookingLinks": {
+    "primary": {
+      "url": "https://book.bustickets.ph/en/bus/manila/baguio?z=64932&curr=PHP",
+      "label": "Check All Schedules",
+      "type": "search"
+    },
+    "charter": {
+      "url": "https://book.bustickets.ph/en/charter/manila/baguio?z=64932&curr=PHP",
+      "label": "Book Private Charter",
+      "type": "charter"
+    }
+  },
+
+  "schedules": {
+    "lastSynced": "2026-01-06T17:20:07.893Z",
+    "source": "12go",
+    "totalDepartures": 50,
+    "featured": [
+      {
+        "id": "manila-to-baguio-joybus-0830",
+        "operatorSlug": "genesis-joybus",
+        "busClass": "deluxe",
+        "departure": {
+          "time": "08:30",
+          "period": "morning",
+          "terminalSlug": "cubao-terminal"
+        },
+        "arrival": {
+          "time": "14:30",
+          "terminalSlug": "baguio-governor-pack"
+        },
+        "duration": {
+          "minutes": 360,
+          "display": "6h 00m"
+        },
+        "price": {
+          "amount": 720,
+          "display": "₱720"
+        },
+        "bookingUrl": "https://book.bustickets.ph/en/bus/quezon-city/baguio?z=64932&curr=PHP",
+        "badges": ["best-value"]
+      },
+      {
+        "id": "manila-to-baguio-joybus-1200",
+        "operatorSlug": "genesis-joybus",
+        "busClass": "premier",
+        "departure": {
+          "time": "12:00",
+          "period": "afternoon",
+          "terminalSlug": "cubao-terminal"
+        },
+        "arrival": {
+          "time": "17:00",
+          "terminalSlug": "baguio-governor-pack"
+        },
+        "duration": {
+          "minutes": 300,
+          "display": "5h 00m"
+        },
+        "price": {
+          "amount": 740,
+          "display": "₱740"
+        },
+        "bookingUrl": "https://book.bustickets.ph/en/bus/quezon-city/baguio?z=64932&curr=PHP",
+        "badges": ["popular"]
+      },
+      {
+        "id": "manila-to-baguio-victory-1315",
+        "operatorSlug": "victory-liner",
+        "busClass": "first-class",
+        "departure": {
+          "time": "13:15",
+          "period": "afternoon",
+          "terminalSlug": "pasay-terminal"
+        },
+        "arrival": {
+          "time": "18:15",
+          "terminalSlug": "baguio-governor-pack"
+        },
+        "duration": {
+          "minutes": 300,
+          "display": "5h 00m"
+        },
+        "price": {
+          "amount": 1395,
+          "display": "₱1,395"
+        },
+        "bookingUrl": "https://book.bustickets.ph/en/bus/manila/baguio?z=64932&curr=PHP",
+        "badges": ["fastest", "premium"]
+      },
+      {
+        "id": "manila-to-baguio-joybus-0001",
+        "operatorSlug": "genesis-joybus",
+        "busClass": "premier",
+        "departure": {
+          "time": "00:01",
+          "period": "night",
+          "terminalSlug": "cubao-terminal"
+        },
+        "arrival": {
+          "time": "05:00",
+          "terminalSlug": "baguio-governor-pack"
+        },
+        "duration": {
+          "minutes": 299,
+          "display": "5h 00m"
+        },
+        "price": {
+          "amount": 740,
+          "display": "₱740"
+        },
+        "bookingUrl": "https://book.bustickets.ph/en/bus/quezon-city/baguio?z=64932&curr=PHP",
+        "badges": ["night-trip"]
+      }
+    ],
+    "byPeriod": {
+      "night": { "count": 8, "range": "12:01am - 5:00am", "note": "Less traffic, faster travel" },
+      "morning": { "count": 6, "range": "5:01am - 12:00pm", "note": "Arrive by afternoon" },
+      "afternoon": { "count": 5, "range": "12:01pm - 6:00pm", "note": "Most popular" },
+      "evening": { "count": 4, "range": "6:01pm - 11:59pm", "note": "Arrive late night" }
+    }
+  },
+
+  "operators": {
+    "active": ["victory-liner", "genesis-joybus", "solid-north"],
+    "primary": "victory-liner",
+    "details": [
+      {
+        "slug": "victory-liner",
+        "routeSpecific": {
+          "terminals": ["cubao-terminal", "pasay-terminal", "sampaloc-terminal"],
+          "classes": ["first-class", "deluxe", "regular"],
+          "priceRange": "₱700 - ₱1,395",
+          "frequency": "Every 30 mins",
+          "rating": 4.2,
+          "reviewCount": 1250,
+          "highlight": null
+        }
+      },
+      {
+        "slug": "genesis-joybus",
+        "routeSpecific": {
+          "terminals": ["cubao-terminal", "pasay-terminal"],
+          "classes": ["premier", "deluxe"],
+          "priceRange": "₱720 - ₱887",
+          "frequency": "Hourly",
+          "rating": 4.3,
+          "reviewCount": 890,
+          "highlight": "28-seater executive coaches with 2+1 seating, WiFi, snacks included"
+        }
+      },
+      {
+        "slug": "solid-north",
+        "routeSpecific": {
+          "terminals": ["sampaloc-terminal"],
+          "classes": ["super-deluxe", "regular"],
+          "priceRange": "₱650 - ₱850",
+          "frequency": "Every 2 hours",
+          "rating": 4.0,
+          "reviewCount": 340,
+          "highlight": null
+        }
+      }
+    ]
+  },
+
+  "content": {
+    "heroSubtitle": "Travel to the Summer Capital of the Philippines. Compare schedules, fares, and book your bus tickets online.",
+    
+    "quickFacts": [
+      { "icon": "MapPin", "label": "Distance", "value": "250 km" },
+      { "icon": "Clock", "label": "Travel time", "value": "5-6 hours" },
+      { "icon": "Bus", "label": "Daily departures", "value": "50+" }
+    ],
+
+    "introduction": null,
+
+    "sections": [],
+
+    "faqs": [],
+
+    "travelTips": []
+  },
+
+  "weather": {
+    "destination": "baguio",
+    "note": "Baguio is typically 10-15°C cooler than Manila. Pack layers!",
+    "lastSynced": null
+  },
+
+  "internalLinks": {
+    "related": [
+      { "slug": "baguio-to-manila", "label": "Return: Baguio to Manila", "type": "reverse" },
+      { "slug": "manila-to-la-union", "label": "Manila to La Union", "type": "similar" },
+      { "slug": "manila-to-vigan", "label": "Manila to Vigan", "type": "similar" },
+      { "slug": "baguio-to-sagada", "label": "Baguio to Sagada", "type": "extended" }
+    ],
+    "operators": ["victory-liner", "genesis-joybus", "solid-north"],
+    "terminals": ["cubao-terminal", "pasay-terminal", "pitx-terminal", "sampaloc-terminal", "baguio-governor-pack"],
+    "destinations": ["baguio"]
+  },
+
+  "media": {
+    "heroImage": null,
+    "gallery": []
+  },
+
+  "schema_org": {
+    "BusTrip": {
+      "departureTime": "multiple",
+      "arrivalTime": "multiple",
+      "departureBusStop": "Manila, Philippines",
+      "arrivalBusStop": "Baguio City, Philippines",
+      "provider": ["Victory Liner", "Genesis Transport/JoyBus", "Solid North"]
+    },
+    "FAQPage": false
+  },
+
+  "_synthesis": {
+    "status": "pending",
+    "contentSources": [],
+    "lastProcessed": null,
+    "needsReview": true,
+    "notes": "Content fields (introduction, sections, faqs, travelTips) to be populated by Claude synthesis"
+  }
+}

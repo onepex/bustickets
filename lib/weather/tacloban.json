@@ -1,0 +1,94 @@
+{
+  "city": "Tacloban",
+  "slug": "tacloban",
+  "lat": 11.2543,
+  "lon": 124.9615,
+  "timezone": "Asia/Manila",
+  "lastUpdated": "2026-01-06T18:09:52.392Z",
+  "forecast": [
+    {
+      "date": "2026-01-07",
+      "tempMax": 28,
+      "tempMin": 23,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 3.4,
+      "precipitationProbability": 83,
+      "windSpeed": 8,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-08",
+      "tempMax": 30,
+      "tempMin": 23,
+      "weatherCode": 45,
+      "weatherLabel": "Foggy",
+      "weatherIcon": "🌫️",
+      "precipitation": 0.4,
+      "precipitationProbability": 48,
+      "windSpeed": 9,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-09",
+      "tempMax": 29,
+      "tempMin": 23,
+      "weatherCode": 95,
+      "weatherLabel": "Thunderstorm",
+      "weatherIcon": "⛈️",
+      "precipitation": 8.7,
+      "precipitationProbability": 70,
+      "windSpeed": 9,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-10",
+      "tempMax": 27,
+      "tempMin": 23,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 3.6,
+      "precipitationProbability": 65,
+      "windSpeed": 10,
+      "uvIndex": 3
+    },
+    {
+      "date": "2026-01-11",
+      "tempMax": 29,
+      "tempMin": 22,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 1.8,
+      "precipitationProbability": 58,
+      "windSpeed": 11,
+      "uvIndex": 6
+    },
+    {
+      "date": "2026-01-12",
+      "tempMax": 29,
+      "tempMin": 23,
+      "weatherCode": 95,
+      "weatherLabel": "Thunderstorm",
+      "weatherIcon": "⛈️",
+      "precipitation": 5.4,
+      "precipitationProbability": 52,
+      "windSpeed": 12,
+      "uvIndex": 6
+    },
+    {
+      "date": "2026-01-13",
+      "tempMax": 28,
+      "tempMin": 24,
+      "weatherCode": 95,
+      "weatherLabel": "Thunderstorm",
+      "weatherIcon": "⛈️",
+      "precipitation": 7.5,
+      "precipitationProbability": 60,
+      "windSpeed": 10,
+      "uvIndex": 5
+    }
+  ]
+}

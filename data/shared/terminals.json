@@ -1,0 +1,206 @@
+{
+  "lastUpdated": "2026-01-07",
+  
+  "terminals": {
+    "cubao-terminal": {
+      "slug": "cubao-terminal",
+      "name": "Cubao Bus Terminal",
+      "shortName": "Cubao",
+      "city": "Quezon City",
+      "region": "NCR",
+      "address": "EDSA corner New York Street, Cubao, Quezon City",
+      "coordinates": {
+        "lat": 14.6195,
+        "lon": 121.0511
+      },
+      "operatorTerminals": [
+        {
+          "operator": "victory-liner",
+          "specificAddress": "EDSA cor. New York St., Cubao",
+          "contact": "(02) 8727-4688"
+        },
+        {
+          "operator": "genesis-joybus",
+          "specificAddress": "EDSA Cubao, near Ali Mall",
+          "contact": "(02) 8421-1425"
+        }
+      ],
+      "nearbyLandmarks": ["Araneta Coliseum", "Ali Mall", "Gateway Mall"],
+      "transitAccess": {
+        "mrt": "Cubao Station (100m)",
+        "lrt": null,
+        "grab": true
+      },
+      "facilities": ["waiting-area", "restrooms", "convenience-store", "food-stalls"],
+      "seoPage": "/terminal/cubao"
+    },
+    
+    "pasay-terminal": {
+      "slug": "pasay-terminal",
+      "name": "Pasay Bus Terminal",
+      "shortName": "Pasay",
+      "city": "Pasay City",
+      "region": "NCR",
+      "address": "Taft Avenue, Pasay City",
+      "coordinates": {
+        "lat": 14.5378,
+        "lon": 121.0014
+      },
+      "operatorTerminals": [
+        {
+          "operator": "victory-liner",
+          "specificAddress": "Taft Avenue, Pasay (near LRT-Buendia)",
+          "contact": "(02) 8833-5019"
+        },
+        {
+          "operator": "genesis-joybus",
+          "specificAddress": "Apelo Cruz St., Pasay",
+          "contact": "(02) 8853-5108"
+        }
+      ],
+      "nearbyLandmarks": ["LRT-Buendia Station", "Mall of Asia (nearby)"],
+      "transitAccess": {
+        "mrt": null,
+        "lrt": "Buendia Station (300m)",
+        "grab": true
+      },
+      "facilities": ["waiting-area", "restrooms"],
+      "seoPage": "/terminal/pasay"
+    },
+    
+    "pitx-terminal": {
+      "slug": "pitx-terminal",
+      "name": "PITX (Parañaque Integrated Terminal Exchange)",
+      "shortName": "PITX",
+      "city": "Parañaque City",
+      "region": "NCR",
+      "address": "Coastal Road, Parañaque City",
+      "coordinates": {
+        "lat": 14.4882,
+        "lon": 120.9853
+      },
+      "description": "Modern integrated terminal serving South Luzon and provincial routes. Largest bus terminal in the Philippines.",
+      "nearbyLandmarks": ["SM Mall of Asia", "NAIA Terminal 3"],
+      "transitAccess": {
+        "mrt": null,
+        "lrt": null,
+        "grab": true,
+        "p2pBus": "BGC, Makati"
+      },
+      "facilities": ["waiting-area", "restrooms", "food-court", "parking", "wifi", "aircon"],
+      "seoPage": "/terminal/pitx"
+    },
+    
+    "sampaloc-terminal": {
+      "slug": "sampaloc-terminal",
+      "name": "Sampaloc Terminal",
+      "shortName": "Sampaloc",
+      "city": "Manila",
+      "region": "NCR",
+      "address": "Lacson Avenue, Sampaloc, Manila",
+      "coordinates": {
+        "lat": 14.6112,
+        "lon": 120.9842
+      },
+      "operatorTerminals": [
+        {
+          "operator": "victory-liner",
+          "specificAddress": "Lacson Ave., Sampaloc",
+          "contact": "(02) 8743-4567"
+        }
+      ],
+      "transitAccess": {
+        "lrt": "Blumentritt Station (500m)"
+      },
+      "facilities": ["waiting-area", "restrooms"],
+      "seoPage": "/terminal/sampaloc"
+    },
+
+    "baguio-governor-pack": {
+      "slug": "baguio-governor-pack",
+      "name": "Governor Pack Road Terminal",
+      "shortName": "Gov. Pack",
+      "city": "Baguio City",
+      "region": "CAR",
+      "address": "Governor Pack Road, Baguio City",
+      "coordinates": {
+        "lat": 16.4145,
+        "lon": 120.5960
+      },
+      "description": "Main bus terminal in Baguio City, serving Victory Liner and Genesis routes from Manila.",
+      "nearbyLandmarks": ["SM Baguio", "Burnham Park (1km)", "Session Road"],
+      "facilities": ["waiting-area", "restrooms", "taxi-stand", "jeepney-terminal"],
+      "seoPage": "/terminal/baguio"
+    },
+
+    "bacolod-north-terminal": {
+      "slug": "bacolod-north-terminal",
+      "name": "Bacolod North Bus Terminal",
+      "shortName": "Bacolod North",
+      "city": "Bacolod City",
+      "region": "Western Visayas",
+      "address": "Barangay Tangub, Bacolod City",
+      "coordinates": {
+        "lat": 10.6840,
+        "lon": 122.9688
+      },
+      "description": "Main bus terminal for northbound buses in Bacolod City.",
+      "operatorTerminals": [
+        {
+          "operator": "ceres-liner",
+          "specificAddress": "Bacolod North Integrated Terminal"
+        }
+      ],
+      "facilities": ["waiting-area", "restrooms", "food-stalls"],
+      "seoPage": "/terminal/bacolod-north"
+    },
+
+    "cebu-south-terminal": {
+      "slug": "cebu-south-terminal",
+      "name": "Cebu South Bus Terminal",
+      "shortName": "South Terminal",
+      "city": "Cebu City",
+      "region": "Central Visayas",
+      "address": "N. Bacalso Avenue, Cebu City",
+      "coordinates": {
+        "lat": 10.2969,
+        "lon": 123.8914
+      },
+      "description": "Main terminal for buses heading to southern Cebu and inter-island connections.",
+      "facilities": ["waiting-area", "restrooms", "food-court", "parking"],
+      "seoPage": "/terminal/cebu-south"
+    },
+
+    "cebu-north-terminal": {
+      "slug": "cebu-north-terminal",
+      "name": "Cebu North Bus Terminal",
+      "shortName": "North Terminal",
+      "city": "Mandaue City",
+      "region": "Central Visayas",
+      "address": "North Reclamation Area, Mandaue City",
+      "coordinates": {
+        "lat": 10.3311,
+        "lon": 123.9251
+      },
+      "description": "Terminal for buses heading to northern Cebu destinations.",
+      "facilities": ["waiting-area", "restrooms", "parking"],
+      "seoPage": "/terminal/cebu-north"
+    },
+
+    "batangas-port": {
+      "slug": "batangas-port",
+      "name": "Batangas Port Terminal",
+      "shortName": "Batangas Port",
+      "city": "Batangas City",
+      "region": "CALABARZON",
+      "address": "Batangas Port, Batangas City",
+      "coordinates": {
+        "lat": 13.7565,
+        "lon": 121.0583
+      },
+      "description": "Major ferry port for connections to Mindoro, Puerto Galera, and Visayas.",
+      "facilities": ["waiting-area", "restrooms", "food-court", "ferry-terminal"],
+      "seoPage": "/terminal/batangas-port"
+    }
+  }
+}

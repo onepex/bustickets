@@ -1,0 +1,94 @@
+{
+  "city": "Legazpi",
+  "slug": "legazpi",
+  "lat": 13.1391,
+  "lon": 123.7438,
+  "timezone": "Asia/Manila",
+  "lastUpdated": "2026-01-06T18:09:52.789Z",
+  "forecast": [
+    {
+      "date": "2026-01-07",
+      "tempMax": 27,
+      "tempMin": 24,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 7.7,
+      "precipitationProbability": 48,
+      "windSpeed": 10,
+      "uvIndex": 3
+    },
+    {
+      "date": "2026-01-08",
+      "tempMax": 28,
+      "tempMin": 24,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 0.9,
+      "precipitationProbability": 30,
+      "windSpeed": 11,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-09",
+      "tempMax": 28,
+      "tempMin": 24,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 5.4,
+      "precipitationProbability": 40,
+      "windSpeed": 13,
+      "uvIndex": 6
+    },
+    {
+      "date": "2026-01-10",
+      "tempMax": 26,
+      "tempMin": 24,
+      "weatherCode": 95,
+      "weatherLabel": "Thunderstorm",
+      "weatherIcon": "⛈️",
+      "precipitation": 19.6,
+      "precipitationProbability": 45,
+      "windSpeed": 10,
+      "uvIndex": 6
+    },
+    {
+      "date": "2026-01-11",
+      "tempMax": 28,
+      "tempMin": 24,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 2.1,
+      "precipitationProbability": 33,
+      "windSpeed": 14,
+      "uvIndex": 6
+    },
+    {
+      "date": "2026-01-12",
+      "tempMax": 30,
+      "tempMin": 24,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0,
+      "precipitationProbability": 29,
+      "windSpeed": 15,
+      "uvIndex": 3
+    },
+    {
+      "date": "2026-01-13",
+      "tempMax": 28,
+      "tempMin": 25,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0.6,
+      "precipitationProbability": 83,
+      "windSpeed": 14,
+      "uvIndex": 7
+    }
+  ]
+}

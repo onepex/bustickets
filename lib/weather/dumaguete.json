@@ -1,0 +1,94 @@
+{
+  "city": "Dumaguete",
+  "slug": "dumaguete",
+  "lat": 9.3068,
+  "lon": 123.3054,
+  "timezone": "Asia/Manila",
+  "lastUpdated": "2026-01-06T18:09:49.230Z",
+  "forecast": [
+    {
+      "date": "2026-01-07",
+      "tempMax": 29,
+      "tempMin": 23,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 2.5,
+      "precipitationProbability": 58,
+      "windSpeed": 7,
+      "uvIndex": 6
+    },
+    {
+      "date": "2026-01-08",
+      "tempMax": 31,
+      "tempMin": 24,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0,
+      "precipitationProbability": 8,
+      "windSpeed": 10,
+      "uvIndex": 8
+    },
+    {
+      "date": "2026-01-09",
+      "tempMax": 31,
+      "tempMin": 23,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0.1,
+      "precipitationProbability": 10,
+      "windSpeed": 8,
+      "uvIndex": 8
+    },
+    {
+      "date": "2026-01-10",
+      "tempMax": 31,
+      "tempMin": 23,
+      "weatherCode": 45,
+      "weatherLabel": "Foggy",
+      "weatherIcon": "🌫️",
+      "precipitation": 0,
+      "precipitationProbability": 15,
+      "windSpeed": 7,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-11",
+      "tempMax": 31,
+      "tempMin": 24,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0,
+      "precipitationProbability": 15,
+      "windSpeed": 13,
+      "uvIndex": 8
+    },
+    {
+      "date": "2026-01-12",
+      "tempMax": 29,
+      "tempMin": 25,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0,
+      "precipitationProbability": 30,
+      "windSpeed": 12,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-13",
+      "tempMax": 30,
+      "tempMin": 25,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0.6,
+      "precipitationProbability": 69,
+      "windSpeed": 13,
+      "uvIndex": 3
+    }
+  ]
+}

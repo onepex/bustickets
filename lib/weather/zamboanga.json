@@ -1,0 +1,94 @@
+{
+  "city": "Zamboanga",
+  "slug": "zamboanga",
+  "lat": 6.9214,
+  "lon": 122.079,
+  "timezone": "Asia/Manila",
+  "lastUpdated": "2026-01-06T18:09:51.603Z",
+  "forecast": [
+    {
+      "date": "2026-01-07",
+      "tempMax": 29,
+      "tempMin": 28,
+      "weatherCode": 96,
+      "weatherLabel": "Thunderstorm with hail",
+      "weatherIcon": "⛈️",
+      "precipitation": 16.9,
+      "precipitationProbability": 65,
+      "windSpeed": 9,
+      "uvIndex": 8
+    },
+    {
+      "date": "2026-01-08",
+      "tempMax": 32,
+      "tempMin": 28,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 3.5,
+      "precipitationProbability": 18,
+      "windSpeed": 8,
+      "uvIndex": 6
+    },
+    {
+      "date": "2026-01-09",
+      "tempMax": 30,
+      "tempMin": 27,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 2,
+      "precipitationProbability": 17,
+      "windSpeed": 8,
+      "uvIndex": 8
+    },
+    {
+      "date": "2026-01-10",
+      "tempMax": 31,
+      "tempMin": 28,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 3.7,
+      "precipitationProbability": 18,
+      "windSpeed": 7,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-11",
+      "tempMax": 30,
+      "tempMin": 28,
+      "weatherCode": 96,
+      "weatherLabel": "Thunderstorm with hail",
+      "weatherIcon": "⛈️",
+      "precipitation": 17.1,
+      "precipitationProbability": 15,
+      "windSpeed": 7,
+      "uvIndex": 8
+    },
+    {
+      "date": "2026-01-12",
+      "tempMax": 30,
+      "tempMin": 28,
+      "weatherCode": 96,
+      "weatherLabel": "Thunderstorm with hail",
+      "weatherIcon": "⛈️",
+      "precipitation": 12.3,
+      "precipitationProbability": 12,
+      "windSpeed": 7,
+      "uvIndex": 8
+    },
+    {
+      "date": "2026-01-13",
+      "tempMax": 32,
+      "tempMin": 28,
+      "weatherCode": 95,
+      "weatherLabel": "Thunderstorm",
+      "weatherIcon": "⛈️",
+      "precipitation": 3.3,
+      "precipitationProbability": 51,
+      "windSpeed": 7,
+      "uvIndex": 7
+    }
+  ]
+}

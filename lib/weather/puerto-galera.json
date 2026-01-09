@@ -1,0 +1,94 @@
+{
+  "city": "Puerto Galera",
+  "slug": "puerto-galera",
+  "lat": 13.5,
+  "lon": 120.95,
+  "timezone": "Asia/Manila",
+  "lastUpdated": "2026-01-06T18:09:46.845Z",
+  "forecast": [
+    {
+      "date": "2026-01-07",
+      "tempMax": 25,
+      "tempMin": 25,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 1.5,
+      "precipitationProbability": 20,
+      "windSpeed": 12,
+      "uvIndex": 1
+    },
+    {
+      "date": "2026-01-08",
+      "tempMax": 25,
+      "tempMin": 25,
+      "weatherCode": 61,
+      "weatherLabel": "Slight rain",
+      "weatherIcon": "🌧️",
+      "precipitation": 0.7,
+      "precipitationProbability": 13,
+      "windSpeed": 11,
+      "uvIndex": 2
+    },
+    {
+      "date": "2026-01-09",
+      "tempMax": 26,
+      "tempMin": 24,
+      "weatherCode": 95,
+      "weatherLabel": "Thunderstorm",
+      "weatherIcon": "⛈️",
+      "precipitation": 11.3,
+      "precipitationProbability": 8,
+      "windSpeed": 14,
+      "uvIndex": 1
+    },
+    {
+      "date": "2026-01-10",
+      "tempMax": 27,
+      "tempMin": 25,
+      "weatherCode": 95,
+      "weatherLabel": "Thunderstorm",
+      "weatherIcon": "⛈️",
+      "precipitation": 11.4,
+      "precipitationProbability": 30,
+      "windSpeed": 14,
+      "uvIndex": 6
+    },
+    {
+      "date": "2026-01-11",
+      "tempMax": 26,
+      "tempMin": 25,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 11.4,
+      "precipitationProbability": 14,
+      "windSpeed": 17,
+      "uvIndex": 1
+    },
+    {
+      "date": "2026-01-12",
+      "tempMax": 29,
+      "tempMin": 25,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 1.8,
+      "precipitationProbability": 10,
+      "windSpeed": 19,
+      "uvIndex": 1
+    },
+    {
+      "date": "2026-01-13",
+      "tempMax": 27,
+      "tempMin": 25,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 3.9,
+      "precipitationProbability": 58,
+      "windSpeed": 14,
+      "uvIndex": 4
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "lastUpdated": "2026-01-07",
+  
+  "operators": {
+    "victory-liner": {
+      "slug": "victory-liner",
+      "name": "Victory Liner",
+      "shortName": "Victory",
+      "logo": "/images/operators/victory-liner.png",
+      "founded": 1945,
+      "headquarters": "Pasay City",
+      "website": "https://victoryliner.com",
+      "description": "The largest and oldest bus company serving Northern Luzon routes. Known for extensive network and frequent departures.",
+      "rating": {
+        "score": 4.2,
+        "source": "12go",
+        "reviewCount": 8500
+      },
+      "amenities": {
+        "regular": ["aircon", "reclining-seats"],
+        "deluxe": ["aircon", "reclining-seats", "wifi"],
+        "first-class": ["aircon", "reclining-seats", "blanket", "restroom", "wifi"]
+      },
+      "busClasses": ["first-class", "deluxe", "regular"],
+      "regions": ["north-luzon", "central-luzon"],
+      "bookingUrl": "https://book.bustickets.ph/en/buses/victory-liner?z=64932&curr=PHP",
+      "contactPhone": "(02) 8727-4688",
+      "socialMedia": {
+        "facebook": "VictoryLiner"
+      },
+      "seoPage": "/operator/victory-liner"
+    },
+    
+    "genesis-joybus": {
+      "slug": "genesis-joybus",
+      "name": "Genesis Transport / JoyBus",
+      "shortName": "JoyBus",
+      "logo": "/images/operators/joybus.png",
+      "founded": 1996,
+      "headquarters": "Quezon City",
+      "website": "https://joybus.ph",
+      "description": "Premium bus service with JoyBus as their luxury arm. Known for executive coaches with exceptional comfort and amenities.",
+      "rating": {
+        "score": 4.3,
+        "source": "12go",
+        "reviewCount": 4200
+      },
+      "amenities": {
+        "deluxe": ["aircon", "reclining-seats", "wifi", "free-snacks", "free-water", "usb-charging"],
+        "premier": ["aircon", "reclining-seats", "wifi", "free-snacks", "free-water", "usb-charging", "restroom", "blanket", "personal-entertainment"]
+      },
+      "busClasses": ["premier", "deluxe"],
+      "uniqueFeatures": [
+        "28-seater executive coaches",
+        "2+1 seating (3 seats per row)",
+        "Complimentary snacks and water"
+      ],
+      "regions": ["north-luzon"],
+      "bookingUrl": "https://book.bustickets.ph/en/buses/genesis?z=64932&curr=PHP",
+      "contactPhone": "(02) 8421-1425",
+      "seoPage": "/operator/joybus"
+    },
+    
+    "solid-north": {
+      "slug": "solid-north",
+      "name": "Pangasinan Solid North Transit",
+      "shortName": "Solid North",
+      "logo": "/images/operators/solid-north.png",
+      "founded": 1980,
+      "headquarters": "Pangasinan",
+      "description": "Budget-friendly option for Northern Luzon routes. Popular with regular commuters for affordable fares.",
+      "rating": {
+        "score": 4.0,
+        "source": "12go",
+        "reviewCount": 1200
+      },
+      "amenities": {
+        "regular": ["aircon", "reclining-seats"],
+        "super-deluxe": ["aircon", "reclining-seats", "wifi", "restroom"]
+      },
+      "busClasses": ["super-deluxe", "regular"],
+      "regions": ["north-luzon"],
+      "bookingUrl": "https://book.bustickets.ph/en/buses/solid-north?z=64932&curr=PHP",
+      "seoPage": "/operator/solid-north"
+    },
+
+    "five-star": {
+      "slug": "five-star",
+      "name": "Five Star Bus Company",
+      "shortName": "Five Star",
+      "logo": "/images/operators/five-star.png",
+      "description": "Major bus operator serving Central and Northern Luzon with regular and deluxe services.",
+      "rating": {
+        "score": 4.0,
+        "source": "12go",
+        "reviewCount": 2100
+      },
+      "amenities": {
+        "regular": ["aircon", "reclining-seats"],
+        "deluxe": ["aircon", "reclining-seats", "wifi"]
+      },
+      "busClasses": ["deluxe", "regular"],
+      "regions": ["north-luzon", "central-luzon"],
+      "bookingUrl": "https://book.bustickets.ph/en/buses/five-star?z=64932&curr=PHP",
+      "seoPage": "/operator/five-star"
+    },
+
+    "ceres-liner": {
+      "slug": "ceres-liner",
+      "name": "Ceres Liner",
+      "shortName": "Ceres",
+      "logo": "/images/operators/ceres.png",
+      "description": "Dominant bus operator in the Visayas region, particularly Negros and Panay islands.",
+      "rating": {
+        "score": 4.1,
+        "source": "12go",
+        "reviewCount": 3500
+      },
+      "amenities": {
+        "regular": ["aircon", "reclining-seats"]
+      },
+      "busClasses": ["regular"],
+      "regions": ["visayas"],
+      "bookingUrl": "https://book.bustickets.ph/en/buses/ceres?z=64932&curr=PHP",
+      "seoPage": "/operator/ceres-liner"
+    },
+
+    "philtranco": {
+      "slug": "philtranco",
+      "name": "Philtranco",
+      "shortName": "Philtranco",
+      "logo": "/images/operators/philtranco.png",
+      "description": "Long-haul bus operator connecting Manila to Visayas and Mindanao via RORO ferries.",
+      "rating": {
+        "score": 3.9,
+        "source": "12go",
+        "reviewCount": 1800
+      },
+      "amenities": {
+        "regular": ["aircon", "reclining-seats"],
+        "super-deluxe": ["aircon", "reclining-seats", "restroom", "blanket"]
+      },
+      "busClasses": ["super-deluxe", "regular"],
+      "regions": ["luzon", "visayas", "mindanao"],
+      "bookingUrl": "https://book.bustickets.ph/en/buses/philtranco?z=64932&curr=PHP",
+      "seoPage": "/operator/philtranco"
+    }
+  }
+}

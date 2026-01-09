@@ -1,0 +1,94 @@
+{
+  "city": "Puerto Princesa",
+  "slug": "puerto-princesa",
+  "lat": 9.7392,
+  "lon": 118.7353,
+  "timezone": "Asia/Manila",
+  "lastUpdated": "2026-01-06T18:09:53.580Z",
+  "forecast": [
+    {
+      "date": "2026-01-07",
+      "tempMax": 26,
+      "tempMin": 24,
+      "weatherCode": 95,
+      "weatherLabel": "Thunderstorm",
+      "weatherIcon": "⛈️",
+      "precipitation": 21.6,
+      "precipitationProbability": 95,
+      "windSpeed": 8,
+      "uvIndex": 6
+    },
+    {
+      "date": "2026-01-08",
+      "tempMax": 29,
+      "tempMin": 24,
+      "weatherCode": 95,
+      "weatherLabel": "Thunderstorm",
+      "weatherIcon": "⛈️",
+      "precipitation": 5.1,
+      "precipitationProbability": 60,
+      "windSpeed": 8,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-09",
+      "tempMax": 30,
+      "tempMin": 24,
+      "weatherCode": 45,
+      "weatherLabel": "Foggy",
+      "weatherIcon": "🌫️",
+      "precipitation": 0,
+      "precipitationProbability": 34,
+      "windSpeed": 8,
+      "uvIndex": 6
+    },
+    {
+      "date": "2026-01-10",
+      "tempMax": 31,
+      "tempMin": 23,
+      "weatherCode": 45,
+      "weatherLabel": "Foggy",
+      "weatherIcon": "🌫️",
+      "precipitation": 0.3,
+      "precipitationProbability": 30,
+      "windSpeed": 7,
+      "uvIndex": 8
+    },
+    {
+      "date": "2026-01-11",
+      "tempMax": 29,
+      "tempMin": 24,
+      "weatherCode": 45,
+      "weatherLabel": "Foggy",
+      "weatherIcon": "🌫️",
+      "precipitation": 0,
+      "precipitationProbability": 20,
+      "windSpeed": 9,
+      "uvIndex": 8
+    },
+    {
+      "date": "2026-01-12",
+      "tempMax": 31,
+      "tempMin": 24,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0,
+      "precipitationProbability": 15,
+      "windSpeed": 8,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-13",
+      "tempMax": 29,
+      "tempMin": 23,
+      "weatherCode": 95,
+      "weatherLabel": "Thunderstorm",
+      "weatherIcon": "⛈️",
+      "precipitation": 7.5,
+      "precipitationProbability": 41,
+      "windSpeed": 10,
+      "uvIndex": 8
+    }
+  ]
+}

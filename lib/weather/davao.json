@@ -1,0 +1,94 @@
+{
+  "city": "Davao",
+  "slug": "davao",
+  "lat": 7.1907,
+  "lon": 125.4553,
+  "timezone": "Asia/Manila",
+  "lastUpdated": "2026-01-06T18:09:44.468Z",
+  "forecast": [
+    {
+      "date": "2026-01-07",
+      "tempMax": 28,
+      "tempMin": 21,
+      "weatherCode": 45,
+      "weatherLabel": "Foggy",
+      "weatherIcon": "🌫️",
+      "precipitation": 0.3,
+      "precipitationProbability": 58,
+      "windSpeed": 7,
+      "uvIndex": 8
+    },
+    {
+      "date": "2026-01-08",
+      "tempMax": 29,
+      "tempMin": 19,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0,
+      "precipitationProbability": 3,
+      "windSpeed": 10,
+      "uvIndex": 8
+    },
+    {
+      "date": "2026-01-09",
+      "tempMax": 29,
+      "tempMin": 20,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0.4,
+      "precipitationProbability": 18,
+      "windSpeed": 13,
+      "uvIndex": 8
+    },
+    {
+      "date": "2026-01-10",
+      "tempMax": 29,
+      "tempMin": 19,
+      "weatherCode": 95,
+      "weatherLabel": "Thunderstorm",
+      "weatherIcon": "⛈️",
+      "precipitation": 5.4,
+      "precipitationProbability": 9,
+      "windSpeed": 8,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-11",
+      "tempMax": 28,
+      "tempMin": 20,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0,
+      "precipitationProbability": 23,
+      "windSpeed": 11,
+      "uvIndex": 6
+    },
+    {
+      "date": "2026-01-12",
+      "tempMax": 25,
+      "tempMin": 22,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0.6,
+      "precipitationProbability": 25,
+      "windSpeed": 6,
+      "uvIndex": 6
+    },
+    {
+      "date": "2026-01-13",
+      "tempMax": 28,
+      "tempMin": 21,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 5.7,
+      "precipitationProbability": 46,
+      "windSpeed": 12,
+      "uvIndex": 2
+    }
+  ]
+}

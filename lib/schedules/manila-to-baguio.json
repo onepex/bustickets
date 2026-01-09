@@ -1,0 +1,414 @@
+{
+  "from": "Manila",
+  "to": "Baguio",
+  "slug": "manila-to-baguio",
+  "subRoutes": [
+    {
+      "subRoute": "Manila - Baguio",
+      "fromCity": "Manila",
+      "toCity": "Baguio",
+      "transportType": "bus",
+      "bookingUrl": "https://book.bustickets.ph/en/bus/manila/baguio?z=64932&curr=PHP",
+      "priceMin": 1395,
+      "priceMax": 1395,
+      "duration": "5h",
+      "classes": [
+        {
+          "name": "First Class",
+          "departures": [
+            "13:15",
+            "20:15"
+          ]
+        }
+      ]
+    },
+    {
+      "subRoute": "Manila - Baguio",
+      "fromCity": "Manila",
+      "toCity": "Baguio",
+      "transportType": "taxi",
+      "bookingUrl": "https://book.bustickets.ph/en/charter/manila/baguio?z=64932&curr=PHP",
+      "priceMin": 9810,
+      "priceMax": 20359,
+      "duration": "4h &ndash; 4h 30m",
+      "classes": [
+        {
+          "name": "Van 9pax",
+          "departures": []
+        },
+        {
+          "name": "Economy 3pax",
+          "departures": []
+        },
+        {
+          "name": "Minivan 4pax",
+          "departures": []
+        },
+        {
+          "name": "SUV 4pax",
+          "departures": []
+        },
+        {
+          "name": "Economy 2pax",
+          "departures": []
+        },
+        {
+          "name": "Minivan 5pax",
+          "departures": []
+        }
+      ]
+    },
+    {
+      "subRoute": "Quezon City - Baguio",
+      "fromCity": "Quezon City",
+      "toCity": "Baguio",
+      "transportType": "bus",
+      "bookingUrl": "https://book.bustickets.ph/en/bus/quezon-city/baguio?z=64932&curr=PHP",
+      "priceMin": 887,
+      "priceMax": 887,
+      "duration": "6h 9m",
+      "classes": [
+        {
+          "name": "Super Deluxe W/CR",
+          "departures": [
+            "08:30",
+            "17:30"
+          ]
+        }
+      ]
+    }
+  ],
+  "schedules": [
+    {
+      "id": "manila-to-baguio-8",
+      "operator": {
+        "id": "quezon-city",
+        "name": "Quezon City Terminal",
+        "slug": "quezon-city"
+      },
+      "transportType": "bus",
+      "busClass": "deluxe",
+      "departure": {
+        "time": "08:30",
+        "terminal": {
+          "id": "quezon-city",
+          "name": "Quezon City Terminal",
+          "city": "Quezon City"
+        }
+      },
+      "arrival": {
+        "time": "14:39",
+        "terminal": {
+          "id": "baguio",
+          "name": "Baguio Terminal",
+          "city": "Baguio"
+        }
+      },
+      "duration": 369,
+      "price": {
+        "amount": 887,
+        "currency": "PHP"
+      },
+      "frequency": "daily",
+      "bookingUrl": "https://book.bustickets.ph/en/bus/quezon-city/baguio?z=64932&curr=PHP"
+    },
+    {
+      "id": "manila-to-baguio-0",
+      "operator": {
+        "id": "manila",
+        "name": "Manila Terminal",
+        "slug": "manila"
+      },
+      "transportType": "bus",
+      "busClass": "first-class",
+      "departure": {
+        "time": "13:15",
+        "terminal": {
+          "id": "manila",
+          "name": "Manila Terminal",
+          "city": "Manila"
+        }
+      },
+      "arrival": {
+        "time": "18:15",
+        "terminal": {
+          "id": "baguio",
+          "name": "Baguio Terminal",
+          "city": "Baguio"
+        }
+      },
+      "duration": 300,
+      "price": {
+        "amount": 1395,
+        "currency": "PHP"
+      },
+      "frequency": "daily",
+      "bookingUrl": "https://book.bustickets.ph/en/bus/manila/baguio?z=64932&curr=PHP"
+    },
+    {
+      "id": "manila-to-baguio-9",
+      "operator": {
+        "id": "quezon-city",
+        "name": "Quezon City Terminal",
+        "slug": "quezon-city"
+      },
+      "transportType": "bus",
+      "busClass": "deluxe",
+      "departure": {
+        "time": "17:30",
+        "terminal": {
+          "id": "quezon-city",
+          "name": "Quezon City Terminal",
+          "city": "Quezon City"
+        }
+      },
+      "arrival": {
+        "time": "23:39",
+        "terminal": {
+          "id": "baguio",
+          "name": "Baguio Terminal",
+          "city": "Baguio"
+        }
+      },
+      "duration": 369,
+      "price": {
+        "amount": 887,
+        "currency": "PHP"
+      },
+      "frequency": "daily",
+      "bookingUrl": "https://book.bustickets.ph/en/bus/quezon-city/baguio?z=64932&curr=PHP"
+    },
+    {
+      "id": "manila-to-baguio-1",
+      "operator": {
+        "id": "manila",
+        "name": "Manila Terminal",
+        "slug": "manila"
+      },
+      "transportType": "bus",
+      "busClass": "first-class",
+      "departure": {
+        "time": "20:15",
+        "terminal": {
+          "id": "manila",
+          "name": "Manila Terminal",
+          "city": "Manila"
+        }
+      },
+      "arrival": {
+        "time": "01:15",
+        "terminal": {
+          "id": "baguio",
+          "name": "Baguio Terminal",
+          "city": "Baguio"
+        }
+      },
+      "duration": 300,
+      "price": {
+        "amount": 1395,
+        "currency": "PHP"
+      },
+      "frequency": "daily",
+      "bookingUrl": "https://book.bustickets.ph/en/bus/manila/baguio?z=64932&curr=PHP"
+    },
+    {
+      "id": "manila-to-baguio-2",
+      "operator": {
+        "id": "manila",
+        "name": "Manila Terminal",
+        "slug": "manila"
+      },
+      "transportType": "taxi",
+      "busClass": "regular",
+      "departure": {
+        "time": "Various",
+        "terminal": {
+          "id": "manila",
+          "name": "Manila Terminal",
+          "city": "Manila"
+        }
+      },
+      "arrival": {
+        "time": "Various",
+        "terminal": {
+          "id": "baguio",
+          "name": "Baguio Terminal",
+          "city": "Baguio"
+        }
+      },
+      "duration": 240,
+      "price": {
+        "amount": 9810,
+        "currency": "PHP"
+      },
+      "frequency": "daily",
+      "bookingUrl": "https://book.bustickets.ph/en/charter/manila/baguio?z=64932&curr=PHP"
+    },
+    {
+      "id": "manila-to-baguio-3",
+      "operator": {
+        "id": "manila",
+        "name": "Manila Terminal",
+        "slug": "manila"
+      },
+      "transportType": "taxi",
+      "busClass": "regular",
+      "departure": {
+        "time": "Various",
+        "terminal": {
+          "id": "manila",
+          "name": "Manila Terminal",
+          "city": "Manila"
+        }
+      },
+      "arrival": {
+        "time": "Various",
+        "terminal": {
+          "id": "baguio",
+          "name": "Baguio Terminal",
+          "city": "Baguio"
+        }
+      },
+      "duration": 240,
+      "price": {
+        "amount": 9810,
+        "currency": "PHP"
+      },
+      "frequency": "daily",
+      "bookingUrl": "https://book.bustickets.ph/en/charter/manila/baguio?z=64932&curr=PHP"
+    },
+    {
+      "id": "manila-to-baguio-4",
+      "operator": {
+        "id": "manila",
+        "name": "Manila Terminal",
+        "slug": "manila"
+      },
+      "transportType": "taxi",
+      "busClass": "regular",
+      "departure": {
+        "time": "Various",
+        "terminal": {
+          "id": "manila",
+          "name": "Manila Terminal",
+          "city": "Manila"
+        }
+      },
+      "arrival": {
+        "time": "Various",
+        "terminal": {
+          "id": "baguio",
+          "name": "Baguio Terminal",
+          "city": "Baguio"
+        }
+      },
+      "duration": 240,
+      "price": {
+        "amount": 9810,
+        "currency": "PHP"
+      },
+      "frequency": "daily",
+      "bookingUrl": "https://book.bustickets.ph/en/charter/manila/baguio?z=64932&curr=PHP"
+    },
+    {
+      "id": "manila-to-baguio-5",
+      "operator": {
+        "id": "manila",
+        "name": "Manila Terminal",
+        "slug": "manila"
+      },
+      "transportType": "taxi",
+      "busClass": "regular",
+      "departure": {
+        "time": "Various",
+        "terminal": {
+          "id": "manila",
+          "name": "Manila Terminal",
+          "city": "Manila"
+        }
+      },
+      "arrival": {
+        "time": "Various",
+        "terminal": {
+          "id": "baguio",
+          "name": "Baguio Terminal",
+          "city": "Baguio"
+        }
+      },
+      "duration": 240,
+      "price": {
+        "amount": 9810,
+        "currency": "PHP"
+      },
+      "frequency": "daily",
+      "bookingUrl": "https://book.bustickets.ph/en/charter/manila/baguio?z=64932&curr=PHP"
+    },
+    {
+      "id": "manila-to-baguio-6",
+      "operator": {
+        "id": "manila",
+        "name": "Manila Terminal",
+        "slug": "manila"
+      },
+      "transportType": "taxi",
+      "busClass": "regular",
+      "departure": {
+        "time": "Various",
+        "terminal": {
+          "id": "manila",
+          "name": "Manila Terminal",
+          "city": "Manila"
+        }
+      },
+      "arrival": {
+        "time": "Various",
+        "terminal": {
+          "id": "baguio",
+          "name": "Baguio Terminal",
+          "city": "Baguio"
+        }
+      },
+      "duration": 240,
+      "price": {
+        "amount": 9810,
+        "currency": "PHP"
+      },
+      "frequency": "daily",
+      "bookingUrl": "https://book.bustickets.ph/en/charter/manila/baguio?z=64932&curr=PHP"
+    },
+    {
+      "id": "manila-to-baguio-7",
+      "operator": {
+        "id": "manila",
+        "name": "Manila Terminal",
+        "slug": "manila"
+      },
+      "transportType": "taxi",
+      "busClass": "regular",
+      "departure": {
+        "time": "Various",
+        "terminal": {
+          "id": "manila",
+          "name": "Manila Terminal",
+          "city": "Manila"
+        }
+      },
+      "arrival": {
+        "time": "Various",
+        "terminal": {
+          "id": "baguio",
+          "name": "Baguio Terminal",
+          "city": "Baguio"
+        }
+      },
+      "duration": 240,
+      "price": {
+        "amount": 9810,
+        "currency": "PHP"
+      },
+      "frequency": "daily",
+      "bookingUrl": "https://book.bustickets.ph/en/charter/manila/baguio?z=64932&curr=PHP"
+    }
+  ],
+  "lastUpdated": "2026-01-06T17:20:07.893Z"
+}

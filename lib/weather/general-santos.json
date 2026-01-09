@@ -1,0 +1,94 @@
+{
+  "city": "General Santos",
+  "slug": "general-santos",
+  "lat": 6.1108,
+  "lon": 125.1716,
+  "timezone": "Asia/Manila",
+  "lastUpdated": "2026-01-06T18:09:51.998Z",
+  "forecast": [
+    {
+      "date": "2026-01-07",
+      "tempMax": 30,
+      "tempMin": 22,
+      "weatherCode": 96,
+      "weatherLabel": "Thunderstorm with hail",
+      "weatherIcon": "⛈️",
+      "precipitation": 8,
+      "precipitationProbability": 75,
+      "windSpeed": 9,
+      "uvIndex": 8
+    },
+    {
+      "date": "2026-01-08",
+      "tempMax": 31,
+      "tempMin": 22,
+      "weatherCode": 45,
+      "weatherLabel": "Foggy",
+      "weatherIcon": "🌫️",
+      "precipitation": 0,
+      "precipitationProbability": 10,
+      "windSpeed": 14,
+      "uvIndex": 8
+    },
+    {
+      "date": "2026-01-09",
+      "tempMax": 30,
+      "tempMin": 23,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 0.8,
+      "precipitationProbability": 28,
+      "windSpeed": 10,
+      "uvIndex": 8
+    },
+    {
+      "date": "2026-01-10",
+      "tempMax": 31,
+      "tempMin": 22,
+      "weatherCode": 45,
+      "weatherLabel": "Foggy",
+      "weatherIcon": "🌫️",
+      "precipitation": 0.6,
+      "precipitationProbability": 15,
+      "windSpeed": 10,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-11",
+      "tempMax": 31,
+      "tempMin": 23,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0.3,
+      "precipitationProbability": 25,
+      "windSpeed": 15,
+      "uvIndex": 8
+    },
+    {
+      "date": "2026-01-12",
+      "tempMax": 28,
+      "tempMin": 23,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 3,
+      "precipitationProbability": 35,
+      "windSpeed": 6,
+      "uvIndex": 3
+    },
+    {
+      "date": "2026-01-13",
+      "tempMax": 29,
+      "tempMin": 24,
+      "weatherCode": 95,
+      "weatherLabel": "Thunderstorm",
+      "weatherIcon": "⛈️",
+      "precipitation": 8.4,
+      "precipitationProbability": 60,
+      "windSpeed": 9,
+      "uvIndex": 3
+    }
+  ]
+}

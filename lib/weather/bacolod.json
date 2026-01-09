@@ -1,0 +1,94 @@
+{
+  "city": "Bacolod",
+  "slug": "bacolod",
+  "lat": 10.6407,
+  "lon": 122.9688,
+  "timezone": "Asia/Manila",
+  "lastUpdated": "2026-01-06T18:09:48.830Z",
+  "forecast": [
+    {
+      "date": "2026-01-07",
+      "tempMax": 29,
+      "tempMin": 26,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 1.2,
+      "precipitationProbability": 65,
+      "windSpeed": 25,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-08",
+      "tempMax": 30,
+      "tempMin": 25,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0,
+      "precipitationProbability": 8,
+      "windSpeed": 24,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-09",
+      "tempMax": 30,
+      "tempMin": 26,
+      "weatherCode": 2,
+      "weatherLabel": "Partly cloudy",
+      "weatherIcon": "⛅",
+      "precipitation": 0,
+      "precipitationProbability": 18,
+      "windSpeed": 18,
+      "uvIndex": 8
+    },
+    {
+      "date": "2026-01-10",
+      "tempMax": 30,
+      "tempMin": 26,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0.3,
+      "precipitationProbability": 15,
+      "windSpeed": 18,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-11",
+      "tempMax": 30,
+      "tempMin": 26,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 1.2,
+      "precipitationProbability": 25,
+      "windSpeed": 16,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-12",
+      "tempMax": 32,
+      "tempMin": 26,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0,
+      "precipitationProbability": 19,
+      "windSpeed": 20,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-13",
+      "tempMax": 29,
+      "tempMin": 26,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0,
+      "precipitationProbability": 45,
+      "windSpeed": 23,
+      "uvIndex": 7
+    }
+  ]
+}

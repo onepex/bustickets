@@ -1,0 +1,94 @@
+{
+  "city": "El Nido",
+  "slug": "el-nido",
+  "lat": 11.1785,
+  "lon": 119.3929,
+  "timezone": "Asia/Manila",
+  "lastUpdated": "2026-01-06T18:09:46.048Z",
+  "forecast": [
+    {
+      "date": "2026-01-07",
+      "tempMax": 27,
+      "tempMin": 26,
+      "weatherCode": 95,
+      "weatherLabel": "Thunderstorm",
+      "weatherIcon": "⛈️",
+      "precipitation": 28.1,
+      "precipitationProbability": 93,
+      "windSpeed": 9,
+      "uvIndex": 6
+    },
+    {
+      "date": "2026-01-08",
+      "tempMax": 29,
+      "tempMin": 26,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0.6,
+      "precipitationProbability": 45,
+      "windSpeed": 10,
+      "uvIndex": 5
+    },
+    {
+      "date": "2026-01-09",
+      "tempMax": 29,
+      "tempMin": 26,
+      "weatherCode": 2,
+      "weatherLabel": "Partly cloudy",
+      "weatherIcon": "⛅",
+      "precipitation": 0.1,
+      "precipitationProbability": 42,
+      "windSpeed": 19,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-10",
+      "tempMax": 29,
+      "tempMin": 27,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0,
+      "precipitationProbability": 16,
+      "windSpeed": 18,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-11",
+      "tempMax": 28,
+      "tempMin": 27,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 1.8,
+      "precipitationProbability": 20,
+      "windSpeed": 16,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-12",
+      "tempMax": 29,
+      "tempMin": 27,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0,
+      "precipitationProbability": 16,
+      "windSpeed": 21,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-13",
+      "tempMax": 29,
+      "tempMin": 27,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 0.6,
+      "precipitationProbability": 29,
+      "windSpeed": 10,
+      "uvIndex": 7
+    }
+  ]
+}

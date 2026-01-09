@@ -1,0 +1,82 @@
+[
+  {
+    "slug": "cubao-terminal",
+    "name": "Cubao Bus Terminal",
+    "city": "Quezon City",
+    "lat": 14.6195,
+    "lon": 121.0550,
+    "operators": ["Victory Liner", "Genesis", "Five Star"]
+  },
+  {
+    "slug": "pitx-terminal",
+    "name": "PITX (Parañaque Integrated Terminal Exchange)",
+    "city": "Parañaque",
+    "lat": 14.5085,
+    "lon": 120.9912,
+    "operators": ["DLTB", "JAM Liner", "Philtranco"]
+  },
+  {
+    "slug": "pasay-terminal",
+    "name": "Pasay Bus Terminal",
+    "city": "Pasay",
+    "lat": 14.5378,
+    "lon": 120.9985,
+    "operators": ["Victory Liner", "Partas", "Dominion"]
+  },
+  {
+    "slug": "sampaloc-terminal",
+    "name": "Sampaloc Terminal (España)",
+    "city": "Manila",
+    "lat": 14.6101,
+    "lon": 120.9891,
+    "operators": ["Ohayami", "Autobus"]
+  },
+  {
+    "slug": "partas-cubao",
+    "name": "Partas Cubao Terminal",
+    "city": "Quezon City",
+    "lat": 14.6207,
+    "lon": 121.0523,
+    "operators": ["Partas"]
+  },
+  {
+    "slug": "victory-liner-cubao",
+    "name": "Victory Liner Cubao Terminal",
+    "city": "Quezon City",
+    "lat": 14.6198,
+    "lon": 121.0545,
+    "operators": ["Victory Liner"]
+  },
+  {
+    "slug": "genesis-cubao",
+    "name": "Genesis Bus Terminal Cubao",
+    "city": "Quezon City",
+    "lat": 14.6189,
+    "lon": 121.0532,
+    "operators": ["Genesis", "Joy Bus"]
+  },
+  {
+    "slug": "baguio-governor-pack",
+    "name": "Governor Pack Road Terminal",
+    "city": "Baguio",
+    "lat": 16.4123,
+    "lon": 120.5960,
+    "operators": ["Victory Liner", "Genesis", "Partas"]
+  },
+  {
+    "slug": "vigan-bus-terminal",
+    "name": "Vigan City Bus Terminal",
+    "city": "Vigan",
+    "lat": 17.5747,
+    "lon": 120.3869,
+    "operators": ["Partas", "Dominion", "Viron"]
+  },
+  {
+    "slug": "laoag-bus-terminal",
+    "name": "Laoag City Bus Terminal",
+    "city": "Laoag",
+    "lat": 18.1985,
+    "lon": 120.5936,
+    "operators": ["Partas", "Farinas", "GV Florida"]
+  }
+]

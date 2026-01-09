@@ -1,0 +1,94 @@
+{
+  "city": "Manila",
+  "slug": "manila",
+  "lat": 14.5995,
+  "lon": 120.9842,
+  "timezone": "Asia/Manila",
+  "lastUpdated": "2026-01-06T18:09:43.649Z",
+  "forecast": [
+    {
+      "date": "2026-01-07",
+      "tempMax": 27,
+      "tempMin": 26,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 0.8,
+      "precipitationProbability": 15,
+      "windSpeed": 19,
+      "uvIndex": 5
+    },
+    {
+      "date": "2026-01-08",
+      "tempMax": 28,
+      "tempMin": 25,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0,
+      "precipitationProbability": 8,
+      "windSpeed": 24,
+      "uvIndex": 5
+    },
+    {
+      "date": "2026-01-09",
+      "tempMax": 28,
+      "tempMin": 26,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0,
+      "precipitationProbability": 13,
+      "windSpeed": 23,
+      "uvIndex": 5
+    },
+    {
+      "date": "2026-01-10",
+      "tempMax": 27,
+      "tempMin": 25,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 6.9,
+      "precipitationProbability": 27,
+      "windSpeed": 19,
+      "uvIndex": 3
+    },
+    {
+      "date": "2026-01-11",
+      "tempMax": 26,
+      "tempMin": 25,
+      "weatherCode": 95,
+      "weatherLabel": "Thunderstorm",
+      "weatherIcon": "⛈️",
+      "precipitation": 5.7,
+      "precipitationProbability": 16,
+      "windSpeed": 19,
+      "uvIndex": 0
+    },
+    {
+      "date": "2026-01-12",
+      "tempMax": 28,
+      "tempMin": 25,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0,
+      "precipitationProbability": 15,
+      "windSpeed": 17,
+      "uvIndex": 4
+    },
+    {
+      "date": "2026-01-13",
+      "tempMax": 29,
+      "tempMin": 25,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0,
+      "precipitationProbability": 17,
+      "windSpeed": 11,
+      "uvIndex": 1
+    }
+  ]
+}

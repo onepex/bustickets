@@ -1,0 +1,94 @@
+{
+  "city": "Baguio",
+  "slug": "baguio",
+  "lat": 16.4023,
+  "lon": 120.596,
+  "timezone": "Asia/Manila",
+  "lastUpdated": "2026-01-06T18:09:43.254Z",
+  "forecast": [
+    {
+      "date": "2026-01-07",
+      "tempMax": 23,
+      "tempMin": 17,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0,
+      "precipitationProbability": 20,
+      "windSpeed": 8,
+      "uvIndex": 6
+    },
+    {
+      "date": "2026-01-08",
+      "tempMax": 23,
+      "tempMin": 17,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 0.2,
+      "precipitationProbability": 5,
+      "windSpeed": 8,
+      "uvIndex": 5
+    },
+    {
+      "date": "2026-01-09",
+      "tempMax": 24,
+      "tempMin": 18,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0.1,
+      "precipitationProbability": 5,
+      "windSpeed": 9,
+      "uvIndex": 5
+    },
+    {
+      "date": "2026-01-10",
+      "tempMax": 24,
+      "tempMin": 19,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0.1,
+      "precipitationProbability": 13,
+      "windSpeed": 7,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-11",
+      "tempMax": 26,
+      "tempMin": 19,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0.6,
+      "precipitationProbability": 9,
+      "windSpeed": 6,
+      "uvIndex": 3
+    },
+    {
+      "date": "2026-01-12",
+      "tempMax": 25,
+      "tempMin": 19,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0,
+      "precipitationProbability": 15,
+      "windSpeed": 8,
+      "uvIndex": 4
+    },
+    {
+      "date": "2026-01-13",
+      "tempMax": 26,
+      "tempMin": 19,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 1.2,
+      "precipitationProbability": 46,
+      "windSpeed": 10,
+      "uvIndex": 5
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "city": "Cagayan de Oro",
+  "slug": "cagayan-de-oro",
+  "lat": 8.4542,
+  "lon": 124.6319,
+  "timezone": "Asia/Manila",
+  "lastUpdated": "2026-01-06T18:09:51.205Z",
+  "forecast": [
+    {
+      "date": "2026-01-07",
+      "tempMax": 30,
+      "tempMin": 26,
+      "weatherCode": 95,
+      "weatherLabel": "Thunderstorm",
+      "weatherIcon": "⛈️",
+      "precipitation": 9.7,
+      "precipitationProbability": 65,
+      "windSpeed": 15,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-08",
+      "tempMax": 30,
+      "tempMin": 26,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 2.9,
+      "precipitationProbability": 35,
+      "windSpeed": 17,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-09",
+      "tempMax": 30,
+      "tempMin": 26,
+      "weatherCode": 95,
+      "weatherLabel": "Thunderstorm",
+      "weatherIcon": "⛈️",
+      "precipitation": 3.5,
+      "precipitationProbability": 40,
+      "windSpeed": 15,
+      "uvIndex": 8
+    },
+    {
+      "date": "2026-01-10",
+      "tempMax": 30,
+      "tempMin": 26,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 0.8,
+      "precipitationProbability": 37,
+      "windSpeed": 16,
+      "uvIndex": 6
+    },
+    {
+      "date": "2026-01-11",
+      "tempMax": 30,
+      "tempMin": 26,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 1.8,
+      "precipitationProbability": 48,
+      "windSpeed": 18,
+      "uvIndex": 8
+    },
+    {
+      "date": "2026-01-12",
+      "tempMax": 29,
+      "tempMin": 26,
+      "weatherCode": 95,
+      "weatherLabel": "Thunderstorm",
+      "weatherIcon": "⛈️",
+      "precipitation": 5.7,
+      "precipitationProbability": 46,
+      "windSpeed": 11,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-13",
+      "tempMax": 30,
+      "tempMin": 26,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 2.4,
+      "precipitationProbability": 78,
+      "windSpeed": 15,
+      "uvIndex": 4
+    }
+  ]
+}

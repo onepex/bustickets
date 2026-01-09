@@ -1,0 +1,94 @@
+{
+  "city": "Sagada",
+  "slug": "sagada",
+  "lat": 17.0833,
+  "lon": 120.9,
+  "timezone": "Asia/Manila",
+  "lastUpdated": "2026-01-06T18:09:47.642Z",
+  "forecast": [
+    {
+      "date": "2026-01-07",
+      "tempMax": 23,
+      "tempMin": 18,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 0.6,
+      "precipitationProbability": 8,
+      "windSpeed": 12,
+      "uvIndex": 6
+    },
+    {
+      "date": "2026-01-08",
+      "tempMax": 23,
+      "tempMin": 17,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0,
+      "precipitationProbability": 3,
+      "windSpeed": 8,
+      "uvIndex": 2
+    },
+    {
+      "date": "2026-01-09",
+      "tempMax": 23,
+      "tempMin": 19,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0.2,
+      "precipitationProbability": 3,
+      "windSpeed": 9,
+      "uvIndex": 3
+    },
+    {
+      "date": "2026-01-10",
+      "tempMax": 24,
+      "tempMin": 19,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0.4,
+      "precipitationProbability": 8,
+      "windSpeed": 6,
+      "uvIndex": 5
+    },
+    {
+      "date": "2026-01-11",
+      "tempMax": 24,
+      "tempMin": 21,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0,
+      "precipitationProbability": 5,
+      "windSpeed": 9,
+      "uvIndex": 1
+    },
+    {
+      "date": "2026-01-12",
+      "tempMax": 24,
+      "tempMin": 19,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 4.5,
+      "precipitationProbability": 18,
+      "windSpeed": 7,
+      "uvIndex": 4
+    },
+    {
+      "date": "2026-01-13",
+      "tempMax": 25,
+      "tempMin": 19,
+      "weatherCode": 81,
+      "weatherLabel": "Moderate showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 8.4,
+      "precipitationProbability": 49,
+      "windSpeed": 8,
+      "uvIndex": 4
+    }
+  ]
+}

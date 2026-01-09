@@ -1,0 +1,94 @@
+{
+  "city": "Calapan",
+  "slug": "calapan",
+  "lat": 13.4115,
+  "lon": 121.1803,
+  "timezone": "Asia/Manila",
+  "lastUpdated": "2026-01-06T18:09:50.415Z",
+  "forecast": [
+    {
+      "date": "2026-01-07",
+      "tempMax": 23,
+      "tempMin": 21,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 4.3,
+      "precipitationProbability": 40,
+      "windSpeed": 7,
+      "uvIndex": 0
+    },
+    {
+      "date": "2026-01-08",
+      "tempMax": 23,
+      "tempMin": 21,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 2.5,
+      "precipitationProbability": 30,
+      "windSpeed": 7,
+      "uvIndex": 2
+    },
+    {
+      "date": "2026-01-09",
+      "tempMax": 24,
+      "tempMin": 21,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 8.6,
+      "precipitationProbability": 38,
+      "windSpeed": 9,
+      "uvIndex": 5
+    },
+    {
+      "date": "2026-01-10",
+      "tempMax": 25,
+      "tempMin": 22,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 10.2,
+      "precipitationProbability": 45,
+      "windSpeed": 9,
+      "uvIndex": 6
+    },
+    {
+      "date": "2026-01-11",
+      "tempMax": 23,
+      "tempMin": 22,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 9.3,
+      "precipitationProbability": 40,
+      "windSpeed": 9,
+      "uvIndex": 3
+    },
+    {
+      "date": "2026-01-12",
+      "tempMax": 27,
+      "tempMin": 22,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 2.4,
+      "precipitationProbability": 38,
+      "windSpeed": 10,
+      "uvIndex": 5
+    },
+    {
+      "date": "2026-01-13",
+      "tempMax": 25,
+      "tempMin": 22,
+      "weatherCode": 95,
+      "weatherLabel": "Thunderstorm",
+      "weatherIcon": "⛈️",
+      "precipitation": 12,
+      "precipitationProbability": 85,
+      "windSpeed": 7,
+      "uvIndex": 6
+    }
+  ]
+}

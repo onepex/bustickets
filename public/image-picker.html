@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destination Image Picker</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, sans-serif; background: #1a1a2e; color: white; padding: 20px; }
+    h1 { text-align: center; margin-bottom: 30px; }
+    .destination { margin-bottom: 40px; border: 1px solid #333; border-radius: 12px; padding: 20px; background: #16213e; }
+    .destination h2 { margin-bottom: 15px; color: #00d9ff; }
+    .variants { display: flex; gap: 15px; flex-wrap: wrap; }
+    .variant { flex: 1; min-width: 300px; cursor: pointer; border: 3px solid transparent; border-radius: 8px; overflow: hidden; transition: all 0.2s; }
+    .variant:hover { border-color: #00d9ff; transform: scale(1.02); }
+    .variant.selected { border-color: #00ff88; box-shadow: 0 0 20px rgba(0,255,136,0.3); }
+    .variant img { width: 100%; height: auto; display: block; }
+    .variant-label { padding: 8px; text-align: center; background: #0f0f23; font-weight: bold; }
+    .selected .variant-label { background: #00ff88; color: black; }
+    .results { position: fixed; bottom: 20px; right: 20px; background: #16213e; border: 1px solid #333; padding: 15px; border-radius: 8px; max-width: 300px; max-height: 400px; overflow-y: auto; }
+    .results h3 { margin-bottom: 10px; color: #00d9ff; }
+    .results pre { font-size: 12px; white-space: pre-wrap; }
+    button { background: #00d9ff; color: black; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: bold; margin-top: 10px; }
+    button:hover { background: #00ff88; }
+  </style>
+</head>
+<body>
+  <h1>🖼️ Destination Image Picker (Day)</h1>
+  <div id="destinations"></div>
+  
+  <div class="results">
+    <h3>Your Picks:</h3>
+    <pre id="picks">{}</pre>
+    <button onclick="copyPicks()">Copy JSON</button>
+    <button onclick="downloadPicks()">Download</button>
+  </div>
+
+  <script>
+    const destinations = [
+      // Original 10
+      'baguio', 'cebu', 'la-union', 'vigan', 'sagada', 
+      'bohol', 'davao', 'legazpi', 'batangas', 'manila',
+      // New 17
+      'siquijor', 'tagaytay', 'palawan', 'el-nido', 'coron',
+      'siargao', 'boracay', 'puerto-galera', 'dumaguete', 'banaue',
+      'cagayan-de-oro', 'iloilo', 'bacolod', 'camiguin', 'leyte',
+      'laoag', 'naga'
+    ];
+    
+    const picks = {};
+    
+    function renderDestinations() {
+      const container = document.getElementById('destinations');
+      
+      destinations.forEach(dest => {
+        const div = document.createElement('div');
+        div.className = 'destination';
+        div.innerHTML = `
+          <h2>${dest.replace('-', ' ').toUpperCase()}</h2>
+          <div class="variants">
+            ${[1, 2, 3].map(v => `
+              <div class="variant" data-dest="${dest}" data-variant="${v}" onclick="selectVariant('${dest}', ${v})">
+                <img src="images/destinations/${dest}-day-v${v}.png" alt="${dest} v${v}" 
+                     onerror="this.parentElement.style.display='none'">
+                <div class="variant-label">Variant ${v}</div>
+              </div>
+            `).join('')}
+          </div>
+        `;
+        container.appendChild(div);
+      });
+    }
+    
+    function selectVariant(dest, variant) {
+      // Update picks
+      picks[dest] = `v${variant}`;
+      
+      // Update UI
+      document.querySelectorAll(`[data-dest="${dest}"]`).forEach(el => {
+        el.classList.remove('selected');
+      });
+      document.querySelector(`[data-dest="${dest}"][data-variant="${variant}"]`).classList.add('selected');
+      
+      // Update display
+      document.getElementById('picks').textContent = JSON.stringify(picks, null, 2);
+      
+      // Log to console
+      console.log(`Selected: ${dest} -> v${variant}`);
+    }
+    
+    function copyPicks() {
+      navigator.clipboard.writeText(JSON.stringify(picks, null, 2));
+      alert('Copied to clipboard!');
+    }
+    
+    function downloadPicks() {
+      const blob = new Blob([JSON.stringify(picks, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'destination-picks.json';
+      a.click();
+    }
+    
+    renderDestinations();
+  </script>
+</body>
+</html>

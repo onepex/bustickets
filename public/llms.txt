@@ -1,0 +1,44 @@
+# BusTickets.ph
+
+> Philippine bus and ferry ticket booking guide. Book tickets online for Victory Liner, 2Go, OceanJet, and 50+ operators.
+
+## About This Site
+BusTickets.ph helps travelers find and book bus and ferry tickets across the Philippines. We provide schedules, prices, terminal guides, and online booking through our partner 12Go.
+
+## Main Sections
+
+### Routes
+Travel guides between cities with schedules, operators, and booking:
+- /route/manila-to-baguio: Bus from Manila to Baguio (Victory Liner, Genesis, Partas)
+- /route/cebu-to-bohol: Ferry from Cebu to Tagbilaran/Tubigon (OceanJet, Lite)
+- /route/el-nido-to-coron: Ferry between Palawan islands
+- /route/manila-to-legazpi: Bus to Bicol region
+
+### Destinations
+How to get to popular Philippine destinations:
+- /destination/siargao: Surfing capital, via Surigao ferry
+- /destination/sagada: Mountain province, via Manila bus
+- /destination/siquijor: Mystic island, via Dumaguete ferry
+- /destination/boracay: Beach resort, via Caticlan
+
+### Operators
+Bus and ferry company guides with schedules and routes:
+- /operator/victory-liner: Largest bus operator, Manila-Baguio-North Luzon
+- /operator/2go-travel: Major ferry operator, inter-island routes
+- /operator/oceanjet: Fast ferry, Visayas region
+- /operator/dltb: Bus to Bicol and Southern Luzon
+
+### Terminals
+Terminal locations, directions, and facilities:
+- /terminal/pitx: Parañaque Integrated Terminal Exchange
+- /terminal/cubao: Multiple terminals in Quezon City
+- /terminal/batangas-port: Ferry port to Mindoro, Visayas
+
+## Key Facts
+- Coverage: 50+ bus and ferry operators
+- Routes: 600+ routes across Philippines
+- Booking: Online tickets via 12Go partner
+- Languages: English, Filipino
+
+## Contact
+Website: https://bustickets.ph

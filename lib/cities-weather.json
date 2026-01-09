@@ -1,0 +1,110 @@
+[
+  {
+    "slug": "baguio",
+    "name": "Baguio"
+  },
+  {
+    "slug": "manila",
+    "name": "Manila"
+  },
+  {
+    "slug": "cebu",
+    "name": "Cebu"
+  },
+  {
+    "slug": "davao",
+    "name": "Davao"
+  },
+  {
+    "slug": "bohol",
+    "name": "Bohol"
+  },
+  {
+    "slug": "boracay",
+    "name": "Boracay"
+  },
+  {
+    "slug": "palawan",
+    "name": "Palawan"
+  },
+  {
+    "slug": "el-nido",
+    "name": "El Nido"
+  },
+  {
+    "slug": "coron",
+    "name": "Coron"
+  },
+  {
+    "slug": "puerto-galera",
+    "name": "Puerto Galera"
+  },
+  {
+    "slug": "vigan",
+    "name": "Vigan"
+  },
+  {
+    "slug": "sagada",
+    "name": "Sagada"
+  },
+  {
+    "slug": "banaue",
+    "name": "Banaue"
+  },
+  {
+    "slug": "iloilo",
+    "name": "Iloilo"
+  },
+  {
+    "slug": "bacolod",
+    "name": "Bacolod"
+  },
+  {
+    "slug": "dumaguete",
+    "name": "Dumaguete"
+  },
+  {
+    "slug": "tagaytay",
+    "name": "Tagaytay"
+  },
+  {
+    "slug": "batangas",
+    "name": "Batangas"
+  },
+  {
+    "slug": "calapan",
+    "name": "Calapan"
+  },
+  {
+    "slug": "caticlan",
+    "name": "Caticlan"
+  },
+  {
+    "slug": "cagayan-de-oro",
+    "name": "Cagayan de Oro"
+  },
+  {
+    "slug": "zamboanga",
+    "name": "Zamboanga"
+  },
+  {
+    "slug": "general-santos",
+    "name": "General Santos"
+  },
+  {
+    "slug": "tacloban",
+    "name": "Tacloban"
+  },
+  {
+    "slug": "legazpi",
+    "name": "Legazpi"
+  },
+  {
+    "slug": "naga",
+    "name": "Naga"
+  },
+  {
+    "slug": "puerto-princesa",
+    "name": "Puerto Princesa"
+  }
+]

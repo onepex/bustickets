@@ -1,0 +1,94 @@
+{
+  "city": "Bohol",
+  "slug": "bohol",
+  "lat": 9.85,
+  "lon": 124,
+  "timezone": "Asia/Manila",
+  "lastUpdated": "2026-01-06T18:09:44.862Z",
+  "forecast": [
+    {
+      "date": "2026-01-07",
+      "tempMax": 28,
+      "tempMin": 24,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 3.6,
+      "precipitationProbability": 50,
+      "windSpeed": 10,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-08",
+      "tempMax": 29,
+      "tempMin": 23,
+      "weatherCode": 45,
+      "weatherLabel": "Foggy",
+      "weatherIcon": "🌫️",
+      "precipitation": 0.1,
+      "precipitationProbability": 13,
+      "windSpeed": 15,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-09",
+      "tempMax": 28,
+      "tempMin": 23,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 1.5,
+      "precipitationProbability": 23,
+      "windSpeed": 11,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-10",
+      "tempMax": 29,
+      "tempMin": 24,
+      "weatherCode": 95,
+      "weatherLabel": "Thunderstorm",
+      "weatherIcon": "⛈️",
+      "precipitation": 2.5,
+      "precipitationProbability": 26,
+      "windSpeed": 9,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-11",
+      "tempMax": 29,
+      "tempMin": 24,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0.3,
+      "precipitationProbability": 35,
+      "windSpeed": 13,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-12",
+      "tempMax": 27,
+      "tempMin": 24,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 1.5,
+      "precipitationProbability": 43,
+      "windSpeed": 13,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-13",
+      "tempMax": 28,
+      "tempMin": 25,
+      "weatherCode": 95,
+      "weatherLabel": "Thunderstorm",
+      "weatherIcon": "⛈️",
+      "precipitation": 7.2,
+      "precipitationProbability": 50,
+      "windSpeed": 14,
+      "uvIndex": 5
+    }
+  ]
+}

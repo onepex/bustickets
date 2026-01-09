@@ -1,0 +1,38 @@
+# BusTickets.ph - robots.txt
+# Updated: January 2026
+
+# Search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# AI Search Crawlers (allow for LLM citations)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Anthropic-ai
+Allow: /
+
+# All other bots
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://bustickets.ph/sitemap.xml

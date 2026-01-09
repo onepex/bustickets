@@ -1,0 +1,94 @@
+{
+  "city": "Vigan",
+  "slug": "vigan",
+  "lat": 17.5747,
+  "lon": 120.3869,
+  "timezone": "Asia/Manila",
+  "lastUpdated": "2026-01-06T18:09:47.244Z",
+  "forecast": [
+    {
+      "date": "2026-01-07",
+      "tempMax": 26,
+      "tempMin": 25,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0,
+      "precipitationProbability": 3,
+      "windSpeed": 47,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-08",
+      "tempMax": 28,
+      "tempMin": 25,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0,
+      "precipitationProbability": 0,
+      "windSpeed": 31,
+      "uvIndex": 5
+    },
+    {
+      "date": "2026-01-09",
+      "tempMax": 28,
+      "tempMin": 26,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0,
+      "precipitationProbability": 3,
+      "windSpeed": 23,
+      "uvIndex": 6
+    },
+    {
+      "date": "2026-01-10",
+      "tempMax": 29,
+      "tempMin": 27,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0,
+      "precipitationProbability": 4,
+      "windSpeed": 23,
+      "uvIndex": 6
+    },
+    {
+      "date": "2026-01-11",
+      "tempMax": 28,
+      "tempMin": 27,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0,
+      "precipitationProbability": 8,
+      "windSpeed": 34,
+      "uvIndex": 6
+    },
+    {
+      "date": "2026-01-12",
+      "tempMax": 28,
+      "tempMin": 27,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0,
+      "precipitationProbability": 3,
+      "windSpeed": 20,
+      "uvIndex": 5
+    },
+    {
+      "date": "2026-01-13",
+      "tempMax": 28,
+      "tempMin": 27,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0,
+      "precipitationProbability": 8,
+      "windSpeed": 46,
+      "uvIndex": 2
+    }
+  ]
+}

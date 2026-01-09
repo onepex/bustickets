@@ -1,0 +1,94 @@
+{
+  "city": "Banaue",
+  "slug": "banaue",
+  "lat": 16.9167,
+  "lon": 121.05,
+  "timezone": "Asia/Manila",
+  "lastUpdated": "2026-01-06T18:09:48.039Z",
+  "forecast": [
+    {
+      "date": "2026-01-07",
+      "tempMax": 17,
+      "tempMin": 13,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 1.5,
+      "precipitationProbability": 8,
+      "windSpeed": 8,
+      "uvIndex": 4
+    },
+    {
+      "date": "2026-01-08",
+      "tempMax": 16,
+      "tempMin": 12,
+      "weatherCode": 45,
+      "weatherLabel": "Foggy",
+      "weatherIcon": "🌫️",
+      "precipitation": 0,
+      "precipitationProbability": 3,
+      "windSpeed": 8,
+      "uvIndex": 1
+    },
+    {
+      "date": "2026-01-09",
+      "tempMax": 14,
+      "tempMin": 13,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0,
+      "precipitationProbability": 3,
+      "windSpeed": 10,
+      "uvIndex": 2
+    },
+    {
+      "date": "2026-01-10",
+      "tempMax": 16,
+      "tempMin": 14,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0,
+      "precipitationProbability": 8,
+      "windSpeed": 9,
+      "uvIndex": 4
+    },
+    {
+      "date": "2026-01-11",
+      "tempMax": 15,
+      "tempMin": 14,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0,
+      "precipitationProbability": 5,
+      "windSpeed": 15,
+      "uvIndex": 1
+    },
+    {
+      "date": "2026-01-12",
+      "tempMax": 16,
+      "tempMin": 14,
+      "weatherCode": 45,
+      "weatherLabel": "Foggy",
+      "weatherIcon": "🌫️",
+      "precipitation": 0,
+      "precipitationProbability": 18,
+      "windSpeed": 11,
+      "uvIndex": 3
+    },
+    {
+      "date": "2026-01-13",
+      "tempMax": 19,
+      "tempMin": 14,
+      "weatherCode": 45,
+      "weatherLabel": "Foggy",
+      "weatherIcon": "🌫️",
+      "precipitation": 0.3,
+      "precipitationProbability": 49,
+      "windSpeed": 8,
+      "uvIndex": 4
+    }
+  ]
+}

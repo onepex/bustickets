@@ -1,0 +1,94 @@
+{
+  "city": "Palawan",
+  "slug": "palawan",
+  "lat": 9.8349,
+  "lon": 118.7384,
+  "timezone": "Asia/Manila",
+  "lastUpdated": "2026-01-06T18:09:45.652Z",
+  "forecast": [
+    {
+      "date": "2026-01-07",
+      "tempMax": 26,
+      "tempMin": 24,
+      "weatherCode": 95,
+      "weatherLabel": "Thunderstorm",
+      "weatherIcon": "⛈️",
+      "precipitation": 21.6,
+      "precipitationProbability": 80,
+      "windSpeed": 8,
+      "uvIndex": 6
+    },
+    {
+      "date": "2026-01-08",
+      "tempMax": 29,
+      "tempMin": 24,
+      "weatherCode": 95,
+      "weatherLabel": "Thunderstorm",
+      "weatherIcon": "⛈️",
+      "precipitation": 5.1,
+      "precipitationProbability": 65,
+      "windSpeed": 8,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-09",
+      "tempMax": 31,
+      "tempMin": 24,
+      "weatherCode": 45,
+      "weatherLabel": "Foggy",
+      "weatherIcon": "🌫️",
+      "precipitation": 0,
+      "precipitationProbability": 34,
+      "windSpeed": 8,
+      "uvIndex": 6
+    },
+    {
+      "date": "2026-01-10",
+      "tempMax": 31,
+      "tempMin": 23,
+      "weatherCode": 45,
+      "weatherLabel": "Foggy",
+      "weatherIcon": "🌫️",
+      "precipitation": 0.3,
+      "precipitationProbability": 37,
+      "windSpeed": 7,
+      "uvIndex": 8
+    },
+    {
+      "date": "2026-01-11",
+      "tempMax": 29,
+      "tempMin": 24,
+      "weatherCode": 45,
+      "weatherLabel": "Foggy",
+      "weatherIcon": "🌫️",
+      "precipitation": 0,
+      "precipitationProbability": 35,
+      "windSpeed": 9,
+      "uvIndex": 8
+    },
+    {
+      "date": "2026-01-12",
+      "tempMax": 31,
+      "tempMin": 24,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0,
+      "precipitationProbability": 27,
+      "windSpeed": 8,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-13",
+      "tempMax": 29,
+      "tempMin": 23,
+      "weatherCode": 95,
+      "weatherLabel": "Thunderstorm",
+      "weatherIcon": "⛈️",
+      "precipitation": 7.5,
+      "precipitationProbability": 41,
+      "windSpeed": 10,
+      "uvIndex": 8
+    }
+  ]
+}

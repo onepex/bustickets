@@ -1,0 +1,94 @@
+{
+  "city": "Cebu",
+  "slug": "cebu",
+  "lat": 10.3157,
+  "lon": 123.8854,
+  "timezone": "Asia/Manila",
+  "lastUpdated": "2026-01-06T18:09:44.045Z",
+  "forecast": [
+    {
+      "date": "2026-01-07",
+      "tempMax": 28,
+      "tempMin": 24,
+      "weatherCode": 95,
+      "weatherLabel": "Thunderstorm",
+      "weatherIcon": "⛈️",
+      "precipitation": 8.9,
+      "precipitationProbability": 53,
+      "windSpeed": 8,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-08",
+      "tempMax": 31,
+      "tempMin": 24,
+      "weatherCode": 45,
+      "weatherLabel": "Foggy",
+      "weatherIcon": "🌫️",
+      "precipitation": 0,
+      "precipitationProbability": 23,
+      "windSpeed": 9,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-09",
+      "tempMax": 30,
+      "tempMin": 24,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 2.4,
+      "precipitationProbability": 35,
+      "windSpeed": 6,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-10",
+      "tempMax": 31,
+      "tempMin": 24,
+      "weatherCode": 45,
+      "weatherLabel": "Foggy",
+      "weatherIcon": "🌫️",
+      "precipitation": 0,
+      "precipitationProbability": 31,
+      "windSpeed": 4,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-11",
+      "tempMax": 31,
+      "tempMin": 23,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0.3,
+      "precipitationProbability": 44,
+      "windSpeed": 9,
+      "uvIndex": 6
+    },
+    {
+      "date": "2026-01-12",
+      "tempMax": 31,
+      "tempMin": 24,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0,
+      "precipitationProbability": 53,
+      "windSpeed": 14,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-13",
+      "tempMax": 30,
+      "tempMin": 25,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 3.3,
+      "precipitationProbability": 50,
+      "windSpeed": 10,
+      "uvIndex": 6
+    }
+  ]
+}

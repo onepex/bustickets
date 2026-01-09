@@ -1,0 +1,94 @@
+{
+  "city": "Boracay",
+  "slug": "boracay",
+  "lat": 11.9674,
+  "lon": 121.9248,
+  "timezone": "Asia/Manila",
+  "lastUpdated": "2026-01-06T18:09:45.256Z",
+  "forecast": [
+    {
+      "date": "2026-01-07",
+      "tempMax": 27,
+      "tempMin": 26,
+      "weatherCode": 95,
+      "weatherLabel": "Thunderstorm",
+      "weatherIcon": "⛈️",
+      "precipitation": 8,
+      "precipitationProbability": 38,
+      "windSpeed": 19,
+      "uvIndex": 5
+    },
+    {
+      "date": "2026-01-08",
+      "tempMax": 28,
+      "tempMin": 26,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0,
+      "precipitationProbability": 28,
+      "windSpeed": 23,
+      "uvIndex": 6
+    },
+    {
+      "date": "2026-01-09",
+      "tempMax": 29,
+      "tempMin": 26,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0,
+      "precipitationProbability": 28,
+      "windSpeed": 17,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-10",
+      "tempMax": 28,
+      "tempMin": 26,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0.6,
+      "precipitationProbability": 10,
+      "windSpeed": 16,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-11",
+      "tempMax": 29,
+      "tempMin": 26,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0,
+      "precipitationProbability": 9,
+      "windSpeed": 22,
+      "uvIndex": 5
+    },
+    {
+      "date": "2026-01-12",
+      "tempMax": 29,
+      "tempMin": 26,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0.6,
+      "precipitationProbability": 13,
+      "windSpeed": 22,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-13",
+      "tempMax": 28,
+      "tempMin": 26,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 0.9,
+      "precipitationProbability": 65,
+      "windSpeed": 20,
+      "uvIndex": 7
+    }
+  ]
+}

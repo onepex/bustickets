@@ -1,0 +1,94 @@
+{
+  "city": "Iloilo",
+  "slug": "iloilo",
+  "lat": 10.7202,
+  "lon": 122.5621,
+  "timezone": "Asia/Manila",
+  "lastUpdated": "2026-01-06T18:09:48.434Z",
+  "forecast": [
+    {
+      "date": "2026-01-07",
+      "tempMax": 30,
+      "tempMin": 25,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 1.4,
+      "precipitationProbability": 53,
+      "windSpeed": 22,
+      "uvIndex": 6
+    },
+    {
+      "date": "2026-01-08",
+      "tempMax": 31,
+      "tempMin": 25,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0,
+      "precipitationProbability": 3,
+      "windSpeed": 23,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-09",
+      "tempMax": 33,
+      "tempMin": 25,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0.1,
+      "precipitationProbability": 5,
+      "windSpeed": 19,
+      "uvIndex": 8
+    },
+    {
+      "date": "2026-01-10",
+      "tempMax": 32,
+      "tempMin": 25,
+      "weatherCode": 80,
+      "weatherLabel": "Slight showers",
+      "weatherIcon": "🌦️",
+      "precipitation": 1.2,
+      "precipitationProbability": 10,
+      "windSpeed": 17,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-11",
+      "tempMax": 32,
+      "tempMin": 26,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0,
+      "precipitationProbability": 5,
+      "windSpeed": 20,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-12",
+      "tempMax": 32,
+      "tempMin": 26,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0,
+      "precipitationProbability": 3,
+      "windSpeed": 25,
+      "uvIndex": 7
+    },
+    {
+      "date": "2026-01-13",
+      "tempMax": 31,
+      "tempMin": 26,
+      "weatherCode": 3,
+      "weatherLabel": "Overcast",
+      "weatherIcon": "☁️",
+      "precipitation": 0,
+      "precipitationProbability": 23,
+      "windSpeed": 26,
+      "uvIndex": 7
+    }
+  ]
+}
