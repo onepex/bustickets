@@ -4,12 +4,13 @@ import { SearchWidgetV3 } from '@/components/search'
 import { HeroBackground } from '@/components/HeroBackground'
 import { StickyBookCTA } from '@/components/StickyBookCTA'
 import { Breadcrumbs } from '@/components/Breadcrumbs'
-import { TerminalCard } from '@/components/TerminalCard'
-import { OperatorCard } from '@/components/OperatorCard'
-import { RouteJourneyMap, TerminalLocationMap } from '@/components/maps'
+import { JourneySection } from '@/components/maps/RouteMapsClient'
+import { TerminalHighlightProvider } from './TerminalHighlightProvider'
 import { TerminalData } from '@/lib/terminal-types'
 import { kv } from '@vercel/kv'
 import Link from 'next/link'
+import Image from 'next/image'
+import { getOperator } from '@/lib/operators'
 import { Clock, MapPin, Bus, Wallet, AlertCircle, Cloud, Navigation, Star, Camera, Sun, Droplets } from 'lucide-react'
 
 export const dynamic = 'force-dynamic'
@@ -159,7 +160,7 @@ export default async function ManilaToViganPage() {
                 </div>
 
                 {/* 5-Day Forecast */}
-                <div className="p-4 space-y-2">
+                <div className="px-4 pt-4 pb-2 space-y-2">
                   <div className="flex items-center justify-between py-2 border-b border-gray-100">
                     <div className="flex items-center gap-3">
                       <Sun className="w-6 h-6 text-amber-500" />
@@ -232,16 +233,6 @@ export default async function ManilaToViganPage() {
                   </div>
                 </div>
 
-                {/* Best Time */}
-                <div className="px-4 pb-4">
-                  <div className="bg-amber-50 rounded-lg p-3">
-                    <div className="flex items-center gap-2 text-amber-800 text-sm font-medium mb-1">
-                      <Star className="w-4 h-4 fill-amber-400 text-amber-400" />
-                      Best Time to Visit
-                    </div>
-                    <p className="text-xs text-amber-700">November–February for cooler weather. January for Vigan Longganisa Festival!</p>
-                  </div>
-                </div>
               </div>
             </div>
           </section>
@@ -252,50 +243,18 @@ export default async function ManilaToViganPage() {
               <Navigation className="w-6 h-6 text-amber-600" />
               Your Journey
             </h2>
-            <div className="grid lg:grid-cols-5 gap-6">
-              <div className="lg:col-span-3">
-                <RouteJourneyMap
-                  origin={{ name: 'Manila', coordinates: [121.0, 14.6] }}
-                  destination={{ name: 'Vigan', coordinates: [120.39, 17.57] }}
-                  waypoints={[
-                    { name: 'Tarlac', coordinates: [120.6, 15.5] },
-                    { name: 'La Union', coordinates: [120.32, 16.62] },
-                  ]}
-                  duration="7-11 hours"
-                  distance="407 km"
-                />
-              </div>
-              <div className="lg:col-span-2">
-                <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 h-full">
-                  <h3 className="font-semibold text-gray-900 mb-4">Journey Highlights</h3>
-                  <div className="space-y-4">
-                    <div className="flex items-start gap-3">
-                      <div className="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0"><span className="text-amber-600 font-bold text-sm">1</span></div>
-                      <div><div className="font-medium text-gray-900">Metro Manila</div><div className="text-sm text-gray-500">Depart from Cubao or Sampaloc</div></div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0"><span className="text-amber-600 font-bold text-sm">2</span></div>
-                      <div><div className="font-medium text-gray-900">TPLEX & SCTEX</div><div className="text-sm text-gray-500">Fast expressway through Central Luzon</div></div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0"><span className="text-amber-600 font-bold text-sm">3</span></div>
-                      <div><div className="font-medium text-gray-900">La Union Coast</div><div className="text-sm text-gray-500">Scenic coastal highway</div></div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center flex-shrink-0"><MapPin className="w-4 h-4 text-white" /></div>
-                      <div><div className="font-medium text-gray-900">Vigan City</div><div className="text-sm text-gray-500">UNESCO World Heritage Site</div></div>
-                    </div>
-                  </div>
-                  <div className="mt-6 p-4 bg-amber-50 rounded-xl">
-                    <div className="flex items-center gap-2 text-amber-800 font-medium text-sm mb-1">
-                      <Bus className="w-4 h-4" />
-                      Pro Tip
-                    </div>
-                    <p className="text-xs text-amber-700">Take the Luxury class for a direct 7-hour trip. Deluxe buses make more stops but are ₱300 cheaper.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <JourneySection
+              origin="Manila"
+              destination="Vigan"
+              duration="7-11 hours"
+              distance="407 km"
+              stops={[
+                { name: 'Metro Manila', coordinates: [121.0, 14.6], description: 'Depart from Cubao or Sampaloc' },
+                { name: 'TPLEX & SCTEX', coordinates: [120.6, 15.5], description: 'Fast expressway through Central Luzon' },
+                { name: 'La Union Coast', coordinates: [120.32, 16.62], description: 'Scenic coastal highway' },
+                { name: 'Vigan City', coordinates: [120.39, 17.57], description: 'UNESCO World Heritage Site', isDestination: true },
+              ]}
+            />
           </section>
 
           {/* Fare Table */}
@@ -314,25 +273,45 @@ export default async function ManilaToViganPage() {
                   </thead>
                   <tbody className="divide-y divide-gray-100">
                     <tr>
-                      <td className="px-4 py-3"><Link href="/operator/partas-bus" className="text-amber-600 hover:underline font-medium">Partas</Link></td>
+                      <td className="px-4 py-3">
+                        <Link href="/operator/partas-bus" className="flex items-center gap-2 text-amber-600 hover:underline font-medium">
+                          <span className="w-6 h-6 flex-shrink-0"><Image src={getOperator('Partas')?.logo || ''} alt="Partas" width={24} height={24} className="w-6 h-6" /></span>
+                          {getOperator('Partas')?.shortName}
+                        </Link>
+                      </td>
                       <td className="px-4 py-3 text-gray-700">Luxury</td>
                       <td className="px-4 py-3 font-semibold text-gray-900">₱1,200-1,350</td>
                       <td className="px-4 py-3 text-sm text-gray-500">7 hours (fastest)</td>
                     </tr>
                     <tr>
-                      <td className="px-4 py-3"><Link href="/operator/partas-bus" className="text-amber-600 hover:underline font-medium">Partas</Link></td>
+                      <td className="px-4 py-3">
+                        <Link href="/operator/partas-bus" className="flex items-center gap-2 text-amber-600 hover:underline font-medium">
+                          <span className="w-6 h-6 flex-shrink-0"><Image src={getOperator('Partas')?.logo || ''} alt="Partas" width={24} height={24} className="w-6 h-6" /></span>
+                          {getOperator('Partas')?.shortName}
+                        </Link>
+                      </td>
                       <td className="px-4 py-3 text-gray-700">Super Deluxe W/CR</td>
                       <td className="px-4 py-3 font-semibold text-gray-900">₱1,000</td>
                       <td className="px-4 py-3 text-sm text-gray-500">7 hours, with restroom</td>
                     </tr>
                     <tr>
-                      <td className="px-4 py-3"><Link href="/operator/partas-bus" className="text-amber-600 hover:underline font-medium">Partas</Link></td>
+                      <td className="px-4 py-3">
+                        <Link href="/operator/partas-bus" className="flex items-center gap-2 text-amber-600 hover:underline font-medium">
+                          <span className="w-6 h-6 flex-shrink-0"><Image src={getOperator('Partas')?.logo || ''} alt="Partas" width={24} height={24} className="w-6 h-6" /></span>
+                          {getOperator('Partas')?.shortName}
+                        </Link>
+                      </td>
                       <td className="px-4 py-3 text-gray-700">Deluxe</td>
                       <td className="px-4 py-3 font-semibold text-gray-900">₱950-980</td>
                       <td className="px-4 py-3 text-sm text-gray-500">9 hours</td>
                     </tr>
                     <tr>
-                      <td className="px-4 py-3"><span className="text-amber-600 font-medium">Farinas Trans</span></td>
+                      <td className="px-4 py-3">
+                        <span className="flex items-center gap-2 text-amber-600 font-medium">
+                          <span className="w-6 h-6 flex-shrink-0"><Image src={getOperator('Farinas')?.logo || ''} alt="Farinas" width={24} height={24} className="w-6 h-6" /></span>
+                          {getOperator('Farinas')?.shortName}
+                        </span>
+                      </td>
                       <td className="px-4 py-3 text-gray-700">Regular AC</td>
                       <td className="px-4 py-3 font-semibold text-gray-900">₱900-950</td>
                       <td className="px-4 py-3 text-sm text-gray-500">9-11 hours</td>
@@ -341,138 +320,34 @@ export default async function ManilaToViganPage() {
                 </table>
               </div>
             </div>
-          </section>
 
-          {/* Bus Operators */}
-          <section className="mb-12">
-            <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-6">Bus Operators</h2>
-            <div className="grid md:grid-cols-2 gap-4">
-              <OperatorCard
-                name="Partas"
-                rating={4.4}
-                badge="Most Popular"
-                description="Premium Ilocos operator. Multiple daily departures with Luxury, Super Deluxe, and Deluxe classes."
-                terminals={['Cubao', 'Pasay', 'CR Option']}
-                priceRange="₱950 - ₱1,350"
-                href="/operator/partas-bus"
-              />
-              <OperatorCard
-                name="Farinas"
-                rating={4.0}
-                badge="Budget Option"
-                description="Ilocos-based operator with affordable fares. Makes more stops along the route."
-                terminals={['Sampaloc', 'Cubao']}
-                priceRange="₱900 - ₱950"
-              />
+            {/* Expert fare explainer */}
+            <div className="mt-8 space-y-4 text-gray-600 leading-relaxed">
+              <h3 className="text-lg font-semibold text-gray-900">Understanding Bus Classes on This Route</h3>
+              <p>
+                <strong className="text-gray-900">Luxury (₱1,200-1,350)</strong> is Partas' premium offering with 2+1 seating configuration, giving you significantly more legroom and wider seats. These buses make fewer stops, use the fastest TPLEX-SCTEX expressway route, and typically arrive 2 hours earlier than regular services. Best for overnight trips when you want to sleep comfortably.
+              </p>
+              <p>
+                <strong className="text-gray-900">Super Deluxe W/CR (₱1,000)</strong> is the sweet spot for most travelers. Standard 2+2 seating but with an onboard restroom—crucial for a 7-hour journey. Same fast expressway route as Luxury class. The restroom means no unscheduled stops, keeping travel time short.
+              </p>
+              <p>
+                <strong className="text-gray-900">Deluxe (₱950-980)</strong> offers comfortable 2+2 air-conditioned seating without onboard restroom. These buses typically take the older coastal route with 2-3 meal/restroom stops, adding about 2 hours to the journey. A good budget option if you're not in a rush.
+              </p>
+              <p>
+                <strong className="text-gray-900">Regular AC (₱900-950)</strong> is Farinas' standard air-conditioned service. Basic but reliable, with more frequent stops along the way. Takes the longest but offers the most departures throughout the day. Best for daytime trips where you want to see the scenery.
+              </p>
+              <p className="text-amber-700 bg-amber-50 px-4 py-3 rounded-lg">
+                <strong>💡 Our recommendation:</strong> For first-time visitors, we suggest the Super Deluxe W/CR for the best balance of comfort, speed, and value. Book night departures (9-11 PM) to arrive in Vigan at dawn—perfect timing for a Calle Crisologo breakfast.
+              </p>
             </div>
           </section>
 
-          {/* Departure Terminals */}
-          <section className="mb-12">
-            <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-              <MapPin className="w-6 h-6 text-amber-600" />
-              Departure & Arrival Terminals
-            </h2>
-            
-            <div className="grid md:grid-cols-2 gap-6 mb-6">
-              {/* Departure */}
-              <div className="space-y-4">
-                <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Departure (Manila)</h3>
-                <TerminalLocationMap
-                  terminals={[
-                    { 
-                      name: 'Partas Cubao', 
-                      coordinates: [121.0523, 14.6207], 
-                      operator: 'Partas',
-                      address: 'Aurora Blvd, Cubao'
-                    },
-                    { 
-                      name: 'Farinas Sampaloc', 
-                      coordinates: [120.9845, 14.6117], 
-                      operator: 'Farinas',
-                      address: 'Lacson Ave, Sampaloc'
-                    },
-                  ]}
-                  title="Manila Terminals"
-                  zoom={12}
-                  height="200px"
-                />
-                {partasCubao ? (
-                  <TerminalCard 
-                    terminal={partasCubao} 
-                    departures="6 daily to Vigan"
-                    firstBus="9:00 AM"
-                    lastBus="11:55 PM"
-                    highlight
-                  />
-                ) : (
-                  <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-4">
-                    <h4 className="font-semibold text-gray-900">Partas Cubao Terminal</h4>
-                    <p className="text-sm text-gray-500">Aurora Blvd, Cubao, Quezon City</p>
-                  </div>
-                )}
-                {farinasSampaloc ? (
-                  <TerminalCard 
-                    terminal={farinasSampaloc} 
-                    departures="4 daily to Vigan"
-                    firstBus="7:00 AM"
-                    lastBus="9:00 PM"
-                  />
-                ) : (
-                  <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-4">
-                    <h4 className="font-semibold text-gray-900">Farinas Sampaloc Terminal</h4>
-                    <p className="text-sm text-gray-500">1238 Lacson Ave, Sampaloc, Manila</p>
-                  </div>
-                )}
-              </div>
-
-              {/* Arrival */}
-              <div className="space-y-4">
-                <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Arrival (Vigan)</h3>
-                <TerminalLocationMap
-                  terminals={[
-                    { 
-                      name: 'Vigan Bus Terminal', 
-                      coordinates: [120.3869, 17.5747], 
-                      operator: 'All operators',
-                      address: 'Vigan City, Ilocos Sur'
-                    },
-                  ]}
-                  title="Vigan Terminal"
-                  zoom={14}
-                  height="200px"
-                />
-                {viganTerminal ? (
-                  <TerminalCard 
-                    terminal={viganTerminal}
-                  />
-                ) : (
-                  <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-4">
-                    <h4 className="font-semibold text-gray-900">Vigan City Bus Terminal</h4>
-                    <p className="text-sm text-gray-500">Vigan City, Ilocos Sur</p>
-                  </div>
-                )}
-              </div>
-            </div>
-
-            <div className="bg-amber-50 border border-amber-200 rounded-xl p-4">
-              <div className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
-                <div className="text-sm text-amber-800">
-                  <strong>From Vigan Terminal:</strong> Calle Crisologo and the heritage district are a 5-minute tricycle ride (₱50) from the bus terminal.
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 mt-3">
-              <div className="flex items-start gap-3">
-                <AlertCircle className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
-                <div className="text-sm text-amber-800">
-                  <strong>Pro tip:</strong> Night departures (21:00-23:55) arrive at dawn—perfect for catching sunrise at Bantay Bell Tower!
-                </div>
-              </div>
-            </div>
-          </section>
+          {/* Bus Operators & Terminals - Connected Highlighting */}
+          <TerminalHighlightProvider
+            partasCubao={partasCubao}
+            farinasSampaloc={farinasSampaloc}
+            viganTerminal={viganTerminal}
+          />
 
           {/* Travel Tips */}
           <section className="mb-12">
@@ -483,7 +358,6 @@ export default async function ManilaToViganPage() {
                 <li className="flex items-start gap-3"><span className="text-amber-500 mt-1">✓</span><span className="text-gray-700"><strong>Super Deluxe W/CR</strong> — Has onboard restroom. Great for the 7-hour journey without stops.</span></li>
                 <li className="flex items-start gap-3"><span className="text-amber-500 mt-1">✓</span><span className="text-gray-700"><strong>Print your voucher</strong> — Partas requires printed vouchers for online bookings.</span></li>
                 <li className="flex items-start gap-3"><span className="text-amber-500 mt-1">✓</span><span className="text-gray-700"><strong>Arrive 15 min early</strong> — Buses depart on time. Seat selection is first-come.</span></li>
-                <li className="flex items-start gap-3"><span className="text-amber-500 mt-1">✓</span><span className="text-gray-700"><strong>Best time to visit</strong> — November-February for cool weather. January for Longganisa Festival!</span></li>
                 <li className="flex items-start gap-3"><span className="text-amber-500 mt-1">✓</span><span className="text-gray-700"><strong>Try Vigan empanada</strong> — Get the orange empanadas at Plaza Burgos upon arrival.</span></li>
               </ul>
             </div>

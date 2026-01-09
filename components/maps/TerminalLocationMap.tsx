@@ -11,6 +11,8 @@ interface Terminal {
   coordinates: [number, number]
   operator?: string
   address?: string
+  markerLetter?: string
+  markerColor?: string
 }
 
 interface TerminalLocationMapProps {
@@ -18,16 +20,21 @@ interface TerminalLocationMapProps {
   title?: string
   zoom?: number
   height?: string
+  onMarkerClick?: (terminalName: string) => void
+  highlightedTerminal?: string | null
 }
 
 export function TerminalLocationMap({
   terminals,
   title,
   zoom = 13,
-  height = '250px',
+  height = '320px',
+  onMarkerClick,
+  highlightedTerminal,
 }: TerminalLocationMapProps) {
   const mapContainer = useRef<HTMLDivElement>(null)
   const map = useRef<mapboxgl.Map | null>(null)
+  const markersRef = useRef<Map<string, HTMLDivElement>>(new Map())
 
   useEffect(() => {
     if (!mapContainer.current || map.current || terminals.length === 0) return
@@ -55,25 +62,34 @@ export function TerminalLocationMap({
       if (!map.current) return
 
       terminals.forEach((terminal, index) => {
+        const letter = terminal.markerLetter || terminal.name.charAt(0) || (index + 1).toString()
+        const color = terminal.markerColor || '#F59E0B'
+        
         const el = document.createElement('div')
         el.className = 'terminal-marker'
+        el.dataset.terminalName = terminal.name
         el.innerHTML = `
           <div class="relative group cursor-pointer">
-            <div class="w-10 h-10 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg border-3 border-white transform transition-transform group-hover:scale-110">
-              <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M4 16c0 .88.39 1.67 1 2.22V20c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h8v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1.78c.61-.55 1-1.34 1-2.22V6c0-3.5-3.58-4-8-4s-8 .5-8 4v10zm3.5 1c-.83 0-1.5-.67-1.5-1.5S6.67 14 7.5 14s1.5.67 1.5 1.5S8.33 17 7.5 17zm9 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm1.5-6H6V6h12v5z"/>
-              </svg>
+            <div class="marker-ring absolute -inset-1 rounded-full transition-all opacity-0" style="background-color: rgba(251, 191, 36, 0.4);"></div>
+            <div class="marker-circle w-10 h-10 rounded-full flex items-center justify-center shadow-lg border-2 border-white transform transition-all group-hover:scale-110 relative" style="background-color: ${color}">
+              <span class="text-white font-bold text-lg">${letter}</span>
             </div>
             <div class="absolute top-12 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity z-10">
               <div class="bg-white rounded-lg shadow-xl p-3 min-w-[180px] border border-gray-100">
                 <div class="font-semibold text-gray-900 text-sm">${terminal.name}</div>
-                ${terminal.operator ? `<div class="text-xs text-amber-600 font-medium mt-0.5">${terminal.operator}</div>` : ''}
+                ${terminal.operator ? `<div class="text-xs font-medium mt-0.5" style="color: ${color}">${terminal.operator}</div>` : ''}
                 ${terminal.address ? `<div class="text-xs text-gray-500 mt-1">${terminal.address}</div>` : ''}
               </div>
               <div class="w-3 h-3 bg-white border-l border-t border-gray-100 transform rotate-45 absolute -top-1.5 left-1/2 -translate-x-1/2"></div>
             </div>
           </div>
         `
+
+        el.addEventListener('click', () => {
+          onMarkerClick?.(terminal.name)
+        })
+
+        markersRef.current.set(terminal.name, el)
 
         new mapboxgl.Marker({ element: el, anchor: 'center' })
           .setLngLat(terminal.coordinates)
@@ -83,7 +99,7 @@ export function TerminalLocationMap({
       if (terminals.length > 1) {
         const bounds = new mapboxgl.LngLatBounds()
         terminals.forEach(t => bounds.extend(t.coordinates))
-        map.current.fitBounds(bounds, { padding: 50, duration: 1000 })
+        map.current.fitBounds(bounds, { padding: 80, duration: 0 })
       }
     })
 
@@ -94,6 +110,24 @@ export function TerminalLocationMap({
       }
     }
   }, [terminals, zoom])
+
+  useEffect(() => {
+    markersRef.current.forEach((el, name) => {
+      const circle = el.querySelector('.marker-circle') as HTMLElement
+      const ring = el.querySelector('.marker-ring') as HTMLElement
+      if (circle && ring) {
+        if (name === highlightedTerminal) {
+          circle.style.transform = 'scale(1.2)'
+          ring.style.opacity = '1'
+          ring.style.transform = 'scale(1.5)'
+        } else {
+          circle.style.transform = ''
+          ring.style.opacity = '0'
+          ring.style.transform = ''
+        }
+      }
+    })
+  }, [highlightedTerminal])
 
   return (
     <div className="relative w-full rounded-xl overflow-hidden shadow-md border border-gray-200">

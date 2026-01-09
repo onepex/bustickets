@@ -31,7 +31,7 @@ export function RouteJourneyMap({
   const mapContainer = useRef<HTMLDivElement>(null)
   const map = useRef<mapboxgl.Map | null>(null)
   const [mapLoaded, setMapLoaded] = useState(false)
-  const [animationProgress, setAnimationProgress] = useState(0)
+  const animationRef = useRef<number | null>(null)
 
   useEffect(() => {
     if (!mapContainer.current || map.current) return
@@ -124,45 +124,48 @@ export function RouteJourneyMap({
         },
       })
 
+      // Step 1: Origin marker with number
       const originEl = document.createElement('div')
       originEl.className = 'origin-marker'
       originEl.innerHTML = `
-        <div class="w-10 h-10 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg border-2 border-white">
-          <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-          </svg>
+        <div class="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center shadow-lg border-2 border-white">
+          <span class="text-amber-600 font-bold text-sm">1</span>
         </div>
-        <div class="absolute -bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap bg-white px-2 py-1 rounded-lg shadow-md text-xs font-semibold text-gray-800">${origin.name}</div>
+        <div class="absolute -bottom-7 left-1/2 -translate-x-1/2 whitespace-nowrap bg-white px-2 py-1 rounded-lg shadow-md text-xs font-semibold text-gray-800">${origin.name}</div>
       `
       new mapboxgl.Marker({ element: originEl, anchor: 'center' })
         .setLngLat(origin.coordinates)
         .addTo(map.current)
 
-      const destEl = document.createElement('div')
-      destEl.className = 'destination-marker'
-      destEl.innerHTML = `
-        <div class="w-10 h-10 bg-gradient-to-br from-teal-500 to-emerald-600 rounded-full flex items-center justify-center shadow-lg border-2 border-white">
-          <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-          </svg>
-        </div>
-        <div class="absolute -bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap bg-white px-2 py-1 rounded-lg shadow-md text-xs font-semibold text-gray-800">${destination.name}</div>
-      `
-      new mapboxgl.Marker({ element: destEl, anchor: 'center' })
-        .setLngLat(destination.coordinates)
-        .addTo(map.current)
-
-      waypoints.forEach((wp) => {
+      // Waypoints with numbers (2, 3, etc.)
+      waypoints.forEach((wp, index) => {
         const wpEl = document.createElement('div')
         wpEl.className = 'waypoint-marker'
         wpEl.innerHTML = `
-          <div class="w-4 h-4 bg-white border-2 border-amber-500 rounded-full shadow-md"></div>
-          <div class="absolute -bottom-6 left-1/2 -translate-x-1/2 whitespace-nowrap text-[10px] font-medium text-gray-600">${wp.name}</div>
+          <div class="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center shadow-lg border-2 border-white">
+            <span class="text-amber-600 font-bold text-sm">${index + 2}</span>
+          </div>
+          <div class="absolute -bottom-7 left-1/2 -translate-x-1/2 whitespace-nowrap bg-white px-2 py-1 rounded-lg shadow-md text-xs font-semibold text-gray-800">${wp.name}</div>
         `
         new mapboxgl.Marker({ element: wpEl, anchor: 'center' })
           .setLngLat(wp.coordinates)
           .addTo(map.current!)
       })
+
+      // Destination marker with location icon (teal)
+      const destEl = document.createElement('div')
+      destEl.className = 'destination-marker'
+      destEl.innerHTML = `
+        <div class="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center shadow-lg border-2 border-white">
+          <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+          </svg>
+        </div>
+        <div class="absolute -bottom-7 left-1/2 -translate-x-1/2 whitespace-nowrap bg-white px-2 py-1 rounded-lg shadow-md text-xs font-semibold text-gray-800">${destination.name}</div>
+      `
+      new mapboxgl.Marker({ element: destEl, anchor: 'center' })
+        .setLngLat(destination.coordinates)
+        .addTo(map.current)
 
       map.current.addSource('bus-point', {
         type: 'geojson',
@@ -190,15 +193,23 @@ export function RouteJourneyMap({
         .addTo(map.current)
 
       let step = 0
-      const numSteps = 200
-      const animateBus = () => {
+      const numSteps = 800
+      let lastTime = 0
+      const frameInterval = 50
+      
+      const animateBus = (timestamp: number) => {
         if (!map.current) return
+        
+        if (timestamp - lastTime < frameInterval) {
+          animationRef.current = requestAnimationFrame(animateBus)
+          return
+        }
+        lastTime = timestamp
         
         step++
         if (step > numSteps) step = 0
 
         const progress = step / numSteps
-        setAnimationProgress(progress)
 
         const currentCoords = interpolateRoute(routeCoordinates, progress)
         const animatedCoords = getRouteUpToProgress(routeCoordinates, progress)
@@ -217,12 +228,12 @@ export function RouteJourneyMap({
           })
         }
 
-        requestAnimationFrame(animateBus)
+        animationRef.current = requestAnimationFrame(animateBus)
       }
 
       setTimeout(() => {
-        animateBus()
-      }, 1000)
+        animationRef.current = requestAnimationFrame(animateBus)
+      }, 1500)
 
       const bounds = new mapboxgl.LngLatBounds()
       routeCoordinates.forEach(coord => bounds.extend(coord as [number, number]))
@@ -230,6 +241,9 @@ export function RouteJourneyMap({
     })
 
     return () => {
+      if (animationRef.current) {
+        cancelAnimationFrame(animationRef.current)
+      }
       if (map.current) {
         map.current.remove()
         map.current = null
@@ -260,25 +274,6 @@ export function RouteJourneyMap({
         </div>
       </div>
 
-      <div className="absolute bottom-4 left-4 right-4">
-        <div className="bg-white/95 backdrop-blur-sm rounded-lg shadow-md p-3">
-          <div className="flex items-center justify-between text-xs text-gray-600 mb-2">
-            <span className="font-medium">{origin.name}</span>
-            <span className="font-medium">{destination.name}</span>
-          </div>
-          <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
-            <div 
-              className="h-full bg-gradient-to-r from-amber-500 to-orange-500 rounded-full transition-all duration-100"
-              style={{ width: `${animationProgress * 100}%` }}
-            />
-          </div>
-          <div className="flex justify-center mt-2">
-            <span className="text-xs text-amber-600 font-medium">
-              {Math.round(animationProgress * 100)}% of journey
-            </span>
-          </div>
-        </div>
-      </div>
     </div>
   )
 }

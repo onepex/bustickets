@@ -1,8 +1,9 @@
 'use client'
 
+import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Star, MapPin, Clock, Phone, Bus, Share2 } from 'lucide-react'
+import { Star, MapPin, Phone, Bus } from 'lucide-react'
 import { TerminalData } from '@/lib/terminal-types'
 import { getOperator } from '@/lib/operators'
 
@@ -12,6 +13,9 @@ interface TerminalCardProps {
   firstBus?: string
   lastBus?: string
   highlight?: boolean
+  markerLetter?: string
+  markerColor?: string
+  onClick?: () => void
 }
 
 export function TerminalCard({ 
@@ -19,32 +23,42 @@ export function TerminalCard({
   departures, 
   firstBus, 
   lastBus,
-  highlight = false 
+  highlight = false,
+  markerLetter,
+  markerColor,
+  onClick 
 }: TerminalCardProps) {
+  const [showPhone, setShowPhone] = useState(false)
   const hasPhoto = terminal.photos && terminal.photos.length > 0
   
   const mapsUrl = terminal.googleMapsUri || 
     `https://www.google.com/maps/search/?api=1&query=${terminal.lat},${terminal.lon}`
 
-  const handleShare = async () => {
-    const shareData = {
-      title: `${terminal.name} - Pickup Location`,
-      text: `Meet me at ${terminal.name}\n${terminal.formattedAddress || terminal.city}`,
-      url: mapsUrl
-    }
-    if (navigator.share) {
-      await navigator.share(shareData)
-    } else {
-      await navigator.clipboard.writeText(`${terminal.name}\n${terminal.formattedAddress}\n${mapsUrl}`)
-      alert('Location copied to clipboard!')
-    }
-  }
-
   return (
-    <div className={`bg-white rounded-2xl shadow-sm border overflow-hidden transition-all hover:shadow-md ${highlight ? 'border-amber-300 ring-2 ring-amber-100' : 'border-gray-100'}`}>
+    <div 
+      className={`bg-white rounded-2xl shadow-sm border-2 overflow-hidden transition-all hover:shadow-md cursor-pointer ${highlight ? 'border-amber-400 shadow-lg' : 'border-gray-100'}`}
+      onClick={onClick}
+    >
+      {/* Mobile: Name first */}
+      <div className="sm:hidden px-4 pt-4 pb-2">
+        <div className="flex items-start justify-between gap-2">
+          <Link href={`/terminal/${terminal.slug}`} className="group">
+            <h3 className="font-bold text-gray-900 group-hover:text-amber-600 transition-colors">
+              {terminal.name}
+            </h3>
+          </Link>
+          {terminal.rating && (
+            <div className="flex items-center gap-1 text-sm flex-shrink-0">
+              <Star className="w-4 h-4 text-amber-500 fill-amber-500" />
+              <span className="font-bold text-gray-700">{terminal.rating.toFixed(1)}</span>
+            </div>
+          )}
+        </div>
+      </div>
+
       <div className="flex">
-        {/* Larger square photo */}
-        <div className="w-36 flex-shrink-0 bg-slate-100 relative">
+        {/* Photo - square aspect, stretches to match content */}
+        <div className="w-36 aspect-square flex-shrink-0 bg-slate-100 relative">
           {hasPhoto ? (
             <Image 
               src={terminal.photos![0]} 
@@ -58,12 +72,20 @@ export function TerminalCard({
               <Bus className="w-10 h-10 text-slate-300" />
             </div>
           )}
+          {markerLetter && markerColor && (
+            <div 
+              className="absolute top-2 left-2 w-10 h-10 rounded-full flex items-center justify-center shadow-lg border-2 border-white"
+              style={{ backgroundColor: markerColor }}
+            >
+              <span className="text-white font-bold text-lg">{markerLetter}</span>
+            </div>
+          )}
         </div>
         
         {/* Content */}
-        <div className="flex-1 p-4 min-w-0">
-          {/* Header: Name + Rating */}
-          <div className="flex items-start justify-between gap-2 mb-1.5">
+        <div className="flex-1 p-5 min-w-0">
+          {/* Header: Name + Rating - hidden on mobile (shown above) */}
+          <div className="hidden sm:flex items-start justify-between gap-2 mb-2">
             <Link href={`/terminal/${terminal.slug}`} className="group">
               <h3 className="font-bold text-gray-900 group-hover:text-amber-600 transition-colors line-clamp-1">
                 {terminal.name}
@@ -82,18 +104,19 @@ export function TerminalCard({
             href={mapsUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-start gap-1.5 text-sm text-gray-500 hover:text-blue-600 mb-2"
+            className="flex items-center gap-1.5 text-sm text-gray-500 hover:text-blue-600 mb-3"
+            onClick={(e) => e.stopPropagation()}
           >
-            <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" />
-            <span className="line-clamp-2">{terminal.formattedAddress || terminal.city}</span>
+            <MapPin className="w-4 h-4 flex-shrink-0" />
+            <span className="line-clamp-2">{(terminal.formattedAddress || terminal.city)?.replace(/, Philippines$/i, '').replace(/, Philippines,/gi, ',')}</span>
           </a>
 
-          {/* Operators with logos */}
+          {/* Operators with logos - only show operators with bus photos */}
           {terminal.operators && terminal.operators.length > 0 && (
-            <div className="flex flex-wrap gap-2 mb-3">
+            <div className="flex flex-wrap gap-2">
               {terminal.operators.map((opName, i) => {
                 const op = getOperator(opName)
-                if (op) {
+                if (op && op.busPhoto) {
                   return (
                     <span 
                       key={i} 
@@ -111,71 +134,51 @@ export function TerminalCard({
                     </span>
                   )
                 }
-                return (
-                  <span key={i} className="text-sm bg-gray-100 text-gray-700 px-2 py-1 rounded-md font-medium">
-                    {opName}
-                  </span>
-                )
+                return null
               })}
             </div>
           )}
 
-          {/* Schedule OR Opening hours */}
-          {(departures || firstBus || lastBus) ? (
-            <div className="flex items-center flex-wrap gap-x-3 gap-y-1 text-sm text-gray-600">
-              <Clock className="w-4 h-4 text-amber-600" />
-              {departures && <span className="text-amber-700 font-semibold">{departures}</span>}
-              {firstBus && <span>First: <strong>{firstBus}</strong></span>}
-              {lastBus && <span>Last: <strong>{lastBus}</strong></span>}
-            </div>
-          ) : terminal.openingHours && terminal.openingHours.length > 0 ? (
-            <div className="flex items-center gap-1.5 text-sm text-gray-500">
-              <Clock className="w-4 h-4" />
-              <span>{terminal.openingHours[0]}</span>
-            </div>
-          ) : null}
         </div>
       </div>
 
       {/* Footer */}
       <div className="flex items-center justify-between px-4 py-3 bg-gray-50 border-t border-gray-100">
-        {/* Phone */}
-        <div className="flex items-center gap-3">
-          {terminal.phone && (
-            <a href={`tel:${terminal.phone}`} className="flex items-center gap-2 text-gray-600 hover:text-amber-600">
+        {/* Phone - click to reveal */}
+        {terminal.phone && (
+          showPhone ? (
+            <a 
+              href={`tel:${terminal.phone}`} 
+              className="flex items-center gap-2 text-amber-600 hover:text-amber-700"
+              onClick={(e) => e.stopPropagation()}
+            >
               <Phone className="w-4 h-4" />
               <span className="font-medium">{terminal.phone}</span>
             </a>
-          )}
-          {terminal.wheelchairAccessible && (
-            <span className="text-blue-600 text-lg" title="Wheelchair accessible">♿</span>
-          )}
-        </div>
+          ) : (
+            <button 
+              onClick={(e) => { e.stopPropagation(); setShowPhone(true) }}
+              className="p-2 -m-1 text-gray-400 hover:text-amber-600 rounded-full hover:bg-gray-100"
+              title="Show phone number"
+            >
+              <Phone className="w-5 h-5" />
+            </button>
+          )
+        )}
 
-        {/* Action buttons */}
-        <div className="flex items-center gap-2">
-          {/* Share button with label */}
-          <button
-            onClick={handleShare}
-            className="flex items-center gap-1.5 text-gray-600 hover:text-gray-800 px-3 py-1.5 rounded-lg border border-gray-200 hover:bg-gray-100 transition-colors"
-          >
-            <Share2 className="w-4 h-4" />
-            <span className="font-medium">Share</span>
-          </button>
-          
-          {/* Google Maps button */}
-          <a 
-            href={mapsUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1.5 bg-blue-500 hover:bg-blue-600 text-white px-3 py-1.5 rounded-lg font-medium transition-colors"
-          >
-            <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-            </svg>
-            <span>Directions</span>
-          </a>
-        </div>
+        {/* Directions button */}
+        <a 
+          href={mapsUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={(e) => e.stopPropagation()}
+          className="flex items-center gap-1.5 bg-blue-500 hover:bg-blue-600 text-white px-3 py-1.5 rounded-lg font-medium transition-colors"
+        >
+          <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+          </svg>
+          <span>Directions</span>
+        </a>
       </div>
     </div>
   )

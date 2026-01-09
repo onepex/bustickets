@@ -4,6 +4,7 @@ export interface Operator {
   shortName: string
   logo: string
   color: string
+  busPhoto?: string
 }
 
 export const operators: Record<string, Operator> = {
@@ -13,6 +14,7 @@ export const operators: Record<string, Operator> = {
     shortName: 'Victory',
     logo: '/images/operators/victory-liner.svg',
     color: '#ED1A25',
+    busPhoto: '/images/buses/victory-liner.jpg',
   },
   'Partas': {
     slug: 'partas',
@@ -20,6 +22,7 @@ export const operators: Record<string, Operator> = {
     shortName: 'Partas',
     logo: '/images/operators/partas.svg',
     color: '#29166F',
+    busPhoto: '/images/buses/partas.jpg',
   },
   'Genesis': {
     slug: 'genesis',
@@ -27,6 +30,7 @@ export const operators: Record<string, Operator> = {
     shortName: 'Genesis',
     logo: '/images/operators/genesis.svg',
     color: '#092178',
+    busPhoto: '/images/buses/genesis.jpg',
   },
   'Joy Bus': {
     slug: 'joybus',
@@ -34,6 +38,7 @@ export const operators: Record<string, Operator> = {
     shortName: 'JoyBus',
     logo: '/images/operators/joybus.svg',
     color: '#FF9400',
+    busPhoto: '/images/buses/joybus.jpg',
   },
   'Five Star': {
     slug: 'five-star',
@@ -41,6 +46,7 @@ export const operators: Record<string, Operator> = {
     shortName: 'Five Star',
     logo: '/images/operators/five-star.svg',
     color: '#499AEA',
+    busPhoto: '/images/buses/five-star.jpg',
   },
   'Philtranco': {
     slug: 'philtranco',
@@ -48,6 +54,7 @@ export const operators: Record<string, Operator> = {
     shortName: 'Philtranco',
     logo: '/images/operators/philtranco.svg',
     color: '#1E1F93',
+    busPhoto: '/images/buses/philtranco.jpg',
   },
   'DLTB': {
     slug: 'dltb',
@@ -55,6 +62,7 @@ export const operators: Record<string, Operator> = {
     shortName: 'DLTB',
     logo: '/images/operators/dltb.svg',
     color: '#DD0000',
+    busPhoto: '/images/buses/dltb.jpg',
   },
   'Farinas': {
     slug: 'farinas',
@@ -62,6 +70,7 @@ export const operators: Record<string, Operator> = {
     shortName: 'Farinas',
     logo: '/images/operators/farinas.svg',
     color: '#035A30',
+    busPhoto: '/images/buses/farinas.jpg',
   },
   'GV Florida': {
     slug: 'gv-florida',
@@ -69,6 +78,7 @@ export const operators: Record<string, Operator> = {
     shortName: 'GV Florida',
     logo: '/images/operators/gv-florida.svg',
     color: '#FA0030',
+    busPhoto: '/images/buses/gv-florida.jpg',
   },
   'Ohayami': {
     slug: 'ohayami',
@@ -76,6 +86,7 @@ export const operators: Record<string, Operator> = {
     shortName: 'Ohayami',
     logo: '/images/operators/ohayami.svg',
     color: '#126FF4',
+    busPhoto: '/images/buses/ohayami.jpg',
   },
   'JAM Liner': {
     slug: 'jam-liner',
@@ -83,6 +94,7 @@ export const operators: Record<string, Operator> = {
     shortName: 'JAM',
     logo: '/images/operators/jam-liner.svg',
     color: '#EC3237',
+    busPhoto: '/images/buses/jam-liner.jpg',
   },
   'Dominion': {
     slug: 'dominion',
@@ -90,13 +102,15 @@ export const operators: Record<string, Operator> = {
     shortName: 'Dominion',
     logo: '/images/operators/dominion.svg',
     color: '#1E3A8A',
+    busPhoto: '/images/buses/dominion.jpg',
   },
   'Viron': {
     slug: 'viron',
     name: 'Viron Transit',
     shortName: 'Viron',
     logo: '/images/operators/viron.svg',
-    color: '#08356F',
+    color: '#0f4c3a',
+    busPhoto: '/images/buses/viron.jpg',
   },
 }
 
