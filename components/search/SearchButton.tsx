@@ -25,7 +25,7 @@ export default function SearchButton({
         transition-all duration-200
         ${disabled || loading
           ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
-          : 'bg-emerald-500 hover:bg-emerald-600 text-white shadow-lg shadow-emerald-500/25 hover:shadow-emerald-500/35 hover:scale-[1.02] active:scale-[0.98]'
+          : 'bg-[#046cbb] hover:bg-[#035a9e] text-white shadow-lg shadow-[#046cbb]/25 hover:shadow-[#046cbb]/35 hover:scale-[1.02] active:scale-[0.98]'
         }
         ${className}
       `}

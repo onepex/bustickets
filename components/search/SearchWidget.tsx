@@ -50,7 +50,7 @@ export default function SearchWidget({
       <div className="w-full max-w-5xl mx-auto px-4">
         <div className="bg-white/95 backdrop-blur-xl rounded-2xl shadow-2xl p-6 md:p-8 border border-white/20 overflow-visible">
           <div className="flex items-center gap-2 mb-6">
-            <Sparkles className="w-5 h-5 text-emerald-500" />
+            <Sparkles className="w-5 h-5 text-[#046cbb]" />
             <span className="text-sm font-medium text-gray-600">
               Book bus & ferry tickets across the Philippines
             </span>
@@ -71,10 +71,10 @@ export default function SearchWidget({
             <div className="hidden md:flex items-center justify-center pb-1">
               <button
                 onClick={handleSwap}
-                className="p-3 bg-gray-100 hover:bg-emerald-100 rounded-full transition-all hover:rotate-180 duration-300 group"
+                className="p-3 bg-gray-100 hover:bg-blue-100 rounded-full transition-all hover:rotate-180 duration-300 group"
                 title="Swap locations"
               >
-                <ArrowRightLeft className="w-5 h-5 text-gray-500 group-hover:text-emerald-600" />
+                <ArrowRightLeft className="w-5 h-5 text-gray-500 group-hover:text-[#035a9e]" />
               </button>
             </div>
 
@@ -113,7 +113,7 @@ export default function SearchWidget({
                 disabled={!isValid || isSearching}
                 className={`w-full py-3.5 px-8 rounded-xl font-semibold text-base flex items-center justify-center gap-3 transition-all ${
                   isValid && !isSearching
-                    ? 'bg-emerald-500 hover:bg-emerald-600 text-white shadow-lg shadow-emerald-500/30 hover:shadow-emerald-500/40 hover:scale-[1.01] active:scale-[0.99]'
+                    ? 'bg-[#046cbb] hover:bg-[#035a9e] text-white shadow-lg shadow-[#046cbb]/30 hover:shadow-[#046cbb]/40 hover:scale-[1.01] active:scale-[0.99]'
                     : 'bg-gray-200 text-gray-400 cursor-not-allowed'
                 }`}
               >
@@ -158,10 +158,10 @@ export default function SearchWidget({
 
           <button
             onClick={handleSwap}
-            className="hidden md:flex p-3 bg-gray-100 hover:bg-emerald-100 rounded-full transition-all hover:rotate-180 duration-300 group self-end mb-1"
+            className="hidden md:flex p-3 bg-gray-100 hover:bg-blue-100 rounded-full transition-all hover:rotate-180 duration-300 group self-end mb-1"
             title="Swap locations"
           >
-            <ArrowRightLeft className="w-5 h-5 text-gray-500 group-hover:text-emerald-600" />
+            <ArrowRightLeft className="w-5 h-5 text-gray-500 group-hover:text-[#035a9e]" />
           </button>
 
           <div className="flex-1 w-full md:w-auto">
@@ -195,7 +195,7 @@ export default function SearchWidget({
             disabled={!isValid || isSearching}
             className={`w-full md:w-auto px-8 py-3 rounded-xl font-semibold flex items-center justify-center gap-2 transition-all ${
               isValid && !isSearching
-                ? 'bg-emerald-500 hover:bg-emerald-600 text-white shadow-lg shadow-emerald-500/25 hover:shadow-emerald-500/35'
+                ? 'bg-[#046cbb] hover:bg-[#035a9e] text-white shadow-lg shadow-[#046cbb]/25 hover:shadow-[#046cbb]/35'
                 : 'bg-gray-200 text-gray-400 cursor-not-allowed'
             }`}
           >

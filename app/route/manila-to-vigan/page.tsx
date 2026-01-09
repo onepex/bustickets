@@ -16,7 +16,7 @@ import { Clock, MapPin, Bus, Wallet, AlertCircle, Cloud, Navigation, Star, Camer
 export const dynamic = 'force-dynamic'
 
 export const metadata = {
-  title: 'Manila to Vigan Bus: Partas, Farinas Schedule 2025',
+  title: 'Manila to Vigan: Partas, Farinas Schedule 2025',
   description: 'Book Manila to Vigan bus tickets online. Partas and Farinas buses to the UNESCO Heritage City. 7-11 hour journey via Ilocos Sur.',
 }
 
@@ -63,7 +63,7 @@ const jsonLd = {
     },
     {
       '@type': 'Product',
-      name: 'Manila to Vigan Bus Tickets',
+      name: 'Manila to Vigan Tickets',
       aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.4', reviewCount: '1250', bestRating: '5', worstRating: '1' },
     },
   ],
@@ -100,8 +100,8 @@ export default async function ManilaToViganPage() {
       <main className="min-h-screen">
         <HeroBackground destination="vigan">
           <div className="max-w-4xl mx-auto text-center mb-8">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Manila to Vigan Bus</h1>
-            <p className="text-lg md:text-xl text-teal-100 mb-2">Direct buses to the UNESCO Heritage City</p>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Manila to Vigan</h1>
+            <p className="text-lg md:text-xl text-teal-100 mb-2">Book bus tickets to Vigan</p>
             <span className="inline-block bg-white/20 backdrop-blur-sm text-white px-4 py-1.5 rounded-full text-sm font-medium">
               From ₱950 · 7-11 hours
             </span>
@@ -121,35 +121,35 @@ export default async function ManilaToViganPage() {
                   Travel to Vigan, the best-preserved Spanish colonial town in Asia and a UNESCO World Heritage Site. Walk the cobblestone streets of Calle Crisologo, ride a kalesa, and taste authentic Ilocano cuisine.
                 </p>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                  <div className="bg-amber-50 rounded-xl p-4 text-center">
-                    <Clock className="w-6 h-6 text-amber-600 mx-auto mb-2" />
+                  <div className="bg-blue-50 rounded-xl p-4 text-center">
+                    <Clock className="w-6 h-6 text-[#046cbb] mx-auto mb-2" />
                     <div className="text-sm text-gray-500">Travel Time</div>
                     <div className="font-semibold text-gray-900">7-11 hours</div>
                   </div>
-                  <div className="bg-amber-50 rounded-xl p-4 text-center">
-                    <Wallet className="w-6 h-6 text-amber-600 mx-auto mb-2" />
+                  <div className="bg-blue-50 rounded-xl p-4 text-center">
+                    <Wallet className="w-6 h-6 text-[#046cbb] mx-auto mb-2" />
                     <div className="text-sm text-gray-500">Fare From</div>
                     <div className="font-semibold text-gray-900">₱950</div>
                   </div>
-                  <div className="bg-amber-50 rounded-xl p-4 text-center">
-                    <Bus className="w-6 h-6 text-amber-600 mx-auto mb-2" />
+                  <div className="bg-blue-50 rounded-xl p-4 text-center">
+                    <Bus className="w-6 h-6 text-[#046cbb] mx-auto mb-2" />
                     <div className="text-sm text-gray-500">Daily Trips</div>
                     <div className="font-semibold text-gray-900">12+</div>
                   </div>
-                  <div className="bg-amber-50 rounded-xl p-4 text-center">
-                    <MapPin className="w-6 h-6 text-amber-600 mx-auto mb-2" />
+                  <div className="bg-blue-50 rounded-xl p-4 text-center">
+                    <MapPin className="w-6 h-6 text-[#046cbb] mx-auto mb-2" />
                     <div className="text-sm text-gray-500">Distance</div>
                     <div className="font-semibold text-gray-900">~325 km</div>
                   </div>
                 </div>
-                <a href="#search" className="mt-6 w-full bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-6 rounded-xl text-center block transition-colors">
+                <a href="#search" className="mt-6 w-full bg-[#046cbb] hover:bg-[#035a9e] text-white font-semibold py-3 px-6 rounded-xl text-center block transition-colors">
                   Check Available Buses →
                 </a>
               </div>
 
-              <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+              <div className="hidden lg:block bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
                 {/* Header */}
-                <div className="bg-gradient-to-r from-amber-500 to-orange-500 p-4 text-white">
+                <div className="bg-gradient-to-r from-[#046cbb] to-[#0891b2] p-4 text-white">
                   <div className="flex items-center justify-between">
                     <div>
                       <div className="text-sm font-medium opacity-90">Vigan City</div>
@@ -160,76 +160,61 @@ export default async function ManilaToViganPage() {
                 </div>
 
                 {/* 5-Day Forecast */}
-                <div className="px-4 pt-4 pb-2 space-y-2">
-                  <div className="flex items-center justify-between py-2 border-b border-gray-100">
-                    <div className="flex items-center gap-3">
-                      <Sun className="w-6 h-6 text-amber-500" />
-                      <span className="font-medium text-gray-900 w-12">Today</span>
+                <div className="px-5 pt-5 pb-3 space-y-3">
+                  <div className="flex items-center justify-between py-3 border-b border-gray-100">
+                    <div className="flex items-center gap-4">
+                      <Sun className="w-7 h-7 text-amber-500" />
+                      <span className="font-semibold text-gray-900 text-lg">Today</span>
                     </div>
-                    <div className="flex items-center gap-2 text-sm text-gray-500">
+                    <div className="flex items-center gap-2 text-gray-500">
                       <span>10%</span>
-                      <Droplets className="w-3 h-3" />
+                      <Droplets className="w-4 h-4" />
                     </div>
-                    <div className="text-right">
-                      <span className="font-semibold text-gray-900">31°</span>
-                      <span className="text-gray-400 ml-1">24°</span>
-                    </div>
+                    <span className="font-bold text-gray-900 text-xl">31°</span>
                   </div>
-                  <div className="flex items-center justify-between py-2 border-b border-gray-100">
-                    <div className="flex items-center gap-3">
-                      <Sun className="w-6 h-6 text-amber-500" />
-                      <span className="font-medium text-gray-900 w-12">Fri</span>
+                  <div className="flex items-center justify-between py-3 border-b border-gray-100">
+                    <div className="flex items-center gap-4">
+                      <Sun className="w-7 h-7 text-amber-500" />
+                      <span className="font-semibold text-gray-900 text-lg">Fri</span>
                     </div>
-                    <div className="flex items-center gap-2 text-sm text-gray-500">
+                    <div className="flex items-center gap-2 text-gray-500">
                       <span>5%</span>
-                      <Droplets className="w-3 h-3" />
+                      <Droplets className="w-4 h-4" />
                     </div>
-                    <div className="text-right">
-                      <span className="font-semibold text-gray-900">30°</span>
-                      <span className="text-gray-400 ml-1">23°</span>
-                    </div>
+                    <span className="font-bold text-gray-900 text-xl">30°</span>
                   </div>
-                  <div className="flex items-center justify-between py-2 border-b border-gray-100">
-                    <div className="flex items-center gap-3">
-                      <Cloud className="w-6 h-6 text-gray-400" />
-                      <span className="font-medium text-gray-900 w-12">Sat</span>
+                  <div className="flex items-center justify-between py-3 border-b border-gray-100">
+                    <div className="flex items-center gap-4">
+                      <Cloud className="w-7 h-7 text-gray-400" />
+                      <span className="font-semibold text-gray-900 text-lg">Sat</span>
                     </div>
-                    <div className="flex items-center gap-2 text-sm text-gray-500">
+                    <div className="flex items-center gap-2 text-gray-500">
                       <span>25%</span>
-                      <Droplets className="w-3 h-3" />
+                      <Droplets className="w-4 h-4" />
                     </div>
-                    <div className="text-right">
-                      <span className="font-semibold text-gray-900">29°</span>
-                      <span className="text-gray-400 ml-1">24°</span>
-                    </div>
+                    <span className="font-bold text-gray-900 text-xl">29°</span>
                   </div>
-                  <div className="flex items-center justify-between py-2 border-b border-gray-100">
-                    <div className="flex items-center gap-3">
-                      <Cloud className="w-6 h-6 text-gray-400" />
-                      <span className="font-medium text-gray-900 w-12">Sun</span>
+                  <div className="flex items-center justify-between py-3 border-b border-gray-100">
+                    <div className="flex items-center gap-4">
+                      <Cloud className="w-7 h-7 text-gray-400" />
+                      <span className="font-semibold text-gray-900 text-lg">Sun</span>
                     </div>
-                    <div className="flex items-center gap-2 text-sm text-gray-500">
+                    <div className="flex items-center gap-2 text-gray-500">
                       <span>40%</span>
-                      <Droplets className="w-3 h-3" />
+                      <Droplets className="w-4 h-4" />
                     </div>
-                    <div className="text-right">
-                      <span className="font-semibold text-gray-900">28°</span>
-                      <span className="text-gray-400 ml-1">23°</span>
-                    </div>
+                    <span className="font-bold text-gray-900 text-xl">28°</span>
                   </div>
-                  <div className="flex items-center justify-between py-2">
-                    <div className="flex items-center gap-3">
-                      <Sun className="w-6 h-6 text-amber-500" />
-                      <span className="font-medium text-gray-900 w-12">Mon</span>
+                  <div className="flex items-center justify-between py-3">
+                    <div className="flex items-center gap-4">
+                      <Sun className="w-7 h-7 text-amber-500" />
+                      <span className="font-semibold text-gray-900 text-lg">Mon</span>
                     </div>
-                    <div className="flex items-center gap-2 text-sm text-gray-500">
+                    <div className="flex items-center gap-2 text-gray-500">
                       <span>15%</span>
-                      <Droplets className="w-3 h-3" />
+                      <Droplets className="w-4 h-4" />
                     </div>
-                    <div className="text-right">
-                      <span className="font-semibold text-gray-900">30°</span>
-                      <span className="text-gray-400 ml-1">24°</span>
-                    </div>
+                    <span className="font-bold text-gray-900 text-xl">30°</span>
                   </div>
                 </div>
 
@@ -237,10 +222,10 @@ export default async function ManilaToViganPage() {
             </div>
           </section>
 
-          {/* Your Journey - Interactive Map */}
-          <section className="mb-12">
+          {/* Your Journey - Interactive Map (hidden on mobile) */}
+          <section className="hidden md:block mb-12">
             <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-              <Navigation className="w-6 h-6 text-amber-600" />
+              <Navigation className="w-6 h-6 text-[#046cbb]" />
               Your Journey
             </h2>
             <JourneySection
@@ -274,7 +259,7 @@ export default async function ManilaToViganPage() {
                   <tbody className="divide-y divide-gray-100">
                     <tr>
                       <td className="px-4 py-3">
-                        <Link href="/operator/partas-bus" className="flex items-center gap-2 text-amber-600 hover:underline font-medium">
+                        <Link href="/operator/partas-bus" className="flex items-center gap-3 text-[#046cbb] hover:underline font-medium">
                           <span className="w-6 h-6 flex-shrink-0"><Image src={getOperator('Partas')?.logo || ''} alt="Partas" width={24} height={24} className="w-6 h-6" /></span>
                           {getOperator('Partas')?.shortName}
                         </Link>
@@ -285,7 +270,7 @@ export default async function ManilaToViganPage() {
                     </tr>
                     <tr>
                       <td className="px-4 py-3">
-                        <Link href="/operator/partas-bus" className="flex items-center gap-2 text-amber-600 hover:underline font-medium">
+                        <Link href="/operator/partas-bus" className="flex items-center gap-3 text-[#046cbb] hover:underline font-medium">
                           <span className="w-6 h-6 flex-shrink-0"><Image src={getOperator('Partas')?.logo || ''} alt="Partas" width={24} height={24} className="w-6 h-6" /></span>
                           {getOperator('Partas')?.shortName}
                         </Link>
@@ -296,7 +281,7 @@ export default async function ManilaToViganPage() {
                     </tr>
                     <tr>
                       <td className="px-4 py-3">
-                        <Link href="/operator/partas-bus" className="flex items-center gap-2 text-amber-600 hover:underline font-medium">
+                        <Link href="/operator/partas-bus" className="flex items-center gap-3 text-[#046cbb] hover:underline font-medium">
                           <span className="w-6 h-6 flex-shrink-0"><Image src={getOperator('Partas')?.logo || ''} alt="Partas" width={24} height={24} className="w-6 h-6" /></span>
                           {getOperator('Partas')?.shortName}
                         </Link>
@@ -307,7 +292,7 @@ export default async function ManilaToViganPage() {
                     </tr>
                     <tr>
                       <td className="px-4 py-3">
-                        <span className="flex items-center gap-2 text-amber-600 font-medium">
+                        <span className="flex items-center gap-3 text-[#046cbb] font-medium">
                           <span className="w-6 h-6 flex-shrink-0"><Image src={getOperator('Farinas')?.logo || ''} alt="Farinas" width={24} height={24} className="w-6 h-6" /></span>
                           {getOperator('Farinas')?.shortName}
                         </span>
@@ -336,7 +321,7 @@ export default async function ManilaToViganPage() {
               <p>
                 <strong className="text-gray-900">Regular AC (₱900-950)</strong> is Farinas' standard air-conditioned service. Basic but reliable, with more frequent stops along the way. Takes the longest but offers the most departures throughout the day. Best for daytime trips where you want to see the scenery.
               </p>
-              <p className="text-amber-700 bg-amber-50 px-4 py-3 rounded-lg">
+              <p className="text-[#046cbb] bg-blue-50 px-4 py-3 rounded-lg">
                 <strong>💡 Our recommendation:</strong> For first-time visitors, we suggest the Super Deluxe W/CR for the best balance of comfort, speed, and value. Book night departures (9-11 PM) to arrive in Vigan at dawn—perfect timing for a Calle Crisologo breakfast.
               </p>
             </div>
@@ -354,11 +339,11 @@ export default async function ManilaToViganPage() {
             <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-6">Travel Tips</h2>
             <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
               <ul className="space-y-3">
-                <li className="flex items-start gap-3"><span className="text-amber-500 mt-1">✓</span><span className="text-gray-700"><strong>Book Luxury for speed</strong> — 7 hours vs 9-11 hours on Deluxe. Worth the extra ₱250 if time matters.</span></li>
-                <li className="flex items-start gap-3"><span className="text-amber-500 mt-1">✓</span><span className="text-gray-700"><strong>Super Deluxe W/CR</strong> — Has onboard restroom. Great for the 7-hour journey without stops.</span></li>
-                <li className="flex items-start gap-3"><span className="text-amber-500 mt-1">✓</span><span className="text-gray-700"><strong>Print your voucher</strong> — Partas requires printed vouchers for online bookings.</span></li>
-                <li className="flex items-start gap-3"><span className="text-amber-500 mt-1">✓</span><span className="text-gray-700"><strong>Arrive 15 min early</strong> — Buses depart on time. Seat selection is first-come.</span></li>
-                <li className="flex items-start gap-3"><span className="text-amber-500 mt-1">✓</span><span className="text-gray-700"><strong>Try Vigan empanada</strong> — Get the orange empanadas at Plaza Burgos upon arrival.</span></li>
+                <li className="flex items-start gap-3"><span className="text-[#046cbb] mt-1">✓</span><span className="text-gray-700"><strong>Book Luxury for speed</strong> — 7 hours vs 9-11 hours on Deluxe. Worth the extra ₱250 if time matters.</span></li>
+                <li className="flex items-start gap-3"><span className="text-[#046cbb] mt-1">✓</span><span className="text-gray-700"><strong>Super Deluxe W/CR</strong> — Has onboard restroom. Great for the 7-hour journey without stops.</span></li>
+                <li className="flex items-start gap-3"><span className="text-[#046cbb] mt-1">✓</span><span className="text-gray-700"><strong>Print your voucher</strong> — Partas requires printed vouchers for online bookings.</span></li>
+                <li className="flex items-start gap-3"><span className="text-[#046cbb] mt-1">✓</span><span className="text-gray-700"><strong>Arrive 15 min early</strong> — Buses depart on time. Seat selection is first-come.</span></li>
+                <li className="flex items-start gap-3"><span className="text-[#046cbb] mt-1">✓</span><span className="text-gray-700"><strong>Try Vigan empanada</strong> — Get the orange empanadas at Plaza Burgos upon arrival.</span></li>
               </ul>
             </div>
           </section>
@@ -392,14 +377,14 @@ export default async function ManilaToViganPage() {
 
           {/* Destination Teaser */}
           <section className="mb-12">
-            <div className="bg-gradient-to-r from-amber-500 to-orange-500 rounded-2xl p-6 md:p-8 text-white">
+            <div className="bg-gradient-to-r from-[#046cbb] to-[#0891b2] rounded-2xl p-6 md:p-8 text-white">
               <div className="flex flex-col md:flex-row md:items-center gap-6">
                 <div className="flex-1">
                   <h2 className="text-xl md:text-2xl font-bold mb-2">Arriving in Vigan?</h2>
-                  <p className="text-amber-100 mb-4">
+                  <p className="text-blue-100 mb-4">
                     Step back in time on Calle Crisologo, ride a kalesa through cobblestone streets, and taste authentic Ilocano cuisine in this UNESCO Heritage City.
                   </p>
-                  <Link href="/destination/vigan" className="inline-flex items-center gap-2 bg-white text-amber-600 px-4 py-2 rounded-lg font-medium hover:bg-amber-50 transition-colors">
+                  <Link href="/destination/vigan" className="inline-flex items-center gap-2 bg-white text-[#046cbb] px-4 py-2 rounded-lg font-medium hover:bg-blue-50 transition-colors">
                     Explore Vigan Guide →
                   </Link>
                 </div>

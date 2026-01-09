@@ -158,7 +158,7 @@ export default function SearchWidgetV3({ defaultFrom, defaultTo, defaultDate }: 
     return (
       <>
         {text.slice(0, idx)}
-        <span className="bg-emerald-100 text-emerald-800 font-semibold">{text.slice(idx, idx + query.length)}</span>
+        <span className="bg-blue-100 text-[#035a9e] font-semibold">{text.slice(idx, idx + query.length)}</span>
         {text.slice(idx + query.length)}
       </>
     )
@@ -185,7 +185,7 @@ export default function SearchWidgetV3({ defaultFrom, defaultTo, defaultDate }: 
               onClick={() => setTripType('oneway')}
               className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all ${
                 tripType === 'oneway'
-                  ? 'bg-emerald-500 text-white'
+                  ? 'bg-[#046cbb] text-white'
                   : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
               }`}
             >
@@ -203,7 +203,7 @@ export default function SearchWidgetV3({ defaultFrom, defaultTo, defaultDate }: 
               onClick={() => setTripType('roundtrip')}
               className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all ${
                 tripType === 'roundtrip'
-                  ? 'bg-emerald-500 text-white'
+                  ? 'bg-[#046cbb] text-white'
                   : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
               }`}
             >
@@ -222,7 +222,7 @@ export default function SearchWidgetV3({ defaultFrom, defaultTo, defaultDate }: 
             <div className="flex-1 relative">
               <label htmlFor="from-input" className="block text-xs font-semibold text-gray-500 mb-2 uppercase tracking-wide">From</label>
               <div className="relative">
-                <MapPin className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-emerald-500 pointer-events-none" />
+                <MapPin className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#046cbb] pointer-events-none" />
                 <input
                   id="from-input"
                   type="text"
@@ -236,7 +236,7 @@ export default function SearchWidgetV3({ defaultFrom, defaultTo, defaultDate }: 
                   aria-expanded={activeDropdown === 'from'}
                   aria-haspopup="listbox"
                   aria-label="Departure city"
-                  className="w-full pl-12 pr-10 py-4 bg-gray-50 border-2 border-gray-200 rounded-xl text-gray-900 font-medium placeholder:text-gray-400 focus:outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 transition-all"
+                  className="w-full pl-12 pr-10 py-4 bg-gray-50 border-2 border-gray-200 rounded-xl text-gray-900 font-medium placeholder:text-gray-400 focus:outline-none focus:border-[#046cbb] focus:ring-2 focus:ring-[#046cbb]/20 transition-all"
                 />
                 {from && activeDropdown !== 'from' && (
                   <button
@@ -263,7 +263,7 @@ export default function SearchWidgetV3({ defaultFrom, defaultTo, defaultDate }: 
                           key={`recent-${idx}`}
                           type="button"
                           onClick={() => handleSelectRecent(recent)}
-                          className="w-full px-4 py-3 flex items-center gap-3 text-left hover:bg-emerald-50 border-b border-gray-50 transition-colors"
+                          className="w-full px-4 py-3 flex items-center gap-3 text-left hover:bg-blue-50 border-b border-gray-50 transition-colors"
                           role="option"
                         >
                           <Clock className="w-4 h-4 text-gray-400 flex-shrink-0" />
@@ -284,17 +284,17 @@ export default function SearchWidgetV3({ defaultFrom, defaultTo, defaultDate }: 
                       onClick={() => handleSelectCity(city, 'from')}
                       onMouseEnter={() => setHighlightedIndex(index)}
                       className={`w-full px-4 py-3 flex items-center gap-3 text-left transition-colors ${
-                        index === highlightedIndex ? 'bg-emerald-50' : 'hover:bg-gray-50'
+                        index === highlightedIndex ? 'bg-blue-50' : 'hover:bg-gray-50'
                       }`}
                       role="option"
                       aria-selected={index === highlightedIndex}
                     >
-                      <MapPin className={`w-4 h-4 flex-shrink-0 ${index === highlightedIndex ? 'text-emerald-500' : 'text-gray-400'}`} />
+                      <MapPin className={`w-4 h-4 flex-shrink-0 ${index === highlightedIndex ? 'text-[#046cbb]' : 'text-gray-400'}`} />
                       <div className="min-w-0">
-                        <div className={`font-medium ${index === highlightedIndex ? 'text-emerald-700' : 'text-gray-900'}`}>
+                        <div className={`font-medium ${index === highlightedIndex ? 'text-[#046cbb]' : 'text-gray-900'}`}>
                           {highlightMatch(city.name, searchQuery)}
                         </div>
-                        {city.popular && <span className="text-xs text-emerald-600">Popular</span>}
+                        {city.popular && <span className="text-xs text-[#035a9e]">Popular</span>}
                       </div>
                     </button>
                   ))}
@@ -310,10 +310,10 @@ export default function SearchWidgetV3({ defaultFrom, defaultTo, defaultDate }: 
               <button
                 type="button"
                 onClick={handleSwap}
-                className="p-3 bg-gray-100 hover:bg-emerald-100 rounded-full transition-all group min-w-[44px] min-h-[44px] flex items-center justify-center"
+                className="p-3 bg-gray-100 hover:bg-blue-100 rounded-full transition-all group min-w-[44px] min-h-[44px] flex items-center justify-center"
                 aria-label="Swap departure and destination"
               >
-                <ArrowRightLeft className="w-5 h-5 text-gray-500 group-hover:text-emerald-600" />
+                <ArrowRightLeft className="w-5 h-5 text-gray-500 group-hover:text-[#035a9e]" />
               </button>
             </div>
 
@@ -321,7 +321,7 @@ export default function SearchWidgetV3({ defaultFrom, defaultTo, defaultDate }: 
             <div className="flex-1 relative">
               <label htmlFor="to-input" className="block text-xs font-semibold text-gray-500 mb-2 uppercase tracking-wide">To</label>
               <div className="relative">
-                <MapPin className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-emerald-500 pointer-events-none" />
+                <MapPin className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#046cbb] pointer-events-none" />
                 <input
                   id="to-input"
                   type="text"
@@ -335,7 +335,7 @@ export default function SearchWidgetV3({ defaultFrom, defaultTo, defaultDate }: 
                   aria-expanded={activeDropdown === 'to'}
                   aria-haspopup="listbox"
                   aria-label="Destination city"
-                  className="w-full pl-12 pr-10 py-4 bg-gray-50 border-2 border-gray-200 rounded-xl text-gray-900 font-medium placeholder:text-gray-400 focus:outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 transition-all"
+                  className="w-full pl-12 pr-10 py-4 bg-gray-50 border-2 border-gray-200 rounded-xl text-gray-900 font-medium placeholder:text-gray-400 focus:outline-none focus:border-[#046cbb] focus:ring-2 focus:ring-[#046cbb]/20 transition-all"
                 />
                 {to && activeDropdown !== 'to' && (
                   <button
@@ -362,7 +362,7 @@ export default function SearchWidgetV3({ defaultFrom, defaultTo, defaultDate }: 
                           key={`recent-${idx}`}
                           type="button"
                           onClick={() => handleSelectRecent(recent)}
-                          className="w-full px-4 py-3 flex items-center gap-3 text-left hover:bg-emerald-50 border-b border-gray-50 transition-colors"
+                          className="w-full px-4 py-3 flex items-center gap-3 text-left hover:bg-blue-50 border-b border-gray-50 transition-colors"
                           role="option"
                         >
                           <Clock className="w-4 h-4 text-gray-400 flex-shrink-0" />
@@ -383,17 +383,17 @@ export default function SearchWidgetV3({ defaultFrom, defaultTo, defaultDate }: 
                       onClick={() => handleSelectCity(city, 'to')}
                       onMouseEnter={() => setHighlightedIndex(index)}
                       className={`w-full px-4 py-3 flex items-center gap-3 text-left transition-colors ${
-                        index === highlightedIndex ? 'bg-emerald-50' : 'hover:bg-gray-50'
+                        index === highlightedIndex ? 'bg-blue-50' : 'hover:bg-gray-50'
                       }`}
                       role="option"
                       aria-selected={index === highlightedIndex}
                     >
-                      <MapPin className={`w-4 h-4 flex-shrink-0 ${index === highlightedIndex ? 'text-emerald-500' : 'text-gray-400'}`} />
+                      <MapPin className={`w-4 h-4 flex-shrink-0 ${index === highlightedIndex ? 'text-[#046cbb]' : 'text-gray-400'}`} />
                       <div className="min-w-0">
-                        <div className={`font-medium ${index === highlightedIndex ? 'text-emerald-700' : 'text-gray-900'}`}>
+                        <div className={`font-medium ${index === highlightedIndex ? 'text-[#046cbb]' : 'text-gray-900'}`}>
                           {highlightMatch(city.name, searchQuery)}
                         </div>
-                        {city.popular && <span className="text-xs text-emerald-600">Popular</span>}
+                        {city.popular && <span className="text-xs text-[#035a9e]">Popular</span>}
                       </div>
                     </button>
                   ))}
@@ -414,11 +414,11 @@ export default function SearchWidgetV3({ defaultFrom, defaultTo, defaultDate }: 
                 <button
                   type="button"
                   onClick={() => setActiveDropdown(activeDropdown === 'dates' ? null : 'dates')}
-                  className="w-full pl-12 pr-4 py-4 bg-gray-50 border-2 border-gray-200 rounded-xl text-gray-900 font-medium text-left focus:outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 transition-all relative min-h-[56px]"
+                  className="w-full pl-12 pr-4 py-4 bg-gray-50 border-2 border-gray-200 rounded-xl text-gray-900 font-medium text-left focus:outline-none focus:border-[#046cbb] focus:ring-2 focus:ring-[#046cbb]/20 transition-all relative min-h-[56px]"
                   aria-label="Select departure date"
                   aria-expanded={activeDropdown === 'dates'}
                 >
-                  <Calendar className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-emerald-500" />
+                  <Calendar className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#046cbb]" />
                   {formatDate(departDate)}
                   <ChevronDown className={`absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400 transition-transform ${activeDropdown === 'dates' ? 'rotate-180' : ''}`} />
                 </button>
@@ -443,10 +443,10 @@ export default function SearchWidgetV3({ defaultFrom, defaultTo, defaultDate }: 
                   <button
                     type="button"
                     onClick={() => setActiveDropdown(activeDropdown === 'dates' ? null : 'dates')}
-                    className="w-full pl-12 pr-4 py-4 bg-gray-50 border-2 border-gray-200 rounded-xl text-gray-900 font-medium text-left focus:outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 transition-all relative min-h-[56px]"
+                    className="w-full pl-12 pr-4 py-4 bg-gray-50 border-2 border-gray-200 rounded-xl text-gray-900 font-medium text-left focus:outline-none focus:border-[#046cbb] focus:ring-2 focus:ring-[#046cbb]/20 transition-all relative min-h-[56px]"
                     aria-label="Select departure date"
                   >
-                    <Calendar className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-emerald-500" />
+                    <Calendar className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#046cbb]" />
                     {formatDate(departDate)}
                     <ChevronDown className={`absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400 transition-transform ${activeDropdown === 'dates' ? 'rotate-180' : ''}`} />
                   </button>
@@ -470,10 +470,10 @@ export default function SearchWidgetV3({ defaultFrom, defaultTo, defaultDate }: 
                   <button
                     type="button"
                     onClick={() => setActiveDropdown(activeDropdown === 'return' ? null : 'return')}
-                    className="w-full pl-12 pr-4 py-4 bg-gray-50 border-2 border-gray-200 rounded-xl text-gray-900 font-medium text-left focus:outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 transition-all relative min-h-[56px]"
+                    className="w-full pl-12 pr-4 py-4 bg-gray-50 border-2 border-gray-200 rounded-xl text-gray-900 font-medium text-left focus:outline-none focus:border-[#046cbb] focus:ring-2 focus:ring-[#046cbb]/20 transition-all relative min-h-[56px]"
                     aria-label="Select return date"
                   >
-                    <Calendar className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-emerald-500" />
+                    <Calendar className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#046cbb]" />
                     {returnDate ? formatDate(returnDate) : <span className="text-gray-400">Add return</span>}
                     <ChevronDown className={`absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400 transition-transform ${activeDropdown === 'return' ? 'rotate-180' : ''}`} />
                   </button>
@@ -501,7 +501,7 @@ export default function SearchWidgetV3({ defaultFrom, defaultTo, defaultDate }: 
               <label className="block text-xs font-semibold text-gray-500 mb-2 uppercase tracking-wide">Passengers</label>
               <div className="flex items-center justify-between bg-gray-50 border-2 border-gray-200 rounded-xl pl-4 pr-2 min-h-[56px]">
                 <div className="flex items-center gap-3">
-                  <Users className="w-5 h-5 text-emerald-500" />
+                  <Users className="w-5 h-5 text-[#046cbb]" />
                   <span className="text-gray-900 font-medium">{passengers} {passengers === 1 ? 'Passenger' : 'Passengers'}</span>
                 </div>
                 <div className="flex items-center gap-1">
@@ -522,7 +522,7 @@ export default function SearchWidgetV3({ defaultFrom, defaultTo, defaultDate }: 
                     className={`w-9 h-9 flex items-center justify-center rounded-lg text-base font-medium transition-all ${
                       passengers >= 10 
                         ? 'bg-gray-200 text-gray-400 cursor-not-allowed' 
-                        : 'bg-emerald-500 text-white hover:bg-emerald-600 active:scale-95 shadow-sm'
+                        : 'bg-[#046cbb] text-white hover:bg-[#035a9e] active:scale-95 shadow-sm'
                     }`}
                     aria-label="Increase passengers"
                   >
@@ -541,7 +541,7 @@ export default function SearchWidgetV3({ defaultFrom, defaultTo, defaultDate }: 
                 disabled={!isValid || isSearching}
                 className={`w-full md:w-auto px-10 py-4 rounded-xl font-semibold text-base flex items-center justify-center gap-3 transition-all min-h-[56px] ${
                   isValid && !isSearching
-                    ? 'bg-emerald-500 hover:bg-emerald-600 text-white shadow-lg shadow-emerald-500/30 hover:shadow-emerald-500/40'
+                    ? 'bg-[#046cbb] hover:bg-[#035a9e] text-white shadow-lg shadow-[#046cbb]/30 hover:shadow-[#046cbb]/40'
                     : 'bg-gray-200 text-gray-400 cursor-not-allowed'
                 }`}
                 aria-label="Search for tickets"
@@ -649,7 +649,7 @@ function DateRangePicker({
             onClick={() => setSelecting('depart')}
             className={`flex-1 py-2 px-3 rounded-md text-sm font-medium transition-all ${
               selecting === 'depart' 
-                ? 'bg-white shadow text-emerald-600' 
+                ? 'bg-white shadow text-[#035a9e]' 
                 : 'text-gray-500 hover:text-gray-700'
             }`}
           >
@@ -661,7 +661,7 @@ function DateRangePicker({
             onClick={() => setSelecting('return')}
             className={`flex-1 py-2 px-3 rounded-md text-sm font-medium transition-all ${
               selecting === 'return' 
-                ? 'bg-white shadow text-emerald-600' 
+                ? 'bg-white shadow text-[#035a9e]' 
                 : 'text-gray-500 hover:text-gray-700'
             }`}
           >
@@ -714,13 +714,13 @@ function DateRangePicker({
                 disabled={isPast(date) || (selecting === 'return' && isBeforeDepart(date))}
                 className={`w-10 h-10 flex items-center justify-center text-sm rounded-lg transition-all ${
                   isDepart(date)
-                    ? 'bg-emerald-500 text-white font-semibold rounded-r-none'
+                    ? 'bg-[#046cbb] text-white font-semibold rounded-r-none'
                     : isReturn(date)
-                    ? 'bg-emerald-500 text-white font-semibold rounded-l-none'
+                    ? 'bg-[#046cbb] text-white font-semibold rounded-l-none'
                     : isInRange(date)
-                    ? 'bg-emerald-100 text-emerald-700'
+                    ? 'bg-blue-100 text-[#046cbb]'
                     : isToday(date)
-                    ? 'ring-2 ring-emerald-300 text-emerald-700 font-medium'
+                    ? 'ring-2 ring-blue-300 text-[#046cbb] font-medium'
                     : isPast(date) || (selecting === 'return' && isBeforeDepart(date))
                     ? 'text-gray-300 cursor-not-allowed'
                     : 'text-gray-700 hover:bg-gray-100'
@@ -751,7 +751,7 @@ function DateRangePicker({
                 type="button"
                 onClick={() => onSelect(qDate, null)}
                 disabled={isPast(qDate)}
-                className="flex-1 py-2 text-xs font-medium rounded-lg bg-gray-100 text-gray-600 hover:bg-emerald-100 hover:text-emerald-700 transition-colors disabled:opacity-50"
+                className="flex-1 py-2 text-xs font-medium rounded-lg bg-gray-100 text-gray-600 hover:bg-blue-100 hover:text-[#046cbb] transition-colors disabled:opacity-50"
               >
                 {q.label}
               </button>

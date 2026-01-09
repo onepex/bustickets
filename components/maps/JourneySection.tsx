@@ -58,17 +58,25 @@ export function JourneySection({
       if (!map.current) return
       setMapReady(true)
 
-      // Fetch actual road route from Mapbox Directions API
+      // Fetch actual road route from Mapbox Directions API (simplified for smooth animation)
       const coordinates = stops.map(s => s.coordinates.join(',')).join(';')
       let routeGeometry: [number, number][] = stops.map(s => s.coordinates) // fallback to straight line
       
       try {
         const response = await fetch(
-          `https://api.mapbox.com/directions/v5/mapbox/driving/${coordinates}?geometries=geojson&overview=full&access_token=${mapboxgl.accessToken}`
+          `https://api.mapbox.com/directions/v5/mapbox/driving/${coordinates}?geometries=geojson&overview=simplified&access_token=${mapboxgl.accessToken}`
         )
         const data = await response.json()
         if (data.routes && data.routes[0]?.geometry?.coordinates) {
-          routeGeometry = data.routes[0].geometry.coordinates
+          // Downsample to ~100 points for smooth animation
+          const fullRoute = data.routes[0].geometry.coordinates as [number, number][]
+          const targetPoints = 100
+          if (fullRoute.length > targetPoints) {
+            const step = Math.floor(fullRoute.length / targetPoints)
+            routeGeometry = fullRoute.filter((_, i) => i % step === 0 || i === fullRoute.length - 1)
+          } else {
+            routeGeometry = fullRoute
+          }
         }
       } catch (error) {
         console.warn('Failed to fetch route, using straight line:', error)
@@ -116,8 +124,8 @@ export function JourneySection({
           `
         } else {
           el.innerHTML = `
-            <div class="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center shadow-lg border-2 border-white hover:scale-110 transition-transform">
-              <span class="text-amber-600 font-bold text-sm">${index + 1}</span>
+            <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center shadow-lg border-2 border-white hover:scale-110 transition-transform">
+              <span class="text-[#046cbb] font-bold text-sm">${index + 1}</span>
             </div>
           `
         }
@@ -233,13 +241,13 @@ export function JourneySection({
             <div className="text-lg font-bold text-gray-900">{origin} → {destination}</div>
             <div className="flex items-center gap-3 mt-2 text-sm text-gray-600">
               <span className="flex items-center gap-1">
-                <svg className="w-4 h-4 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 text-[#046cbb]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 {duration}
               </span>
               <span className="flex items-center gap-1">
-                <svg className="w-4 h-4 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 text-[#046cbb]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                 </svg>
                 {distance}
@@ -258,7 +266,7 @@ export function JourneySection({
                 key={index}
                 className={`flex items-start gap-3 p-2 rounded-lg cursor-pointer transition-all ${
                   hoveredStop === index 
-                    ? 'bg-amber-50 scale-[1.02]' 
+                    ? 'bg-blue-50 scale-[1.02]' 
                     : 'hover:bg-gray-50'
                 }`}
                 onMouseEnter={() => setHoveredStop(index)}
@@ -269,8 +277,8 @@ export function JourneySection({
                     <MapPin className="w-4 h-4 text-white" />
                   </div>
                 ) : (
-                  <div className="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <span className="text-amber-600 font-bold text-sm">{index + 1}</span>
+                  <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-[#046cbb] font-bold text-sm">{index + 1}</span>
                   </div>
                 )}
                 <div>

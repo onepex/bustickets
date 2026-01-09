@@ -57,31 +57,6 @@ export function TerminalCard({
       </div>
 
       <div className="flex">
-        {/* Photo - square aspect, stretches to match content */}
-        <div className="w-36 aspect-square flex-shrink-0 bg-slate-100 relative">
-          {hasPhoto ? (
-            <Image 
-              src={terminal.photos![0]} 
-              alt={terminal.name}
-              fill
-              sizes="144px"
-              className="object-cover"
-            />
-          ) : (
-            <div className="w-full h-full flex items-center justify-center">
-              <Bus className="w-10 h-10 text-slate-300" />
-            </div>
-          )}
-          {markerLetter && markerColor && (
-            <div 
-              className="absolute top-2 left-2 w-10 h-10 rounded-full flex items-center justify-center shadow-lg border-2 border-white"
-              style={{ backgroundColor: markerColor }}
-            >
-              <span className="text-white font-bold text-lg">{markerLetter}</span>
-            </div>
-          )}
-        </div>
-        
         {/* Content */}
         <div className="flex-1 p-5 min-w-0">
           {/* Header: Name + Rating - hidden on mobile (shown above) */}
@@ -139,6 +114,31 @@ export function TerminalCard({
             </div>
           )}
 
+        </div>
+        
+        {/* Photo - square aspect, on right side */}
+        <div className="w-36 aspect-square flex-shrink-0 bg-slate-100 relative">
+          {hasPhoto ? (
+            <Image 
+              src={terminal.photos![0]} 
+              alt={terminal.name}
+              fill
+              sizes="144px"
+              className="object-cover"
+            />
+          ) : (
+            <div className="w-full h-full flex items-center justify-center">
+              <Bus className="w-10 h-10 text-slate-300" />
+            </div>
+          )}
+          {markerLetter && markerColor && (
+            <div 
+              className="absolute top-2 right-2 w-10 h-10 rounded-full flex items-center justify-center shadow-lg border-2 border-white"
+              style={{ backgroundColor: markerColor }}
+            >
+              <span className="text-white font-bold text-lg">{markerLetter}</span>
+            </div>
+          )}
         </div>
       </div>
 

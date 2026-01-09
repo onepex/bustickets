@@ -103,7 +103,7 @@ export default function LocationInput({
         {label}
       </label>
       <div className="relative">
-        <MapPin className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-emerald-500 pointer-events-none" />
+        <MapPin className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-[#046cbb] pointer-events-none" />
         <input
           ref={inputRef}
           type="text"
@@ -121,7 +121,7 @@ export default function LocationInput({
           aria-expanded={isOpen}
           aria-haspopup="listbox"
           aria-label={label}
-          className="w-full pl-10 pr-8 py-3 bg-gray-50 border border-gray-200 rounded-xl text-gray-900 font-medium placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all"
+          className="w-full pl-10 pr-8 py-3 bg-gray-50 border border-gray-200 rounded-xl text-gray-900 font-medium placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#046cbb] focus:border-transparent transition-all"
         />
         <ChevronDown className={`absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400 transition-transform pointer-events-none ${isOpen ? 'rotate-180' : ''}`} />
       </div>
@@ -152,17 +152,17 @@ export default function LocationInput({
               aria-selected={index === highlightedIndex}
               className={`w-full px-3 py-3 flex items-center gap-3 text-left transition-colors ${
                 index === highlightedIndex
-                  ? 'bg-emerald-50'
+                  ? 'bg-blue-50'
                   : 'hover:bg-gray-50'
               }`}
             >
-              <MapPin className={`w-4 h-4 flex-shrink-0 ${index === highlightedIndex ? 'text-emerald-500' : 'text-gray-400'}`} />
+              <MapPin className={`w-4 h-4 flex-shrink-0 ${index === highlightedIndex ? 'text-[#046cbb]' : 'text-gray-400'}`} />
               <div className="min-w-0">
                 <div className={`font-medium truncate ${index === highlightedIndex ? 'text-emerald-700' : 'text-gray-900'}`}>
                   {city.name}
                 </div>
                 {city.popular && (
-                  <span className="text-xs text-emerald-600">Popular</span>
+                  <span className="text-xs text-[#035a9e]">Popular</span>
                 )}
               </div>
             </button>

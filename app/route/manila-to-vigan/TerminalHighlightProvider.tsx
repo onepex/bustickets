@@ -121,7 +121,7 @@ export function TerminalHighlightProvider({
         </div>
 
         {/* Terminal explainer */}
-        <div className="mb-8 space-y-4 text-gray-600 leading-relaxed">
+        <div className="mb-10 space-y-6 text-gray-600 leading-relaxed">
           <p>
             <button 
               onClick={() => handleTerminalSelect('Partas Cubao Terminal')}
@@ -152,7 +152,7 @@ export function TerminalHighlightProvider({
             </button>
             {' '}is where all buses arrive. It's located about 1.5 km from the heritage zone. Tricycles wait outside (₱50-70 to Calle Crisologo) or you can walk in 20 minutes if traveling light. Pro tip: some hotels offer free pickup if you book directly—just message them your bus schedule.
           </p>
-          <p className="text-amber-700 bg-amber-50 px-4 py-3 rounded-lg">
+          <p className="text-[#046cbb] bg-blue-50 px-4 py-3 rounded-lg">
             <strong>💡 Our recommendation:</strong> Book from Partas Cubao if you want schedule flexibility, especially for overnight trips (the 9:55 PM and 11:55 PM departures arrive at dawn). Choose Farinas Sampaloc for early morning departures or if you're staying near UST/Manila area.
           </p>
         </div>

@@ -13,12 +13,12 @@ export default function HomePage() {
         {/* Hero Section with Search Widget */}
         <section className="relative">
           {/* Background gradient */}
-          <div className="absolute inset-0 bg-gradient-to-br from-emerald-400 via-teal-500 to-cyan-600" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#046cbb] via-[#0580d4] to-[#0891b2]" />
           
           {/* Decorative elements */}
           <div className="absolute inset-0 opacity-30">
             <div className="absolute top-20 left-10 w-72 h-72 bg-white/20 rounded-full blur-3xl" />
-            <div className="absolute bottom-10 right-20 w-96 h-96 bg-emerald-300/30 rounded-full blur-3xl" />
+            <div className="absolute bottom-10 right-20 w-96 h-96 bg-[#046cbb]/30 rounded-full blur-3xl" />
           </div>
           
           <div className="relative max-w-7xl mx-auto px-4 py-16 md:py-24 pb-32">
@@ -55,7 +55,7 @@ export default function HomePage() {
         <section className="py-16 bg-white">
           <div className="max-w-7xl mx-auto px-4">
             <div className="flex items-center gap-3 mb-8">
-              <Bus className="w-6 h-6 text-emerald-500" />
+              <Bus className="w-6 h-6 text-[#046cbb]" />
               <h2 className="text-2xl font-bold text-gray-900">Popular Routes</h2>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -72,17 +72,17 @@ export default function HomePage() {
                 <Link
                   key={route.slug}
                   href={`/route/${route.slug}`}
-                  className="group p-5 bg-gray-50 border border-gray-100 rounded-xl hover:border-emerald-300 hover:shadow-lg hover:shadow-emerald-500/10 transition-all"
+                  className="group p-5 bg-gray-50 border border-gray-100 rounded-xl hover:border-[#046cbb]/40 hover:shadow-lg hover:shadow-[#046cbb]/10 transition-all"
                 >
                   <div className="flex items-center gap-2 mb-2">
-                    <MapPin className="w-4 h-4 text-emerald-500" />
-                    <p className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors">
+                    <MapPin className="w-4 h-4 text-[#046cbb]" />
+                    <p className="font-semibold text-gray-900 group-hover:text-[#046cbb] transition-colors">
                       {route.from} → {route.to}
                     </p>
                   </div>
                   <div className="flex items-center justify-between text-sm text-gray-500">
                     <span>{route.duration}</span>
-                    <span className="font-medium text-emerald-600">{route.price}</span>
+                    <span className="font-medium text-[#046cbb]">{route.price}</span>
                   </div>
                 </Link>
               ))}
@@ -94,7 +94,7 @@ export default function HomePage() {
         <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
           <div className="max-w-7xl mx-auto px-4">
             <div className="flex items-center gap-3 mb-8">
-              <MapPin className="w-6 h-6 text-emerald-500" />
+              <MapPin className="w-6 h-6 text-[#046cbb]" />
               <h2 className="text-2xl font-bold text-gray-900">Popular Destinations</h2>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -111,10 +111,10 @@ export default function HomePage() {
                 <Link
                   key={dest.slug}
                   href={`/destination/${dest.slug}`}
-                  className="group relative p-6 bg-white border border-gray-100 rounded-xl hover:border-emerald-300 hover:shadow-lg transition-all overflow-hidden"
+                  className="group relative p-6 bg-white border border-gray-100 rounded-xl hover:border-[#046cbb]/40 hover:shadow-lg transition-all overflow-hidden"
                 >
-                  <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-emerald-100 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity" />
-                  <p className="font-semibold text-gray-900 group-hover:text-emerald-600 transition-colors relative z-10">
+                  <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-blue-100 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <p className="font-semibold text-gray-900 group-hover:text-[#046cbb] transition-colors relative z-10">
                     {dest.name}
                   </p>
                   <p className="text-sm text-gray-500 relative z-10">{dest.desc}</p>
@@ -128,7 +128,7 @@ export default function HomePage() {
         <section className="py-16 bg-white">
           <div className="max-w-7xl mx-auto px-4">
             <div className="flex items-center gap-3 mb-8">
-              <Ship className="w-6 h-6 text-emerald-500" />
+              <Ship className="w-6 h-6 text-[#046cbb]" />
               <h2 className="text-2xl font-bold text-gray-900">Bus & Ferry Operators</h2>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
@@ -149,9 +149,9 @@ export default function HomePage() {
                 <Link
                   key={op.slug}
                   href={`/operator/${op.slug}`}
-                  className="group p-4 text-center bg-gray-50 border border-gray-100 rounded-xl hover:border-emerald-300 hover:bg-emerald-50 transition-all"
+                  className="group p-4 text-center bg-gray-50 border border-gray-100 rounded-xl hover:border-[#046cbb]/40 hover:bg-blue-50 transition-all"
                 >
-                  <p className="text-sm font-medium text-gray-700 group-hover:text-emerald-600 transition-colors">
+                  <p className="text-sm font-medium text-gray-700 group-hover:text-[#046cbb] transition-colors">
                     {op.name}
                   </p>
                 </Link>
@@ -161,15 +161,15 @@ export default function HomePage() {
         </section>
 
         {/* Why Choose Us */}
-        <section className="py-16 bg-emerald-50">
+        <section className="py-16 bg-blue-50">
           <div className="max-w-7xl mx-auto px-4">
             <h2 className="text-2xl font-bold text-gray-900 text-center mb-12">
               Why Book with BusTickets.ph?
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="text-center">
-                <div className="w-14 h-14 bg-emerald-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <Shield className="w-7 h-7 text-emerald-600" />
+                <div className="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <Shield className="w-7 h-7 text-[#046cbb]" />
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-2">Secure Booking</h3>
                 <p className="text-sm text-gray-600">
@@ -177,8 +177,8 @@ export default function HomePage() {
                 </p>
               </div>
               <div className="text-center">
-                <div className="w-14 h-14 bg-emerald-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <Clock className="w-7 h-7 text-emerald-600" />
+                <div className="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <Clock className="w-7 h-7 text-[#046cbb]" />
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-2">Instant Confirmation</h3>
                 <p className="text-sm text-gray-600">
@@ -186,8 +186,8 @@ export default function HomePage() {
                 </p>
               </div>
               <div className="text-center">
-                <div className="w-14 h-14 bg-emerald-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <Star className="w-7 h-7 text-emerald-600" />
+                <div className="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <Star className="w-7 h-7 text-[#046cbb]" />
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-2">Best Price Guarantee</h3>
                 <p className="text-sm text-gray-600">

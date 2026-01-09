@@ -92,9 +92,9 @@ export default function DatePicker({
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full pl-10 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-gray-900 font-medium text-left focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all relative"
+        className="w-full pl-10 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-gray-900 font-medium text-left focus:outline-none focus:ring-2 focus:ring-[#046cbb] focus:border-transparent transition-all relative"
       >
-        <Calendar className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-emerald-500" />
+        <Calendar className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-[#046cbb]" />
         {formatDate(value)}
       </button>
 
@@ -110,8 +110,8 @@ export default function DatePicker({
                 onClick={() => handleSelectDate(q.date)}
                 className={`flex-1 py-1.5 text-xs font-medium rounded-lg transition-colors ${
                   isSelected(q.date)
-                    ? 'bg-emerald-500 text-white'
-                    : 'bg-gray-100 text-gray-600 hover:bg-emerald-100'
+                    ? 'bg-[#046cbb] text-white'
+                    : 'bg-gray-100 text-gray-600 hover:bg-blue-100'
                 }`}
               >
                 {q.label}
@@ -155,9 +155,9 @@ export default function DatePicker({
                     disabled={isPast(date)}
                     className={`w-9 h-9 flex items-center justify-center text-sm rounded-lg transition-colors ${
                       isSelected(date)
-                        ? 'bg-emerald-500 text-white font-semibold'
+                        ? 'bg-[#046cbb] text-white font-semibold'
                         : isToday(date)
-                        ? 'bg-emerald-100 text-emerald-700 font-medium'
+                        ? 'bg-blue-100 text-emerald-700 font-medium'
                         : isPast(date)
                         ? 'text-gray-300 cursor-not-allowed'
                         : 'text-gray-700 hover:bg-gray-100'

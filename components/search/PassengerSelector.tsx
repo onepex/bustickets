@@ -47,9 +47,9 @@ export default function PassengerSelector({
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full pl-10 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-gray-900 font-medium text-left focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all relative"
+        className="w-full pl-10 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-gray-900 font-medium text-left focus:outline-none focus:ring-2 focus:ring-[#046cbb] focus:border-transparent transition-all relative"
       >
-        <Users className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-emerald-500" />
+        <Users className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-[#046cbb]" />
         {value} {value === 1 ? 'Passenger' : 'Passengers'}
       </button>
 
@@ -67,7 +67,7 @@ export default function PassengerSelector({
                 className={`w-8 h-8 flex items-center justify-center rounded-full transition-colors ${
                   value <= min
                     ? 'bg-gray-100 text-gray-300 cursor-not-allowed'
-                    : 'bg-gray-100 text-gray-600 hover:bg-emerald-100 hover:text-emerald-600'
+                    : 'bg-gray-100 text-gray-600 hover:bg-blue-100 hover:text-[#035a9e]'
                 }`}
               >
                 <Minus className="w-4 h-4" />
@@ -81,7 +81,7 @@ export default function PassengerSelector({
                 className={`w-8 h-8 flex items-center justify-center rounded-full transition-colors ${
                   value >= max
                     ? 'bg-gray-100 text-gray-300 cursor-not-allowed'
-                    : 'bg-gray-100 text-gray-600 hover:bg-emerald-100 hover:text-emerald-600'
+                    : 'bg-gray-100 text-gray-600 hover:bg-blue-100 hover:text-[#035a9e]'
                 }`}
               >
                 <Plus className="w-4 h-4" />

@@ -29,7 +29,7 @@ const classColors: Record<string, string> = {
   'deluxe': 'bg-blue-100 text-blue-700',
   'first-class': 'bg-amber-100 text-amber-700',
   'royal-class': 'bg-purple-100 text-purple-700',
-  'executive': 'bg-emerald-100 text-emerald-700',
+  'executive': 'bg-blue-100 text-emerald-700',
   'sleeper': 'bg-indigo-100 text-indigo-700',
 }
 
@@ -89,12 +89,12 @@ export default function SampleSchedules({ routeSchedule }: SampleSchedulesProps)
   return (
     <div className="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm">
       {/* Header */}
-      <div className="bg-gradient-to-r from-emerald-500 to-teal-500 px-6 py-5 text-white">
+      <div className="bg-gradient-to-r from-[#046cbb] to-teal-500 px-6 py-5 text-white">
         <h2 className="text-xl font-bold flex items-center gap-2">
           <Bus className="w-5 h-5" />
           {routeSchedule.from} → {routeSchedule.to}
         </h2>
-        <p className="text-emerald-100 text-sm mt-1">
+        <p className="text-blue-100 text-sm mt-1">
           Daily buses from {formatPrice(minPrice)} • {formatDuration(minDuration)} - {formatDuration(maxDuration)} travel
         </p>
       </div>
@@ -135,7 +135,7 @@ export default function SampleSchedules({ routeSchedule }: SampleSchedulesProps)
                 )}
 
                 {/* Price */}
-                <div className="font-semibold text-emerald-600 min-w-[60px] text-right">
+                <div className="font-semibold text-[#035a9e] min-w-[60px] text-right">
                   {formatPrice(schedule.price.amount)}
                 </div>
               </div>
@@ -164,7 +164,7 @@ export default function SampleSchedules({ routeSchedule }: SampleSchedulesProps)
                 value={formatDateInput(selectedDate)}
                 min={minDateStr}
                 onChange={(e) => setSelectedDate(new Date(e.target.value))}
-                className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-xl text-gray-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-xl text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#046cbb] focus:border-transparent"
               />
             </div>
           </div>
@@ -174,7 +174,7 @@ export default function SampleSchedules({ routeSchedule }: SampleSchedulesProps)
             href={mainBookingUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 px-6 py-3 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold rounded-xl transition-colors shadow-sm hover:shadow-md whitespace-nowrap"
+            className="flex items-center justify-center gap-2 px-6 py-3 bg-[#046cbb] hover:bg-[#035a9e] text-white font-semibold rounded-xl transition-colors shadow-sm hover:shadow-md whitespace-nowrap"
           >
             Check Schedules
             <ExternalLink className="w-4 h-4" />
